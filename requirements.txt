@@ -1,0 +1,20 @@
+# Third-party packages imported by the notebooks and scripts in experiments/.
+# Versions are those of the Anaconda environment the project was validated with (Python 3.13).
+numpy>=2.1
+pandas>=2.2
+scipy>=1.15
+scikit-learn>=1.6
+statsmodels>=0.14
+matplotlib>=3.10
+seaborn>=0.13
+joblib>=1.4
+tensorflow>=2.16      # Keras 3 (.keras model files)
+prophet>=1.1          # experiments/01 prophet_energy_forecasting.ipynb
+h5py>=3.12            # experiments/04 cleaning/extract_city_energy.py
+jinja2>=3.1           # pandas DataFrame.style in a few result notebooks
+markdown>=3.8         # climate-similarity HTML reports
+nbformat>=5.10        # experiments/05 create_*_notebook.py generators
+ipykernel
+streamlit>=1.45        # dashboard/ UI
+plotly>=5.24          # dashboard/ charts
+pytest>=8.3           # dashboard/tests

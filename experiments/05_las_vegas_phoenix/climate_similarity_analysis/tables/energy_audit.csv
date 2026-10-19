@@ -1,0 +1,3 @@
+city,rows,timestamp_column,start,end,numeric_columns,missing_pct
+Las Vegas,70128,timestamp,2016-01-01,2023-12-31 23:00:00,hourly_load_mw,0.0
+Phoenix,70128,timestamp,2016-01-01,2023-12-31 23:00:00,hourly_load_mw,0.0

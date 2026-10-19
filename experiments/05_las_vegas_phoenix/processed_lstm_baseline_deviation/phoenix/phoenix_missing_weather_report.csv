@@ -1,0 +1,17 @@
+,missing_before,largest_gap_hours,short_gap_hours,large_gap_hours
+extraterrestrial_horizontal_radiation_wh_m2,0,0,0,0
+extraterrestrial_direct_normal_radiation_wh_m2,0,0,0,0
+total_sky_cover_tenths,0,0,0,0
+opaque_sky_cover_tenths,0,0,0,0
+temperature_c,0,0,0,0
+dew_point_c,0,0,0,0
+relative_humidity_percent,0,0,0,0
+station_pressure_kpa,0,0,0,0
+wind_direction_deg,0,0,0,0
+wind_speed_ms,0,0,0,0
+horizontal_visibility_km,0,0,0,0
+ceiling_height_m,0,0,0,0
+precipitable_water_mm,0,0,0,0
+broadband_aerosol_optical_depth,0,0,0,0
+days_since_last_snowfall,0,0,0,0
+hourly_precipitation_cm,0,0,0,0

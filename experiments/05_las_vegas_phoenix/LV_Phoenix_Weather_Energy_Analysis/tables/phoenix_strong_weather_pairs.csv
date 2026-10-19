@@ -1,0 +1,6 @@
+feature_1,feature_2,correlation,absolute_correlation
+dew_point_c,precipitable_water_mm,0.9659411866710712,0.9659411866710712
+opaque_sky_cover_tenths,ceiling_height_m,-0.8971136294592592,0.8971136294592592
+total_sky_cover_tenths,opaque_sky_cover_tenths,0.8632671019691016,0.8632671019691016
+extraterrestrial_horizontal_radiation_wh_m2,extraterrestrial_direct_normal_radiation_wh_m2,0.8290436064749042,0.8290436064749042
+total_sky_cover_tenths,ceiling_height_m,-0.7111440847091639,0.7111440847091639

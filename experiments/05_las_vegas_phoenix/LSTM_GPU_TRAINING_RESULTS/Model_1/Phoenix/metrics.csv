@@ -1,0 +1,3 @@
+city,model,split,number_of_features,feature_list,training_epochs,best_validation_loss,deviation_mae,deviation_rmse,deviation_r2,final_energy_mae,final_energy_rmse,final_energy_r2
+Phoenix,Model_1,validation,5,temperature_c | dew_point_c | station_pressure_kpa | wind_speed_ms | wind_direction_deg,11,1.3816689252853394,731.8919449460819,980.96678557018,-0.048449044677896014,731.8919449460819,980.9667855701799,0.7042008670200041
+Phoenix,Model_1,test,5,temperature_c | dew_point_c | station_pressure_kpa | wind_speed_ms | wind_direction_deg,11,1.3816689252853394,794.2739079907697,1017.4055967775266,0.02461498201671708,794.2739079907697,1017.4055967775266,0.6978633896130892

@@ -1,0 +1,3 @@
+city,rows,columns,timestamp_column,valid_timestamp_pct,start,end,duplicate_rows,missing_cells,missing_cell_pct,energy_column
+Atlanta,70080,26,timestamp,100.0,2016-01-01,2023-12-31 23:00:00,0,210240,11.538461538461538,hourly_load_mw
+Birmingham,70080,26,timestamp,100.0,2016-01-01,2023-12-31 23:00:00,0,210240,11.538461538461538,hourly_load_mw

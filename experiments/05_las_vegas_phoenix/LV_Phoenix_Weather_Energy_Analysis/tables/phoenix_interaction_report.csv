@@ -1,0 +1,7 @@
+feature_a,feature_b,n,interaction_pearson,interaction_spearman
+temperature_c,dew_point_c,70080,0.5222133521710457,0.4737585085400654
+temperature_c,relative_humidity_percent,70080,0.40333346835413236,0.33185407369909076
+temperature_c,station_pressure_kpa,70080,0.4472084796850799,0.4577395998176131
+temperature_c,wind_speed_ms,70080,0.22073815019203463,0.2483081849397497
+temperature_c,precipitable_water_mm,70080,0.5556583875547252,0.5318536787440328
+temperature_c,broadband_aerosol_optical_depth,70080,0.3468491067645854,0.4336809418019768

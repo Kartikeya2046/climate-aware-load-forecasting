@@ -1,0 +1,96 @@
+{
+ "protocol": "Evaluate fitness-weight sets against held-out windows (run via `python -m core.evidence --weights-study`).\n\nProtocol (no information from the evaluated window enters its own score):\n* Each holdout is split chronologically. Validation skill is computed from the FIRST-half weekly\n  windows only; selection is then evaluated on every SECOND-half weekly window.\n* Per window and candidate: validation (first-half skill), climate similarity of that window's\n  weather against the model's training weather, temporal compatibility (date domain), feature\n  compatibility and data quality (100: repository data). Calibration is left unavailable because\n  it is itself estimated from the half split.\n* The selected model is the fitness argmax; regret = its window MAPE minus the best candidate's.\nOnly locations with at least two scorable candidates are informative.",
+ "n_cases": 208,
+ "best_model_counts": {
+  "phoenix/one_step": {
+   "tcn_las_vegas": 26
+  },
+  "phoenix/forecast": {
+   "tcn_las_vegas": 26
+  },
+  "atlanta/one_step": {
+   "tcn_atlanta": 26
+  },
+  "atlanta/forecast": {
+   "tcn_atlanta": 22,
+   "lstm_dayton": 4
+  },
+  "birmingham/one_step": {
+   "tcn_atlanta": 26
+  },
+  "birmingham/forecast": {
+   "tcn_atlanta": 26
+  },
+  "las_vegas/one_step": {
+   "tcn_las_vegas": 26
+  },
+  "las_vegas/forecast": {
+   "tcn_las_vegas": 26
+  }
+ },
+ "results": {
+  "configured": {
+   "weights": {
+    "validation_performance": 0.35,
+    "climate_similarity": 0.25,
+    "feature_compatibility": 0.15,
+    "input_data_quality": 0.1,
+    "temporal_compatibility": 0.1,
+    "calibration_reliability": 0.05
+   },
+   "mean_regret_mape_points": 0.04143369971703114,
+   "selection_accuracy": 0.9807692307692307
+  },
+  "validation_only": {
+   "weights": {
+    "validation_performance": 1.0,
+    "climate_similarity": 0.0,
+    "feature_compatibility": 0.0,
+    "input_data_quality": 0.0,
+    "temporal_compatibility": 0.0,
+    "calibration_reliability": 0.0
+   },
+   "mean_regret_mape_points": 0.04143369971703114,
+   "selection_accuracy": 0.9807692307692307
+  },
+  "climate_only": {
+   "weights": {
+    "validation_performance": 0.0,
+    "climate_similarity": 1.0,
+    "feature_compatibility": 0.0,
+    "input_data_quality": 0.0,
+    "temporal_compatibility": 0.0,
+    "calibration_reliability": 0.0
+   },
+   "mean_regret_mape_points": 0.04143369971703114,
+   "selection_accuracy": 0.9807692307692307
+  },
+  "equal": {
+   "weights": {
+    "validation_performance": 0.16666666666666666,
+    "climate_similarity": 0.16666666666666666,
+    "feature_compatibility": 0.16666666666666666,
+    "input_data_quality": 0.16666666666666666,
+    "temporal_compatibility": 0.16666666666666666,
+    "calibration_reliability": 0.16666666666666666
+   },
+   "mean_regret_mape_points": 0.04143369971703114,
+   "selection_accuracy": 0.9807692307692307
+  }
+ },
+ "configured_rank_among_all_sets": 2,
+ "n_weight_sets": 204,
+ "best_set": {
+  "name": "climate_only",
+  "weights": {
+   "validation_performance": 0.0,
+   "climate_similarity": 1.0,
+   "feature_compatibility": 0.0,
+   "input_data_quality": 0.0,
+   "temporal_compatibility": 0.0,
+   "calibration_reliability": 0.0
+  },
+  "mean_regret_mape_points": 0.04143369971703114,
+  "selection_accuracy": 0.9807692307692307
+ }
+}

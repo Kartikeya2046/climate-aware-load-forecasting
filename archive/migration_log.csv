@@ -1,0 +1,440 @@
+action,old_path,new_path,note
+archive,.ipynb_checkpoints/all_interaction_correlations-checkpoint.csv,archive/ipynb_checkpoints/all_interaction_correlations-checkpoint.csv,Jupyter autosave; differs from live file or live file absent
+archive,.ipynb_checkpoints/clean_weather-checkpoint.ipynb,archive/ipynb_checkpoints/clean_weather-checkpoint.ipynb,Jupyter autosave; differs from live file or live file absent
+archive,.ipynb_checkpoints/cleaned_weather-checkpoint.csv,archive/ipynb_checkpoints/cleaned_weather-checkpoint.csv,Jupyter autosave; differs from live file or live file absent
+archive,.ipynb_checkpoints/correlation_analysis-checkpoint.ipynb,archive/ipynb_checkpoints/correlation_analysis-checkpoint.ipynb,Jupyter autosave; differs from live file or live file absent
+archive,.ipynb_checkpoints/correlation_analysis_final-checkpoint.ipynb,archive/ipynb_checkpoints/correlation_analysis_final-checkpoint.ipynb,Jupyter autosave; differs from live file or live file absent
+delete_duplicate,.ipynb_checkpoints/correlation_summary-checkpoint.csv,,identical to correlation_summary.csv
+delete_duplicate,.ipynb_checkpoints/degree_selection-checkpoint.png,,identical to degree_selection.png
+delete_duplicate,.ipynb_checkpoints/energy_data_BH3-checkpoint.csv,,identical to energy_data_BH3.csv
+delete_duplicate,.ipynb_checkpoints/energy_data_BH4-checkpoint.csv,,identical to energy_data_BH4.csv
+archive,.ipynb_checkpoints/energy_feature_engineering-checkpoint.ipynb,archive/ipynb_checkpoints/energy_feature_engineering-checkpoint.ipynb,Jupyter autosave; differs from live file or live file absent
+archive,.ipynb_checkpoints/energy_mlr_baseline-checkpoint.ipynb,archive/ipynb_checkpoints/energy_mlr_baseline-checkpoint.ipynb,Jupyter autosave; differs from live file or live file absent
+archive,.ipynb_checkpoints/fiktering-checkpoint.ipynb,archive/ipynb_checkpoints/fiktering-checkpoint.ipynb,Jupyter autosave; differs from live file or live file absent
+delete_duplicate,.ipynb_checkpoints/final_training_dataset-checkpoint.csv,,identical to final_training_dataset.csv
+archive,.ipynb_checkpoints/hourly_energy-checkpoint.csv,archive/ipynb_checkpoints/hourly_energy-checkpoint.csv,Jupyter autosave; differs from live file or live file absent
+delete_duplicate,.ipynb_checkpoints/hourly_energy_filtered-checkpoint.csv,,identical to hourly_energy_filtered.csv
+archive,.ipynb_checkpoints/INDIANA_CLEANING-checkpoint.ipynb,archive/ipynb_checkpoints/INDIANA_CLEANING-checkpoint.ipynb,Jupyter autosave; differs from live file or live file absent
+delete_duplicate,.ipynb_checkpoints/Indiana_energy_consumption_2005-18-checkpoint.csv,,identical to Indiana_energy_consumption_2005-18.csv
+archive,.ipynb_checkpoints/Indiana_LSTM_Energy_Forecast-checkpoint.ipynb,archive/ipynb_checkpoints/Indiana_LSTM_Energy_Forecast-checkpoint.ipynb,Jupyter autosave; differs from live file or live file absent
+archive,.ipynb_checkpoints/Kentucky_Feature_Engineering-checkpoint.ipynb,archive/ipynb_checkpoints/Kentucky_Feature_Engineering-checkpoint.ipynb,Jupyter autosave; differs from live file or live file absent
+archive,.ipynb_checkpoints/Kentucky_LSTM_Evaluation-checkpoint.ipynb,archive/ipynb_checkpoints/Kentucky_LSTM_Evaluation-checkpoint.ipynb,Jupyter autosave; differs from live file or live file absent
+delete_duplicate,.ipynb_checkpoints/kentucky_weather_1962_1980-checkpoint.csv,,identical to kentucky_weather_1962_1980.csv
+delete_duplicate,.ipynb_checkpoints/kentucky_weather_2005_2018-checkpoint.csv,,identical to kentucky_weather_2005_2018.csv
+delete_duplicate,.ipynb_checkpoints/kentucky_weather_reconstructed-checkpoint.csv,,identical to kentucky_weather_reconstructed.csv
+archive,.ipynb_checkpoints/lstm_energy_forecasting-checkpoint.ipynb,archive/ipynb_checkpoints/lstm_energy_forecasting-checkpoint.ipynb,Jupyter autosave; differs from live file or live file absent
+archive,.ipynb_checkpoints/lstm_energy_forecasting_new-checkpoint.ipynb,archive/ipynb_checkpoints/lstm_energy_forecasting_new-checkpoint.ipynb,Jupyter autosave; differs from live file or live file absent
+archive,.ipynb_checkpoints/lstm_energy_v2-checkpoint.ipynb,archive/ipynb_checkpoints/lstm_energy_v2-checkpoint.ipynb,Jupyter autosave; differs from live file or live file absent
+delete_duplicate,.ipynb_checkpoints/master_weather-checkpoint.csv,,identical to master_weather.csv
+archive,.ipynb_checkpoints/mlr_energy_model_filtered_energy-checkpoint.ipynb,archive/ipynb_checkpoints/mlr_energy_model_filtered_energy-checkpoint.ipynb,Jupyter autosave; differs from live file or live file absent
+archive,.ipynb_checkpoints/mlr_plots-checkpoint.png,archive/ipynb_checkpoints/mlr_plots-checkpoint.png,Jupyter autosave; differs from live file or live file absent
+delete_duplicate,.ipynb_checkpoints/overfit_check-checkpoint.png,,identical to overfit_check.png
+archive,.ipynb_checkpoints/pearson_heatmap-checkpoint.png,archive/ipynb_checkpoints/pearson_heatmap-checkpoint.png,Jupyter autosave; differs from live file or live file absent
+delete_duplicate,.ipynb_checkpoints/poly_mlr_plots-checkpoint.png,,identical to poly_mlr_plots.png
+archive,.ipynb_checkpoints/polynomial_mlr_energy-checkpoint.ipynb,archive/ipynb_checkpoints/polynomial_mlr_energy-checkpoint.ipynb,Jupyter autosave; differs from live file or live file absent
+archive,.ipynb_checkpoints/prophet_energy_forecasting-checkpoint.ipynb,archive/ipynb_checkpoints/prophet_energy_forecasting-checkpoint.ipynb,Jupyter autosave; differs from live file or live file absent
+archive,.ipynb_checkpoints/SUB_S_clean_withoutgrouping-checkpoint.csv,archive/ipynb_checkpoints/SUB_S_clean_withoutgrouping-checkpoint.csv,Jupyter autosave; differs from live file or live file absent
+archive,.ipynb_checkpoints/sub_s_cleanedtime-checkpoint.csv,archive/ipynb_checkpoints/sub_s_cleanedtime-checkpoint.csv,Jupyter autosave; differs from live file or live file absent
+delete_duplicate,.ipynb_checkpoints/weather-checkpoint.csv,,identical to weather.csv
+archive,.ipynb_checkpoints/weather_cleaning pt2-checkpoint.ipynb,archive/ipynb_checkpoints/weather_cleaning pt2-checkpoint.ipynb,Jupyter autosave; differs from live file or live file absent
+delete_duplicate,.ipynb_checkpoints/weather_hourly-checkpoint.csv,,identical to weather_hourly.csv
+delete_duplicate,.ipynb_checkpoints/weird vaklues of energy-checkpoint.csv,,identical to weird vaklues of energy.csv
+rmdir,.ipynb_checkpoints,,
+delete_duplicate,lstm_training_1/.ipynb_checkpoints/cleaned_weather_DAY-checkpoint.csv,,identical to lstm_training_1/cleaned_weather_DAY.csv
+delete_duplicate,lstm_training_1/.ipynb_checkpoints/corr_daytype-checkpoint.png,,identical to lstm_training_1/corr_daytype.png
+delete_duplicate,lstm_training_1/.ipynb_checkpoints/corr_full_heatmap-checkpoint.png,,identical to lstm_training_1/corr_full_heatmap.png
+delete_duplicate,lstm_training_1/.ipynb_checkpoints/corr_lags-checkpoint.png,,identical to lstm_training_1/corr_lags.png
+delete_duplicate,lstm_training_1/.ipynb_checkpoints/corr_rolling-checkpoint.png,,identical to lstm_training_1/corr_rolling.png
+delete_duplicate,lstm_training_1/.ipynb_checkpoints/corr_weather-checkpoint.png,,identical to lstm_training_1/corr_weather.png
+archive,lstm_training_1/.ipynb_checkpoints/Date_change-checkpoint.ipynb,archive/ipynb_checkpoints/lstm_training_1/Date_change-checkpoint.ipynb,Jupyter autosave; differs from live file or live file absent
+archive,lstm_training_1/.ipynb_checkpoints/DAY_LOAD_HOURLY_2006-checkpoint.csv,archive/ipynb_checkpoints/lstm_training_1/DAY_LOAD_HOURLY_2006-checkpoint.csv,Jupyter autosave; differs from live file or live file absent
+archive,lstm_training_1/.ipynb_checkpoints/DAY_LOAD_HOURLY_2007-checkpoint.csv,archive/ipynb_checkpoints/lstm_training_1/DAY_LOAD_HOURLY_2007-checkpoint.csv,Jupyter autosave; differs from live file or live file absent
+archive,lstm_training_1/.ipynb_checkpoints/DAY_LOAD_HOURLY_2008-checkpoint.csv,archive/ipynb_checkpoints/lstm_training_1/DAY_LOAD_HOURLY_2008-checkpoint.csv,Jupyter autosave; differs from live file or live file absent
+archive,lstm_training_1/.ipynb_checkpoints/DAY_LOAD_HOURLY_2009-checkpoint.csv,archive/ipynb_checkpoints/lstm_training_1/DAY_LOAD_HOURLY_2009-checkpoint.csv,Jupyter autosave; differs from live file or live file absent
+archive,lstm_training_1/.ipynb_checkpoints/DAY_LOAD_HOURLY_2010-checkpoint.csv,archive/ipynb_checkpoints/lstm_training_1/DAY_LOAD_HOURLY_2010-checkpoint.csv,Jupyter autosave; differs from live file or live file absent
+archive,lstm_training_1/.ipynb_checkpoints/DAY_LOAD_HOURLY_2011-checkpoint.csv,archive/ipynb_checkpoints/lstm_training_1/DAY_LOAD_HOURLY_2011-checkpoint.csv,Jupyter autosave; differs from live file or live file absent
+archive,lstm_training_1/.ipynb_checkpoints/DAY_LOAD_HOURLY_2012-checkpoint.csv,archive/ipynb_checkpoints/lstm_training_1/DAY_LOAD_HOURLY_2012-checkpoint.csv,Jupyter autosave; differs from live file or live file absent
+archive,lstm_training_1/.ipynb_checkpoints/DAY_LOAD_HOURLY_2013-checkpoint.csv,archive/ipynb_checkpoints/lstm_training_1/DAY_LOAD_HOURLY_2013-checkpoint.csv,Jupyter autosave; differs from live file or live file absent
+archive,lstm_training_1/.ipynb_checkpoints/DAY_LOAD_HOURLY_2014-checkpoint.csv,archive/ipynb_checkpoints/lstm_training_1/DAY_LOAD_HOURLY_2014-checkpoint.csv,Jupyter autosave; differs from live file or live file absent
+archive,lstm_training_1/.ipynb_checkpoints/DAY_LOAD_HOURLY_2015-checkpoint.csv,archive/ipynb_checkpoints/lstm_training_1/DAY_LOAD_HOURLY_2015-checkpoint.csv,Jupyter autosave; differs from live file or live file absent
+archive,lstm_training_1/.ipynb_checkpoints/DAY_LOAD_HOURLY_2016-checkpoint.csv,archive/ipynb_checkpoints/lstm_training_1/DAY_LOAD_HOURLY_2016-checkpoint.csv,Jupyter autosave; differs from live file or live file absent
+archive,lstm_training_1/.ipynb_checkpoints/DAY_LOAD_HOURLY_2017-checkpoint.csv,archive/ipynb_checkpoints/lstm_training_1/DAY_LOAD_HOURLY_2017-checkpoint.csv,Jupyter autosave; differs from live file or live file absent
+archive,lstm_training_1/.ipynb_checkpoints/DAY_LOAD_HOURLY_2018-checkpoint.csv,archive/ipynb_checkpoints/lstm_training_1/DAY_LOAD_HOURLY_2018-checkpoint.csv,Jupyter autosave; differs from live file or live file absent
+archive,lstm_training_1/.ipynb_checkpoints/Dayton_LSTM_Energy_Forecast-checkpoint.ipynb,archive/ipynb_checkpoints/lstm_training_1/Dayton_LSTM_Energy_Forecast-checkpoint.ipynb,Jupyter autosave; differs from live file or live file absent
+archive,lstm_training_1/.ipynb_checkpoints/DUQ_LOAD_HOURLY_2006-checkpoint.csv,archive/ipynb_checkpoints/lstm_training_1/DUQ_LOAD_HOURLY_2006-checkpoint.csv,Jupyter autosave; differs from live file or live file absent
+archive,lstm_training_1/.ipynb_checkpoints/DUQ_LOAD_HOURLY_2007-checkpoint.csv,archive/ipynb_checkpoints/lstm_training_1/DUQ_LOAD_HOURLY_2007-checkpoint.csv,Jupyter autosave; differs from live file or live file absent
+archive,lstm_training_1/.ipynb_checkpoints/DUQ_predictions-checkpoint.csv,archive/ipynb_checkpoints/lstm_training_1/DUQ_predictions-checkpoint.csv,Jupyter autosave; differs from live file or live file absent
+archive,lstm_training_1/.ipynb_checkpoints/energy cleaning and merging-checkpoint.ipynb,archive/ipynb_checkpoints/lstm_training_1/energy cleaning and merging-checkpoint.ipynb,Jupyter autosave; differs from live file or live file absent
+archive,lstm_training_1/.ipynb_checkpoints/FINAL_MERGED_DAY_LOAD_2006_2016-checkpoint.csv,archive/ipynb_checkpoints/lstm_training_1/FINAL_MERGED_DAY_LOAD_2006_2016-checkpoint.csv,Jupyter autosave; differs from live file or live file absent
+archive,lstm_training_1/.ipynb_checkpoints/FINAL_MERGED_DAY_LOAD_2006_2018-checkpoint.csv,archive/ipynb_checkpoints/lstm_training_1/FINAL_MERGED_DAY_LOAD_2006_2018-checkpoint.csv,Jupyter autosave; differs from live file or live file absent
+delete_duplicate,lstm_training_1/.ipynb_checkpoints/FINAL_MERGED_DUQ_LOAD_2006_2016-checkpoint.csv,,identical to lstm_training_1/FINAL_MERGED_DUQ_LOAD_2006_2016.csv
+archive,lstm_training_1/.ipynb_checkpoints/kentucky_weather_cleaning-checkpoint.ipynb,archive/ipynb_checkpoints/lstm_training_1/kentucky_weather_cleaning-checkpoint.ipynb,Jupyter autosave; differs from live file or live file absent
+archive,lstm_training_1/.ipynb_checkpoints/Untitled-checkpoint.ipynb,archive/ipynb_checkpoints/lstm_training_1/Untitled-checkpoint.ipynb,Jupyter autosave; differs from live file or live file absent
+archive,lstm_training_1/.ipynb_checkpoints/weather_DAY_2006-2016-checkpoint.csv,archive/ipynb_checkpoints/lstm_training_1/weather_DAY_2006-2016-checkpoint.csv,Jupyter autosave; differs from live file or live file absent
+delete_duplicate,lstm_training_1/.ipynb_checkpoints/weather_DUQ_2006-2016-checkpoint.csv,,identical to lstm_training_1/weather_DUQ_2006-2016.csv
+archive,lstm_training_1/.ipynb_checkpoints/weather_parser_notebook-checkpoint.ipynb,archive/ipynb_checkpoints/lstm_training_1/weather_parser_notebook-checkpoint.ipynb,Jupyter autosave; differs from live file or live file absent
+rmdir,lstm_training_1/.ipynb_checkpoints,,
+delete_duplicate,lstm_training_1/cleaned_data_DAY/.ipynb_checkpoints/DAY_LOAD_HOURLY_2006-checkpoint.csv,,identical to lstm_training_1/cleaned_data_DAY/DAY_LOAD_HOURLY_2006.csv
+rmdir,lstm_training_1/cleaned_data_DAY/.ipynb_checkpoints,,
+delete_duplicate,lstm_training_1/cleaned_data_DUQ/.ipynb_checkpoints/DUQ_LOAD_HOURLY_2007-checkpoint.csv,,identical to lstm_training_1/cleaned_data_DUQ/DUQ_LOAD_HOURLY_2007.csv
+rmdir,lstm_training_1/cleaned_data_DUQ/.ipynb_checkpoints,,
+rmdir,models/.ipynb_checkpoints,,
+archive,prophet_output/.ipynb_checkpoints/cv_metrics-checkpoint.csv,archive/ipynb_checkpoints/prophet_output/cv_metrics-checkpoint.csv,Jupyter autosave; differs from live file or live file absent
+archive,prophet_output/.ipynb_checkpoints/cv_results-checkpoint.csv,archive/ipynb_checkpoints/prophet_output/cv_results-checkpoint.csv,Jupyter autosave; differs from live file or live file absent
+delete_duplicate,prophet_output/.ipynb_checkpoints/hyperparam_search-checkpoint.csv,,identical to prophet_output/hyperparam_search.csv
+archive,prophet_output/.ipynb_checkpoints/prophet_predictions-checkpoint.csv,archive/ipynb_checkpoints/prophet_output/prophet_predictions-checkpoint.csv,Jupyter autosave; differs from live file or live file absent
+rmdir,prophet_output/.ipynb_checkpoints,,
+delete_duplicate,best_lstm_model.keras,,identical (md5) to models/best_lstm_model.keras
+delete_duplicate,feature_scaler.pkl,,identical (md5) to models/feature_scaler.pkl
+delete_duplicate,feature_scaler_v2.pkl,,identical (md5) to models/feature_scaler_v2.pkl
+delete_duplicate,lstm_energy_model.keras,,identical (md5) to models/lstm_energy_model.keras
+delete_duplicate,lstm_energy_model_v2.keras,,identical (md5) to models/lstm_energy_model_v2.keras
+delete_duplicate,target_scaler.pkl,,identical (md5) to models/target_scaler.pkl
+delete_duplicate,target_scaler_v2.pkl,,identical (md5) to models/target_scaler_v2.pkl
+delete_duplicate,lstm_training_1/cleaned_data_DUQ/FINAL_MERGED_DUQ_LOAD_2006_2016.csv,,identical (md5) to lstm_training_1/FINAL_MERGED_DUQ_LOAD_2006_2016.csv
+move,energy_data_SUB-S.csv,experiments/01_campus_substation/data/raw/energy_data_SUB-S.csv,
+move,energy_data_BH3.csv,experiments/01_campus_substation/data/raw/energy_data_BH3.csv,
+move,energy_data_BH4.csv,experiments/01_campus_substation/data/raw/energy_data_BH4.csv,
+move,weather.csv,experiments/01_campus_substation/data/raw/weather.csv,
+move,cleaned_weather.csv,experiments/01_campus_substation/data/interim/cleaned_weather.csv,
+move,cleaned_data.csv,experiments/01_campus_substation/data/interim/cleaned_data.csv,
+move,sub_s_cleanedtime.csv,experiments/01_campus_substation/data/interim/sub_s_cleanedtime.csv,
+move,SUB_S_clean_withoutgrouping.csv,experiments/01_campus_substation/data/interim/SUB_S_clean_withoutgrouping.csv,
+move,hourly_energy.csv,experiments/01_campus_substation/data/interim/hourly_energy.csv,
+move,hourly_energy_filtered.csv,experiments/01_campus_substation/data/interim/hourly_energy_filtered.csv,
+move,weather_hourly.csv,experiments/01_campus_substation/data/interim/weather_hourly.csv,
+move,weird vaklues of energy.csv,experiments/01_campus_substation/data/interim/weird vaklues of energy.csv,
+move,final_training_dataset.csv,experiments/01_campus_substation/data/processed/final_training_dataset.csv,
+move,final_feature_engineered_dataset.csv,experiments/01_campus_substation/data/processed/final_feature_engineered_dataset.csv,
+move,clean_weather.ipynb,experiments/01_campus_substation/notebooks/clean_weather.ipynb,
+move,weather_cleaning pt2.ipynb,experiments/01_campus_substation/notebooks/weather_cleaning pt2.ipynb,
+move,fiktering.ipynb,experiments/01_campus_substation/notebooks/fiktering.ipynb,
+move,correlation_analysis.ipynb,experiments/01_campus_substation/notebooks/correlation_analysis.ipynb,
+move,correlation_analysis_final.ipynb,experiments/01_campus_substation/notebooks/correlation_analysis_final.ipynb,
+move,energy_mlr_baseline.ipynb,experiments/01_campus_substation/notebooks/energy_mlr_baseline.ipynb,
+move,mlr_energy_model_filtered_energy.ipynb,experiments/01_campus_substation/notebooks/mlr_energy_model_filtered_energy.ipynb,
+move,polynomial_mlr_energy.ipynb,experiments/01_campus_substation/notebooks/polynomial_mlr_energy.ipynb,
+move,energy_feature_engineering.ipynb,experiments/01_campus_substation/notebooks/energy_feature_engineering.ipynb,
+move,lstm_energy_forecasting.ipynb,experiments/01_campus_substation/notebooks/lstm_energy_forecasting.ipynb,
+move,lstm_energy_forecasting_new.ipynb,experiments/01_campus_substation/notebooks/lstm_energy_forecasting_new.ipynb,
+move,lstm_energy_v2.ipynb,experiments/01_campus_substation/notebooks/lstm_energy_v2.ipynb,
+move,prophet_energy_forecasting.ipynb,experiments/01_campus_substation/notebooks/prophet_energy_forecasting.ipynb,
+move,lstm_energy_forecasting.py,experiments/01_campus_substation/scripts/lstm_energy_forecasting.py,
+move,models/best_lstm_model.keras,experiments/01_campus_substation/models/best_lstm_model.keras,
+move,models/feature_scaler.pkl,experiments/01_campus_substation/models/feature_scaler.pkl,
+move,models/feature_scaler_v2.pkl,experiments/01_campus_substation/models/feature_scaler_v2.pkl,
+move,models/lstm_energy_model.keras,experiments/01_campus_substation/models/lstm_energy_model.keras,
+move,models/lstm_energy_model_v2.keras,experiments/01_campus_substation/models/lstm_energy_model_v2.keras,
+move,models/prophet_model_tuned.pkl,experiments/01_campus_substation/models/prophet_model_tuned.pkl,
+move,models/target_scaler.pkl,experiments/01_campus_substation/models/target_scaler.pkl,
+move,models/target_scaler_v2.pkl,experiments/01_campus_substation/models/target_scaler_v2.pkl,
+move,checkpoints/lstm_best.keras,experiments/01_campus_substation/models/checkpoints/lstm_best.keras,
+move,checkpoints/lstm_best_v2.keras,experiments/01_campus_substation/models/checkpoints/lstm_best_v2.keras,
+move,checkpoints/lstm_final_v2.keras,experiments/01_campus_substation/models/checkpoints/lstm_final_v2.keras,
+move,degree_selection.png,experiments/01_campus_substation/outputs/figures/degree_selection.png,
+move,energy_time_patterns.png,experiments/01_campus_substation/outputs/figures/energy_time_patterns.png,
+move,error_by_hour.png,experiments/01_campus_substation/outputs/figures/error_by_hour.png,
+move,feature_importance_proxy.png,experiments/01_campus_substation/outputs/figures/feature_importance_proxy.png,
+move,interaction_terms_bar.png,experiments/01_campus_substation/outputs/figures/interaction_terms_bar.png,
+move,lag_scatter_plots.png,experiments/01_campus_substation/outputs/figures/lag_scatter_plots.png,
+move,lstm_results.png,experiments/01_campus_substation/outputs/figures/lstm_results.png,
+move,mlr_plots.png,experiments/01_campus_substation/outputs/figures/mlr_plots.png,
+move,overfit_check.png,experiments/01_campus_substation/outputs/figures/overfit_check.png,
+move,overfitting_dashboard_v2.png,experiments/01_campus_substation/outputs/figures/overfitting_dashboard_v2.png,
+move,overfitting_report.png,experiments/01_campus_substation/outputs/figures/overfitting_report.png,
+move,pearson_heatmap.png,experiments/01_campus_substation/outputs/figures/pearson_heatmap.png,
+move,pearson_vs_spearman_bar.png,experiments/01_campus_substation/outputs/figures/pearson_vs_spearman_bar.png,
+move,poly_mlr_plots.png,experiments/01_campus_substation/outputs/figures/poly_mlr_plots.png,
+move,prophet_changepoints.png,experiments/01_campus_substation/outputs/figures/prophet_changepoints.png,
+move,prophet_components.png,experiments/01_campus_substation/outputs/figures/prophet_components.png,
+move,prophet_cv_rmse.png,experiments/01_campus_substation/outputs/figures/prophet_cv_rmse.png,
+move,prophet_dashboard.png,experiments/01_campus_substation/outputs/figures/prophet_dashboard.png,
+move,prophet_forecast.png,experiments/01_campus_substation/outputs/figures/prophet_forecast.png,
+move,prophet_zoom_hourly.png,experiments/01_campus_substation/outputs/figures/prophet_zoom_hourly.png,
+move,scatter_residuals.png,experiments/01_campus_substation/outputs/figures/scatter_residuals.png,
+move,scatter_top6.png,experiments/01_campus_substation/outputs/figures/scatter_top6.png,
+move,spearman_heatmap.png,experiments/01_campus_substation/outputs/figures/spearman_heatmap.png,
+move,test_forecast.png,experiments/01_campus_substation/outputs/figures/test_forecast.png,
+move,test_forecast_v2.png,experiments/01_campus_substation/outputs/figures/test_forecast_v2.png,
+move,training_curves.png,experiments/01_campus_substation/outputs/figures/training_curves.png,
+move,training_curves_v2.png,experiments/01_campus_substation/outputs/figures/training_curves_v2.png,
+move,zoom_7day.png,experiments/01_campus_substation/outputs/figures/zoom_7day.png,
+move,zoom_and_hourly_error_v2.png,experiments/01_campus_substation/outputs/figures/zoom_and_hourly_error_v2.png,
+move,correlation_summary.csv,experiments/01_campus_substation/outputs/tables/correlation_summary.csv,
+move,all_interaction_correlations.csv,experiments/01_campus_substation/outputs/tables/all_interaction_correlations.csv,
+move,lstm_test_predictions.csv,experiments/01_campus_substation/outputs/tables/lstm_test_predictions.csv,
+move,lstm_predictions_v2.csv,experiments/01_campus_substation/outputs/tables/lstm_predictions_v2.csv,
+move,training_log.csv,experiments/01_campus_substation/outputs/logs/training_log.csv,
+move,training_log_v2.csv,experiments/01_campus_substation/outputs/logs/training_log_v2.csv,
+move,training_log_final_v2.csv,experiments/01_campus_substation/outputs/logs/training_log_final_v2.csv,
+move,logs/train,experiments/01_campus_substation/outputs/logs/tensorboard/train,
+move,prophet_output/cv_metrics.csv,experiments/01_campus_substation/outputs/prophet/cv_metrics.csv,
+move,prophet_output/cv_results.csv,experiments/01_campus_substation/outputs/prophet/cv_results.csv,
+move,prophet_output/hyperparam_search.csv,experiments/01_campus_substation/outputs/prophet/hyperparam_search.csv,
+move,prophet_output/prophet_model_tuned.pkl,experiments/01_campus_substation/outputs/prophet/prophet_model_tuned.pkl,
+move,prophet_output/prophet_predictions.csv,experiments/01_campus_substation/outputs/prophet/prophet_predictions.csv,
+move,prophet_output/reg_scaler.pkl,experiments/01_campus_substation/outputs/prophet/reg_scaler.pkl,
+move,Indiana_energy_consumption_2005-18.csv,experiments/02_indiana_kentucky/data/raw/Indiana_energy_consumption_2005-18.csv,
+move,Indiana_weather_2005_2018.csv,experiments/02_indiana_kentucky/data/raw/Indiana_weather_2005_2018.csv,
+move,master_weather.csv,experiments/02_indiana_kentucky/data/raw/master_weather.csv,
+move,kentucky_weather_reconstructed.csv,experiments/02_indiana_kentucky/data/raw/kentucky_weather_reconstructed.csv,
+move,kentucky_weather_1962_1980.csv,experiments/02_indiana_kentucky/data/interim/kentucky_weather_1962_1980.csv,
+move,kentucky_weather_2005_2018.csv,experiments/02_indiana_kentucky/data/processed/kentucky_weather_2005_2018.csv,
+move,INDIANA_CLEANING.ipynb,experiments/02_indiana_kentucky/notebooks/INDIANA_CLEANING.ipynb,
+move,Indiana_LSTM_Energy_Forecast.ipynb,experiments/02_indiana_kentucky/notebooks/Indiana_LSTM_Energy_Forecast.ipynb,
+move,Kentucky_Feature_Engineering.ipynb,experiments/02_indiana_kentucky/notebooks/Kentucky_Feature_Engineering.ipynb,
+move,Kentucky_LSTM_Evaluation.ipynb,experiments/02_indiana_kentucky/notebooks/Kentucky_LSTM_Evaluation.ipynb,
+move,eda_overview.png,experiments/02_indiana_kentucky/outputs/figures/eda_overview.png,
+move,correlation_heatmap.png,experiments/02_indiana_kentucky/outputs/figures/correlation_heatmap.png,
+move,lstm_training_1/cleaned_weather_DAY.csv,experiments/03_dayton_duquesne/data/interim/cleaned_weather_DAY.csv,
+move,lstm_training_1/cleaned_weather_DUQ.csv,experiments/03_dayton_duquesne/data/interim/cleaned_weather_DUQ.csv,
+move,lstm_training_1/cleaned_data_DAY,experiments/03_dayton_duquesne/data/interim/cleaned_data_DAY,
+move,lstm_training_1/cleaned_data_DUQ,experiments/03_dayton_duquesne/data/interim/cleaned_data_DUQ,
+move,lstm_training_1/FINAL_MERGED_DAY_LOAD_2006_2016.csv,experiments/03_dayton_duquesne/data/processed/FINAL_MERGED_DAY_LOAD_2006_2016.csv,
+move,lstm_training_1/FINAL_MERGED_DUQ_LOAD_2006_2016.csv,experiments/03_dayton_duquesne/data/processed/FINAL_MERGED_DUQ_LOAD_2006_2016.csv,
+move,lstm_training_1/weather_DAY_2006-2016.csv,experiments/03_dayton_duquesne/data/processed/weather_DAY_2006-2016.csv,
+move,lstm_training_1/weather_DUQ_2006-2016.csv,experiments/03_dayton_duquesne/data/processed/weather_DUQ_2006-2016.csv,
+move,lstm_training_1/weather_parser_notebook.ipynb,experiments/03_dayton_duquesne/notebooks/weather_parser_notebook.ipynb,
+move,lstm_training_1/energy cleaning and merging.ipynb,experiments/03_dayton_duquesne/notebooks/energy cleaning and merging.ipynb,
+move,lstm_training_1/Date_change.ipynb,experiments/03_dayton_duquesne/notebooks/Date_change.ipynb,
+move,lstm_training_1/Dayton_LSTM_Energy_Forecast.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,
+move_rename,lstm_training_1/Untitled.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_to_Duquesne_LSTM_Transfer.ipynb,
+move,lstm_training_1/best_dayton_lstm.keras,experiments/03_dayton_duquesne/models/best_dayton_lstm.keras,
+move,lstm_training_1/day_lstm_model.keras,experiments/03_dayton_duquesne/models/day_lstm_model.keras,
+move,lstm_training_1/day_scaler.pkl,experiments/03_dayton_duquesne/models/day_scaler.pkl,
+move,lstm_training_1/corr_all_features_bar.png,experiments/03_dayton_duquesne/outputs/figures/corr_all_features_bar.png,
+move,lstm_training_1/corr_daytype.png,experiments/03_dayton_duquesne/outputs/figures/corr_daytype.png,
+move,lstm_training_1/corr_full_heatmap.png,experiments/03_dayton_duquesne/outputs/figures/corr_full_heatmap.png,
+move,lstm_training_1/corr_lags.png,experiments/03_dayton_duquesne/outputs/figures/corr_lags.png,
+move,lstm_training_1/corr_rolling.png,experiments/03_dayton_duquesne/outputs/figures/corr_rolling.png,
+move,lstm_training_1/corr_weather.png,experiments/03_dayton_duquesne/outputs/figures/corr_weather.png,
+move,lstm_training_1/eda_overview.png,experiments/03_dayton_duquesne/outputs/figures/eda_overview.png,
+move,lstm_training_1/eda_temporal_patterns.png,experiments/03_dayton_duquesne/outputs/figures/eda_temporal_patterns.png,
+move,lstm_training_1/DAY_model_results.png,experiments/03_dayton_duquesne/outputs/figures/DAY_model_results.png,
+move,lstm_training_1/college_lstm_metrics_table.jpg,experiments/03_dayton_duquesne/outputs/figures/college_lstm_metrics_table.jpg,
+move,lstm_training_1/prophet_metrics_table.jpg,experiments/03_dayton_duquesne/outputs/figures/prophet_metrics_table.jpg,
+move,lstm_training_1/region_metrics_table.jpg,experiments/03_dayton_duquesne/outputs/figures/region_metrics_table.jpg,
+move,dayton_pittusburgh_map.png,experiments/03_dayton_duquesne/outputs/figures/dayton_pittusburgh_map.png,
+move,lstm_training_1/DUQ_predictions.csv,experiments/03_dayton_duquesne/outputs/DUQ_predictions.csv,
+move_rename,lstm_training_2,experiments/04_atlanta_birmingham,
+move,experiments/04_atlanta_birmingham/energy_date_change.py,experiments/04_atlanta_birmingham/Atlanta/energy_date_change.py,
+move,experiments/04_atlanta_birmingham/Atlanta_Birmingham_Climate_Similarity_Analysis.ipynb,experiments/04_atlanta_birmingham/atlanta_birmingham_climate_similarity/Atlanta_Birmingham_Climate_Similarity_Analysis.ipynb,
+move_rename,lstm_training_3,experiments/05_las_vegas_phoenix,
+mkdir,,experiments/02_indiana_kentucky/models,write/drop location referenced by notebooks
+mkdir,,experiments/03_dayton_duquesne/data/raw,write/drop location referenced by notebooks
+rmdir,raw data,,empty after migration
+rmdir,models,,empty after migration
+rmdir,checkpoints,,empty after migration
+rmdir,logs,,empty after migration
+rmdir,prophet_output,,empty after migration
+rmdir,lstm_training_1,,empty after migration
+edit,experiments/01_campus_substation/notebooks/clean_weather.ipynb,experiments/01_campus_substation/notebooks/clean_weather.ipynb,"1x  ""weather.csv""  ->  ""../data/raw/weather.csv"""
+edit,experiments/01_campus_substation/notebooks/clean_weather.ipynb,experiments/01_campus_substation/notebooks/clean_weather.ipynb,"2x  ""cleaned_weather.csv""  ->  ""../data/interim/cleaned_weather.csv"""
+edit,experiments/01_campus_substation/notebooks/clean_weather.ipynb,experiments/01_campus_substation/notebooks/clean_weather.ipynb,"1x  ""sub_s_cleanedtime.csv""  ->  ""../data/interim/sub_s_cleanedtime.csv"""
+edit,experiments/01_campus_substation/notebooks/weather_cleaning pt2.ipynb,experiments/01_campus_substation/notebooks/weather_cleaning pt2.ipynb,"2x  ""hourly_energy.csv""  ->  ""../data/interim/hourly_energy.csv"""
+edit,experiments/01_campus_substation/notebooks/weather_cleaning pt2.ipynb,experiments/01_campus_substation/notebooks/weather_cleaning pt2.ipynb,"1x  ""SUB_S_clean_withoutgrouping.csv""  ->  ""../data/interim/SUB_S_clean_withoutgrouping.csv"""
+edit,experiments/01_campus_substation/notebooks/weather_cleaning pt2.ipynb,experiments/01_campus_substation/notebooks/weather_cleaning pt2.ipynb,"2x  ""cleaned_weather.csv""  ->  ""../data/interim/cleaned_weather.csv"""
+edit,experiments/01_campus_substation/notebooks/weather_cleaning pt2.ipynb,experiments/01_campus_substation/notebooks/weather_cleaning pt2.ipynb,"2x  ""cleaned_data.csv""  ->  ""../data/interim/cleaned_data.csv"""
+edit,experiments/01_campus_substation/notebooks/weather_cleaning pt2.ipynb,experiments/01_campus_substation/notebooks/weather_cleaning pt2.ipynb,"1x  ""weather_hourly.csv""  ->  ""../data/interim/weather_hourly.csv"""
+edit,experiments/01_campus_substation/notebooks/fiktering.ipynb,experiments/01_campus_substation/notebooks/fiktering.ipynb,"6x  ""hourly_energy.csv""  ->  ""../data/interim/hourly_energy.csv"""
+edit,experiments/01_campus_substation/notebooks/fiktering.ipynb,experiments/01_campus_substation/notebooks/fiktering.ipynb,"1x  ""hourly_energy_filtered.csv""  ->  ""../data/interim/hourly_energy_filtered.csv"""
+edit,experiments/01_campus_substation/notebooks/fiktering.ipynb,experiments/01_campus_substation/notebooks/fiktering.ipynb,"1x  ""weather_hourly.csv""  ->  ""../data/interim/weather_hourly.csv"""
+edit,experiments/01_campus_substation/notebooks/fiktering.ipynb,experiments/01_campus_substation/notebooks/fiktering.ipynb,"1x  ""final_training_dataset.csv""  ->  ""../data/processed/final_training_dataset.csv"""
+edit,experiments/01_campus_substation/notebooks/correlation_analysis.ipynb,experiments/01_campus_substation/notebooks/correlation_analysis.ipynb,1x  r'D:\Downloads\BTP\model_training\hourly_energy.csv'  ->  '../data/interim/hourly_energy.csv'
+edit,experiments/01_campus_substation/notebooks/correlation_analysis.ipynb,experiments/01_campus_substation/notebooks/correlation_analysis.ipynb,1x  r'D:\Downloads\BTP\model_training\weather_hourly.csv'  ->  '../data/interim/weather_hourly.csv'
+edit,experiments/01_campus_substation/notebooks/correlation_analysis.ipynb,experiments/01_campus_substation/notebooks/correlation_analysis.ipynb,1x  'pearson_heatmap.png'  ->  '../outputs/figures/pearson_heatmap.png'
+edit,experiments/01_campus_substation/notebooks/correlation_analysis.ipynb,experiments/01_campus_substation/notebooks/correlation_analysis.ipynb,1x  'spearman_heatmap.png'  ->  '../outputs/figures/spearman_heatmap.png'
+edit,experiments/01_campus_substation/notebooks/correlation_analysis.ipynb,experiments/01_campus_substation/notebooks/correlation_analysis.ipynb,1x  'pearson_vs_spearman_bar.png'  ->  '../outputs/figures/pearson_vs_spearman_bar.png'
+edit,experiments/01_campus_substation/notebooks/correlation_analysis.ipynb,experiments/01_campus_substation/notebooks/correlation_analysis.ipynb,1x  'scatter_top6.png'  ->  '../outputs/figures/scatter_top6.png'
+edit,experiments/01_campus_substation/notebooks/correlation_analysis.ipynb,experiments/01_campus_substation/notebooks/correlation_analysis.ipynb,1x  'interaction_terms_bar.png'  ->  '../outputs/figures/interaction_terms_bar.png'
+edit,experiments/01_campus_substation/notebooks/correlation_analysis.ipynb,experiments/01_campus_substation/notebooks/correlation_analysis.ipynb,1x  'correlation_summary.csv'  ->  '../outputs/tables/correlation_summary.csv'
+edit,experiments/01_campus_substation/notebooks/correlation_analysis.ipynb,experiments/01_campus_substation/notebooks/correlation_analysis.ipynb,1x  'all_interaction_correlations.csv'  ->  '../outputs/tables/all_interaction_correlations.csv'
+edit,experiments/01_campus_substation/notebooks/correlation_analysis_final.ipynb,experiments/01_campus_substation/notebooks/correlation_analysis_final.ipynb,1x  r'D:\Downloads\BTP\model_training\final_training_dataset.csv'  ->  '../data/processed/final_training_dataset.csv'
+edit,experiments/01_campus_substation/notebooks/correlation_analysis_final.ipynb,experiments/01_campus_substation/notebooks/correlation_analysis_final.ipynb,1x  'pearson_heatmap.png'  ->  '../outputs/figures/pearson_heatmap.png'
+edit,experiments/01_campus_substation/notebooks/correlation_analysis_final.ipynb,experiments/01_campus_substation/notebooks/correlation_analysis_final.ipynb,1x  'spearman_heatmap.png'  ->  '../outputs/figures/spearman_heatmap.png'
+edit,experiments/01_campus_substation/notebooks/correlation_analysis_final.ipynb,experiments/01_campus_substation/notebooks/correlation_analysis_final.ipynb,1x  'pearson_vs_spearman_bar.png'  ->  '../outputs/figures/pearson_vs_spearman_bar.png'
+edit,experiments/01_campus_substation/notebooks/correlation_analysis_final.ipynb,experiments/01_campus_substation/notebooks/correlation_analysis_final.ipynb,1x  'scatter_top6.png'  ->  '../outputs/figures/scatter_top6.png'
+edit,experiments/01_campus_substation/notebooks/correlation_analysis_final.ipynb,experiments/01_campus_substation/notebooks/correlation_analysis_final.ipynb,1x  'interaction_terms_bar.png'  ->  '../outputs/figures/interaction_terms_bar.png'
+edit,experiments/01_campus_substation/notebooks/correlation_analysis_final.ipynb,experiments/01_campus_substation/notebooks/correlation_analysis_final.ipynb,1x  'correlation_summary.csv'  ->  '../outputs/tables/correlation_summary.csv'
+edit,experiments/01_campus_substation/notebooks/correlation_analysis_final.ipynb,experiments/01_campus_substation/notebooks/correlation_analysis_final.ipynb,1x  'all_interaction_correlations.csv'  ->  '../outputs/tables/all_interaction_correlations.csv'
+edit,experiments/01_campus_substation/notebooks/energy_feature_engineering.ipynb,experiments/01_campus_substation/notebooks/energy_feature_engineering.ipynb,"1x  ""final_training_dataset.csv""  ->  ""../data/processed/final_training_dataset.csv"""
+edit,experiments/01_campus_substation/notebooks/energy_feature_engineering.ipynb,experiments/01_campus_substation/notebooks/energy_feature_engineering.ipynb,"1x  ""final_feature_engineered_dataset.csv""  ->  ""../data/processed/final_feature_engineered_dataset.csv"""
+edit,experiments/01_campus_substation/notebooks/energy_feature_engineering.ipynb,experiments/01_campus_substation/notebooks/energy_feature_engineering.ipynb,"1x  ""energy_time_patterns.png""  ->  ""../outputs/figures/energy_time_patterns.png"""
+edit,experiments/01_campus_substation/notebooks/energy_feature_engineering.ipynb,experiments/01_campus_substation/notebooks/energy_feature_engineering.ipynb,"1x  ""lag_scatter_plots.png""  ->  ""../outputs/figures/lag_scatter_plots.png"""
+edit,experiments/01_campus_substation/notebooks/energy_feature_engineering.ipynb,experiments/01_campus_substation/notebooks/energy_feature_engineering.ipynb,"1x  ""correlation_heatmap.png""  ->  ""../outputs/figures/correlation_heatmap.png"""
+edit,experiments/01_campus_substation/notebooks/energy_feature_engineering.ipynb,experiments/01_campus_substation/notebooks/energy_feature_engineering.ipynb,"1x  ""feature_importance_proxy.png""  ->  ""../outputs/figures/feature_importance_proxy.png"""
+edit,experiments/01_campus_substation/notebooks/energy_mlr_baseline.ipynb,experiments/01_campus_substation/notebooks/energy_mlr_baseline.ipynb,1x  r'D:\Downloads\BTP\model_training\hourly_energy.csv'  ->  '../data/interim/hourly_energy.csv'
+edit,experiments/01_campus_substation/notebooks/energy_mlr_baseline.ipynb,experiments/01_campus_substation/notebooks/energy_mlr_baseline.ipynb,1x  r'D:\Downloads\BTP\model_training\weather_hourly.csv'  ->  '../data/interim/weather_hourly.csv'
+edit,experiments/01_campus_substation/notebooks/energy_mlr_baseline.ipynb,experiments/01_campus_substation/notebooks/energy_mlr_baseline.ipynb,1x  'mlr_plots.png'  ->  '../outputs/figures/mlr_plots.png'
+edit,experiments/01_campus_substation/notebooks/mlr_energy_model_filtered_energy.ipynb,experiments/01_campus_substation/notebooks/mlr_energy_model_filtered_energy.ipynb,1x  r'D:\Downloads\BTP\model_training\final_training_dataset.csv'  ->  '../data/processed/final_training_dataset.csv'
+edit,experiments/01_campus_substation/notebooks/mlr_energy_model_filtered_energy.ipynb,experiments/01_campus_substation/notebooks/mlr_energy_model_filtered_energy.ipynb,1x  'mlr_plots.png'  ->  '../outputs/figures/mlr_plots.png'
+edit,experiments/01_campus_substation/notebooks/polynomial_mlr_energy.ipynb,experiments/01_campus_substation/notebooks/polynomial_mlr_energy.ipynb,1x  r'D:\Downloads\BTP\model_training\final_training_dataset.csv'  ->  '../data/processed/final_training_dataset.csv'
+edit,experiments/01_campus_substation/notebooks/polynomial_mlr_energy.ipynb,experiments/01_campus_substation/notebooks/polynomial_mlr_energy.ipynb,1x  'degree_selection.png'  ->  '../outputs/figures/degree_selection.png'
+edit,experiments/01_campus_substation/notebooks/polynomial_mlr_energy.ipynb,experiments/01_campus_substation/notebooks/polynomial_mlr_energy.ipynb,1x  'poly_mlr_plots.png'  ->  '../outputs/figures/poly_mlr_plots.png'
+edit,experiments/01_campus_substation/notebooks/polynomial_mlr_energy.ipynb,experiments/01_campus_substation/notebooks/polynomial_mlr_energy.ipynb,1x  'overfit_check.png'  ->  '../outputs/figures/overfit_check.png'
+edit,experiments/01_campus_substation/notebooks/lstm_energy_forecasting.ipynb,experiments/01_campus_substation/notebooks/lstm_energy_forecasting.ipynb,"1x  ""final_training_dataset.csv""  ->  ""../data/processed/final_training_dataset.csv"""
+edit,experiments/01_campus_substation/notebooks/lstm_energy_forecasting.ipynb,experiments/01_campus_substation/notebooks/lstm_energy_forecasting.ipynb,"1x  ""best_lstm_model.keras""  ->  ""../models/best_lstm_model.keras"""
+edit,experiments/01_campus_substation/notebooks/lstm_energy_forecasting.ipynb,experiments/01_campus_substation/notebooks/lstm_energy_forecasting.ipynb,"1x  ""lstm_results.png""  ->  ""../outputs/figures/lstm_results.png"""
+edit,experiments/01_campus_substation/notebooks/lstm_energy_forecasting_new.ipynb,experiments/01_campus_substation/notebooks/lstm_energy_forecasting_new.ipynb,"1x  ""final_feature_engineered_dataset.csv""  ->  ""../data/processed/final_feature_engineered_dataset.csv"""
+edit,experiments/01_campus_substation/notebooks/lstm_energy_forecasting_new.ipynb,experiments/01_campus_substation/notebooks/lstm_energy_forecasting_new.ipynb,"4x  ""checkpoints  ->  ""../models/checkpoints"
+edit,experiments/01_campus_substation/notebooks/lstm_energy_forecasting_new.ipynb,experiments/01_campus_substation/notebooks/lstm_energy_forecasting_new.ipynb,"2x  ""training_log.csv""  ->  ""../outputs/logs/training_log.csv"""
+edit,experiments/01_campus_substation/notebooks/lstm_energy_forecasting_new.ipynb,experiments/01_campus_substation/notebooks/lstm_energy_forecasting_new.ipynb,"1x  ""overfitting_report.png""  ->  ""../outputs/figures/overfitting_report.png"""
+edit,experiments/01_campus_substation/notebooks/lstm_energy_v2.ipynb,experiments/01_campus_substation/notebooks/lstm_energy_v2.ipynb,"1x  ""final_feature_engineered_dataset.csv""  ->  ""../data/processed/final_feature_engineered_dataset.csv"""
+edit,experiments/01_campus_substation/notebooks/lstm_energy_v2.ipynb,experiments/01_campus_substation/notebooks/lstm_energy_v2.ipynb,"3x  ""checkpoints  ->  ""../models/checkpoints"
+edit,experiments/01_campus_substation/notebooks/lstm_energy_v2.ipynb,experiments/01_campus_substation/notebooks/lstm_energy_v2.ipynb,"1x  ""training_log_v2.csv""  ->  ""../outputs/logs/training_log_v2.csv"""
+edit,experiments/01_campus_substation/notebooks/lstm_energy_v2.ipynb,experiments/01_campus_substation/notebooks/lstm_energy_v2.ipynb,"1x  ""training_log_final_v2.csv""  ->  ""../outputs/logs/training_log_final_v2.csv"""
+edit,experiments/01_campus_substation/notebooks/lstm_energy_v2.ipynb,experiments/01_campus_substation/notebooks/lstm_energy_v2.ipynb,"1x  ""training_curves_v2.png""  ->  ""../outputs/figures/training_curves_v2.png"""
+edit,experiments/01_campus_substation/notebooks/lstm_energy_v2.ipynb,experiments/01_campus_substation/notebooks/lstm_energy_v2.ipynb,"1x  ""test_forecast_v2.png""  ->  ""../outputs/figures/test_forecast_v2.png"""
+edit,experiments/01_campus_substation/notebooks/lstm_energy_v2.ipynb,experiments/01_campus_substation/notebooks/lstm_energy_v2.ipynb,"1x  ""overfitting_dashboard_v2.png""  ->  ""../outputs/figures/overfitting_dashboard_v2.png"""
+edit,experiments/01_campus_substation/notebooks/lstm_energy_v2.ipynb,experiments/01_campus_substation/notebooks/lstm_energy_v2.ipynb,"1x  ""zoom_and_hourly_error_v2.png""  ->  ""../outputs/figures/zoom_and_hourly_error_v2.png"""
+edit,experiments/01_campus_substation/notebooks/lstm_energy_v2.ipynb,experiments/01_campus_substation/notebooks/lstm_energy_v2.ipynb,"1x  ""lstm_energy_model_v2.keras""  ->  ""../models/lstm_energy_model_v2.keras"""
+edit,experiments/01_campus_substation/notebooks/lstm_energy_v2.ipynb,experiments/01_campus_substation/notebooks/lstm_energy_v2.ipynb,"1x  ""feature_scaler_v2.pkl""  ->  ""../models/feature_scaler_v2.pkl"""
+edit,experiments/01_campus_substation/notebooks/lstm_energy_v2.ipynb,experiments/01_campus_substation/notebooks/lstm_energy_v2.ipynb,"1x  ""target_scaler_v2.pkl""  ->  ""../models/target_scaler_v2.pkl"""
+edit,experiments/01_campus_substation/notebooks/lstm_energy_v2.ipynb,experiments/01_campus_substation/notebooks/lstm_energy_v2.ipynb,"1x  ""lstm_predictions_v2.csv""  ->  ""../outputs/tables/lstm_predictions_v2.csv"""
+edit,experiments/01_campus_substation/notebooks/prophet_energy_forecasting.ipynb,experiments/01_campus_substation/notebooks/prophet_energy_forecasting.ipynb,"1x  ""final_feature_engineered_dataset.csv""  ->  ""../data/processed/final_feature_engineered_dataset.csv"""
+edit,experiments/01_campus_substation/notebooks/prophet_energy_forecasting.ipynb,experiments/01_campus_substation/notebooks/prophet_energy_forecasting.ipynb,"1x  ""prophet_components.png""  ->  ""../outputs/figures/prophet_components.png"""
+edit,experiments/01_campus_substation/notebooks/prophet_energy_forecasting.ipynb,experiments/01_campus_substation/notebooks/prophet_energy_forecasting.ipynb,"1x  ""prophet_forecast.png""  ->  ""../outputs/figures/prophet_forecast.png"""
+edit,experiments/01_campus_substation/notebooks/prophet_energy_forecasting.ipynb,experiments/01_campus_substation/notebooks/prophet_energy_forecasting.ipynb,"1x  ""prophet_cv_rmse.png""  ->  ""../outputs/figures/prophet_cv_rmse.png"""
+edit,experiments/01_campus_substation/notebooks/prophet_energy_forecasting.ipynb,experiments/01_campus_substation/notebooks/prophet_energy_forecasting.ipynb,"1x  ""prophet_dashboard.png""  ->  ""../outputs/figures/prophet_dashboard.png"""
+edit,experiments/01_campus_substation/notebooks/prophet_energy_forecasting.ipynb,experiments/01_campus_substation/notebooks/prophet_energy_forecasting.ipynb,"1x  ""prophet_zoom_hourly.png""  ->  ""../outputs/figures/prophet_zoom_hourly.png"""
+edit,experiments/01_campus_substation/notebooks/prophet_energy_forecasting.ipynb,experiments/01_campus_substation/notebooks/prophet_energy_forecasting.ipynb,"1x  ""prophet_changepoints.png""  ->  ""../outputs/figures/prophet_changepoints.png"""
+edit,experiments/01_campus_substation/notebooks/prophet_energy_forecasting.ipynb,experiments/01_campus_substation/notebooks/prophet_energy_forecasting.ipynb,"7x  ""prophet_output  ->  ""../outputs/prophet"
+edit,experiments/01_campus_substation/scripts/lstm_energy_forecasting.py,experiments/01_campus_substation/scripts/lstm_energy_forecasting.py,"1x  import warnings
+  ->  import warnings
+from pathlib import Path
+"
+edit,experiments/01_campus_substation/scripts/lstm_energy_forecasting.py,experiments/01_campus_substation/scripts/lstm_energy_forecasting.py,"1x  CONFIG = {
+  ->  EXP_DIR = Path(__file__).resolve().parents[1]   # experiments/01_campus_substation
+
+CONFIG = {
+"
+edit,experiments/01_campus_substation/scripts/lstm_energy_forecasting.py,experiments/01_campus_substation/scripts/lstm_energy_forecasting.py,"1x  ""final_training_dataset.csv"",  ->  str(EXP_DIR / ""data"" / ""processed"" / ""final_training_dataset.csv""),"
+edit,experiments/01_campus_substation/scripts/lstm_energy_forecasting.py,experiments/01_campus_substation/scripts/lstm_energy_forecasting.py,"1x  ""best_lstm_model.keras"",  ->  str(EXP_DIR / ""models"" / ""best_lstm_model.keras""),"
+edit,experiments/01_campus_substation/scripts/lstm_energy_forecasting.py,experiments/01_campus_substation/scripts/lstm_energy_forecasting.py,"1x  ""lstm_results.png"",  ->  str(EXP_DIR / ""outputs"" / ""figures"" / ""lstm_results.png""),"
+edit,experiments/02_indiana_kentucky/notebooks/INDIANA_CLEANING.ipynb,experiments/02_indiana_kentucky/notebooks/INDIANA_CLEANING.ipynb,"2x  ""kentucky_weather_1962_1980.csv""  ->  ""../data/interim/kentucky_weather_1962_1980.csv"""
+edit,experiments/02_indiana_kentucky/notebooks/INDIANA_CLEANING.ipynb,experiments/02_indiana_kentucky/notebooks/INDIANA_CLEANING.ipynb,"1x  ""kentucky_weather_2005_2018.csv""  ->  ""../data/processed/kentucky_weather_2005_2018.csv"""
+edit,experiments/02_indiana_kentucky/notebooks/INDIANA_CLEANING.ipynb,experiments/02_indiana_kentucky/notebooks/INDIANA_CLEANING.ipynb,"1x  ""Indiana_consumption_2005_18.csv""  ->  ""../data/raw/Indiana_consumption_2005_18.csv"""
+edit,experiments/02_indiana_kentucky/notebooks/INDIANA_CLEANING.ipynb,experiments/02_indiana_kentucky/notebooks/INDIANA_CLEANING.ipynb,"1x  ""kentucky_weather_reconstructed.csv""  ->  ""../data/raw/kentucky_weather_reconstructed.csv"""
+edit,experiments/02_indiana_kentucky/notebooks/INDIANA_CLEANING.ipynb,experiments/02_indiana_kentucky/notebooks/INDIANA_CLEANING.ipynb,"1x  ""cleaned.csv""  ->  ""../data/interim/cleaned.csv"""
+edit,experiments/02_indiana_kentucky/notebooks/INDIANA_CLEANING.ipynb,experiments/02_indiana_kentucky/notebooks/INDIANA_CLEANING.ipynb,1x  'feature_scaler_v2.pkl'  ->  '../../01_campus_substation/models/feature_scaler_v2.pkl'
+edit,experiments/02_indiana_kentucky/notebooks/Indiana_LSTM_Energy_Forecast.ipynb,experiments/02_indiana_kentucky/notebooks/Indiana_LSTM_Energy_Forecast.ipynb,1x  'Indiana_energy_consumption_2005-18.csv'  ->  '../data/raw/Indiana_energy_consumption_2005-18.csv'
+edit,experiments/02_indiana_kentucky/notebooks/Indiana_LSTM_Energy_Forecast.ipynb,experiments/02_indiana_kentucky/notebooks/Indiana_LSTM_Energy_Forecast.ipynb,1x  'Indiana_weather_2005_2018.csv'  ->  '../data/raw/Indiana_weather_2005_2018.csv'
+edit,experiments/02_indiana_kentucky/notebooks/Indiana_LSTM_Energy_Forecast.ipynb,experiments/02_indiana_kentucky/notebooks/Indiana_LSTM_Energy_Forecast.ipynb,1x  'eda_overview.png'  ->  '../outputs/figures/eda_overview.png'
+edit,experiments/02_indiana_kentucky/notebooks/Indiana_LSTM_Energy_Forecast.ipynb,experiments/02_indiana_kentucky/notebooks/Indiana_LSTM_Energy_Forecast.ipynb,1x  'correlation_heatmap.png'  ->  '../outputs/figures/correlation_heatmap.png'
+edit,experiments/02_indiana_kentucky/notebooks/Indiana_LSTM_Energy_Forecast.ipynb,experiments/02_indiana_kentucky/notebooks/Indiana_LSTM_Energy_Forecast.ipynb,1x  'training_history.png'  ->  '../outputs/figures/training_history.png'
+edit,experiments/02_indiana_kentucky/notebooks/Indiana_LSTM_Energy_Forecast.ipynb,experiments/02_indiana_kentucky/notebooks/Indiana_LSTM_Energy_Forecast.ipynb,1x  'predictions.png'  ->  '../outputs/figures/predictions.png'
+edit,experiments/02_indiana_kentucky/notebooks/Indiana_LSTM_Energy_Forecast.ipynb,experiments/02_indiana_kentucky/notebooks/Indiana_LSTM_Energy_Forecast.ipynb,1x  'scatter_actual_vs_pred.png'  ->  '../outputs/figures/scatter_actual_vs_pred.png'
+edit,experiments/02_indiana_kentucky/notebooks/Indiana_LSTM_Energy_Forecast.ipynb,experiments/02_indiana_kentucky/notebooks/Indiana_LSTM_Energy_Forecast.ipynb,2x  'best_lstm_model.keras'  ->  '../models/best_lstm_model.keras'
+edit,experiments/02_indiana_kentucky/notebooks/Indiana_LSTM_Energy_Forecast.ipynb,experiments/02_indiana_kentucky/notebooks/Indiana_LSTM_Energy_Forecast.ipynb,1x  'indiana_lstm_final.keras'  ->  '../models/indiana_lstm_final.keras'
+edit,experiments/02_indiana_kentucky/notebooks/Indiana_LSTM_Energy_Forecast.ipynb,experiments/02_indiana_kentucky/notebooks/Indiana_LSTM_Energy_Forecast.ipynb,1x  'feature_scaler.pkl'  ->  '../models/feature_scaler.pkl'
+edit,experiments/02_indiana_kentucky/notebooks/Indiana_LSTM_Energy_Forecast.ipynb,experiments/02_indiana_kentucky/notebooks/Indiana_LSTM_Energy_Forecast.ipynb,1x  'target_scaler.pkl'  ->  '../models/target_scaler.pkl'
+edit,experiments/02_indiana_kentucky/notebooks/Indiana_LSTM_Energy_Forecast.ipynb,experiments/02_indiana_kentucky/notebooks/Indiana_LSTM_Energy_Forecast.ipynb,1x  'test_predictions.csv'  ->  '../outputs/test_predictions.csv'
+edit,experiments/02_indiana_kentucky/notebooks/Kentucky_Feature_Engineering.ipynb,experiments/02_indiana_kentucky/notebooks/Kentucky_Feature_Engineering.ipynb,1x  'kentucky_weather_2005_2018.csv'  ->  '../data/processed/kentucky_weather_2005_2018.csv'
+edit,experiments/02_indiana_kentucky/notebooks/Kentucky_Feature_Engineering.ipynb,experiments/02_indiana_kentucky/notebooks/Kentucky_Feature_Engineering.ipynb,1x  'kentucky_features_engineered.csv'  ->  '../data/processed/kentucky_features_engineered.csv'
+edit,experiments/02_indiana_kentucky/notebooks/Kentucky_Feature_Engineering.ipynb,experiments/02_indiana_kentucky/notebooks/Kentucky_Feature_Engineering.ipynb,1x  'X_kentucky_seq.npy'  ->  '../data/processed/X_kentucky_seq.npy'
+edit,experiments/02_indiana_kentucky/notebooks/Kentucky_Feature_Engineering.ipynb,experiments/02_indiana_kentucky/notebooks/Kentucky_Feature_Engineering.ipynb,1x  'feature_scaler.pkl'  ->  '../../01_campus_substation/models/feature_scaler.pkl'
+edit,experiments/02_indiana_kentucky/notebooks/Kentucky_Feature_Engineering.ipynb,experiments/02_indiana_kentucky/notebooks/Kentucky_Feature_Engineering.ipynb,1x  'target_scaler.pkl'  ->  '../../01_campus_substation/models/target_scaler.pkl'
+edit,experiments/02_indiana_kentucky/notebooks/Kentucky_Feature_Engineering.ipynb,experiments/02_indiana_kentucky/notebooks/Kentucky_Feature_Engineering.ipynb,1x  'seq_dates_kentucky.npy'  ->  '../data/processed/seq_dates_kentucky.npy'
+edit,experiments/02_indiana_kentucky/notebooks/Kentucky_LSTM_Evaluation.ipynb,experiments/02_indiana_kentucky/notebooks/Kentucky_LSTM_Evaluation.ipynb,1x  'kentucky_weather_2005_2018.csv'  ->  '../data/processed/kentucky_weather_2005_2018.csv'
+edit,experiments/02_indiana_kentucky/notebooks/Kentucky_LSTM_Evaluation.ipynb,experiments/02_indiana_kentucky/notebooks/Kentucky_LSTM_Evaluation.ipynb,1x  'kentucky_features_engineered.csv'  ->  '../data/processed/kentucky_features_engineered.csv'
+edit,experiments/02_indiana_kentucky/notebooks/Kentucky_LSTM_Evaluation.ipynb,experiments/02_indiana_kentucky/notebooks/Kentucky_LSTM_Evaluation.ipynb,1x  'X_kentucky_seq.npy'  ->  '../data/processed/X_kentucky_seq.npy'
+edit,experiments/02_indiana_kentucky/notebooks/Kentucky_LSTM_Evaluation.ipynb,experiments/02_indiana_kentucky/notebooks/Kentucky_LSTM_Evaluation.ipynb,1x  'feature_scaler.pkl'  ->  '../../01_campus_substation/models/feature_scaler.pkl'
+edit,experiments/02_indiana_kentucky/notebooks/Kentucky_LSTM_Evaluation.ipynb,experiments/02_indiana_kentucky/notebooks/Kentucky_LSTM_Evaluation.ipynb,1x  'target_scaler.pkl'  ->  '../../01_campus_substation/models/target_scaler.pkl'
+edit,experiments/02_indiana_kentucky/notebooks/Kentucky_LSTM_Evaluation.ipynb,experiments/02_indiana_kentucky/notebooks/Kentucky_LSTM_Evaluation.ipynb,1x  'kentucky_predictions.csv'  ->  '../outputs/kentucky_predictions.csv'
+edit,experiments/02_indiana_kentucky/notebooks/Kentucky_LSTM_Evaluation.ipynb,experiments/02_indiana_kentucky/notebooks/Kentucky_LSTM_Evaluation.ipynb,"1x  '""D:\Downloads\BTP\model_training\models\best_lstm_model.keras""'  ->  '../../01_campus_substation/models/best_lstm_model.keras'"
+edit,experiments/03_dayton_duquesne/notebooks/Date_change.ipynb,experiments/03_dayton_duquesne/notebooks/Date_change.ipynb,"1x  ""cleaned_weather_DUQ.csv""  ->  ""../data/interim/cleaned_weather_DUQ.csv"""
+edit,experiments/03_dayton_duquesne/notebooks/Date_change.ipynb,experiments/03_dayton_duquesne/notebooks/Date_change.ipynb,"1x  ""weather_DUQ_2006-2016.csv""  ->  ""../data/processed/weather_DUQ_2006-2016.csv"""
+edit,experiments/03_dayton_duquesne/notebooks/Date_change.ipynb,experiments/03_dayton_duquesne/notebooks/Date_change.ipynb,"2x  ""FINAL_MERGED_DAY_LOAD_2006_2016.csv""  ->  ""../data/processed/FINAL_MERGED_DAY_LOAD_2006_2016.csv"""
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,1x  'FINAL_MERGED_DAY_LOAD_2006_2016.csv'  ->  '../data/processed/FINAL_MERGED_DAY_LOAD_2006_2016.csv'
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,1x  'weather_DAY_2006-2016.csv'  ->  '../data/processed/weather_DAY_2006-2016.csv'
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,1x  'eda_overview.png'  ->  '../outputs/figures/eda_overview.png'
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,1x  'eda_temporal_patterns.png'  ->  '../outputs/figures/eda_temporal_patterns.png'
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,1x  'corr_weather.png'  ->  '../outputs/figures/corr_weather.png'
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,1x  'corr_lags.png'  ->  '../outputs/figures/corr_lags.png'
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,1x  'corr_rolling.png'  ->  '../outputs/figures/corr_rolling.png'
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,1x  'corr_daytype.png'  ->  '../outputs/figures/corr_daytype.png'
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,1x  'corr_all_features_bar.png'  ->  '../outputs/figures/corr_all_features_bar.png'
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,1x  'corr_full_heatmap.png'  ->  '../outputs/figures/corr_full_heatmap.png'
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,1x  'training_history.png'  ->  '../outputs/figures/training_history.png'
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,1x  'overfitting_ratio.png'  ->  '../outputs/figures/overfitting_ratio.png'
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,1x  'predictions.png'  ->  '../outputs/figures/predictions.png'
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,1x  'scatter_residuals.png'  ->  '../outputs/figures/scatter_residuals.png'
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,1x  'cv_mae_folds.png'  ->  '../outputs/figures/cv_mae_folds.png'
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,2x  'best_dayton_lstm.keras'  ->  '../models/best_dayton_lstm.keras'
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,1x  'dayton_lstm_final.keras'  ->  '../models/dayton_lstm_final.keras'
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,1x  'dayton_feature_scaler.pkl'  ->  '../models/dayton_feature_scaler.pkl'
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,1x  'dayton_target_scaler.pkl'  ->  '../models/dayton_target_scaler.pkl'
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_LSTM_Energy_Forecast.ipynb,1x  'dayton_test_predictions.csv'  ->  '../outputs/dayton_test_predictions.csv'
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_to_Duquesne_LSTM_Transfer.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_to_Duquesne_LSTM_Transfer.ipynb,"1x  ""FINAL_MERGED_DAY_LOAD_2006_2016.csv""  ->  ""../data/processed/FINAL_MERGED_DAY_LOAD_2006_2016.csv"""
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_to_Duquesne_LSTM_Transfer.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_to_Duquesne_LSTM_Transfer.ipynb,"1x  ""weather_DAY_2006-2016.csv""  ->  ""../data/processed/weather_DAY_2006-2016.csv"""
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_to_Duquesne_LSTM_Transfer.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_to_Duquesne_LSTM_Transfer.ipynb,"1x  ""weather_DUQ_2006-2016.csv""  ->  ""../data/processed/weather_DUQ_2006-2016.csv"""
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_to_Duquesne_LSTM_Transfer.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_to_Duquesne_LSTM_Transfer.ipynb,"1x  ""FINAL_MERGED_DUQ_LOAD_2006_2016.csv""  ->  ""../data/processed/FINAL_MERGED_DUQ_LOAD_2006_2016.csv"""
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_to_Duquesne_LSTM_Transfer.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_to_Duquesne_LSTM_Transfer.ipynb,"2x  ""day_lstm_model.keras""  ->  ""../models/day_lstm_model.keras"""
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_to_Duquesne_LSTM_Transfer.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_to_Duquesne_LSTM_Transfer.ipynb,"2x  ""day_scaler.pkl""  ->  ""../models/day_scaler.pkl"""
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_to_Duquesne_LSTM_Transfer.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_to_Duquesne_LSTM_Transfer.ipynb,"1x  ""DUQ_predictions.csv""  ->  ""../outputs/DUQ_predictions.csv"""
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_to_Duquesne_LSTM_Transfer.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_to_Duquesne_LSTM_Transfer.ipynb,1x  'prophet_metrics_table.jpg'  ->  '../outputs/figures/prophet_metrics_table.jpg'
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_to_Duquesne_LSTM_Transfer.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_to_Duquesne_LSTM_Transfer.ipynb,1x  'college_lstm_metrics_table.jpg'  ->  '../outputs/figures/college_lstm_metrics_table.jpg'
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_to_Duquesne_LSTM_Transfer.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_to_Duquesne_LSTM_Transfer.ipynb,1x  'DAY_DUQ_metrics_table.jpg'  ->  '../outputs/figures/DAY_DUQ_metrics_table.jpg'
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_to_Duquesne_LSTM_Transfer.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_to_Duquesne_LSTM_Transfer.ipynb,1x  'DAY_model_results.png'  ->  '../outputs/figures/DAY_model_results.png'
+edit,experiments/03_dayton_duquesne/notebooks/Dayton_to_Duquesne_LSTM_Transfer.ipynb,experiments/03_dayton_duquesne/notebooks/Dayton_to_Duquesne_LSTM_Transfer.ipynb,1x  'DUQ_actual_vs_predicted.jpg'  ->  '../outputs/figures/DUQ_actual_vs_predicted.jpg'
+edit,experiments/03_dayton_duquesne/notebooks/energy cleaning and merging.ipynb,experiments/03_dayton_duquesne/notebooks/energy cleaning and merging.ipynb,"2x  ""D:\Downloads\BTP\model_training\lstm_training""  ->  ""../data/raw"""
+edit,experiments/03_dayton_duquesne/notebooks/energy cleaning and merging.ipynb,experiments/03_dayton_duquesne/notebooks/energy cleaning and merging.ipynb,"1x  output_folder = os.path.join(input_folder, ""cleaned_data_DUQ"")  ->  output_folder = ""../data/interim/cleaned_data_DUQ"""
+edit,experiments/03_dayton_duquesne/notebooks/energy cleaning and merging.ipynb,experiments/03_dayton_duquesne/notebooks/energy cleaning and merging.ipynb,"1x  r""D:\Downloads\BTP\model_training\lstm_training\cleaned_data_DUQ""  ->  r""../data/interim/cleaned_data_DUQ"""
+edit,experiments/03_dayton_duquesne/notebooks/energy cleaning and merging.ipynb,experiments/03_dayton_duquesne/notebooks/energy cleaning and merging.ipynb,"1x  output_path = os.path.join(input_folder, ""FINAL_MERGED_DUQ_LOAD_2006_2016.csv"")  ->  output_path = ""../data/processed/FINAL_MERGED_DUQ_LOAD_2006_2016.csv"""
+edit,experiments/03_dayton_duquesne/notebooks/weather_parser_notebook.ipynb,experiments/03_dayton_duquesne/notebooks/weather_parser_notebook.ipynb,1x  glob.glob('w93815.h*')  ->  glob.glob('../data/raw/w93815.h*')
+edit,experiments/03_dayton_duquesne/notebooks/weather_parser_notebook.ipynb,experiments/03_dayton_duquesne/notebooks/weather_parser_notebook.ipynb,"1x  ""cleaned_weather_DAY.csv""  ->  ""../data/interim/cleaned_weather_DAY.csv"""
+edit,experiments/04_atlanta_birmingham/atlanta_birmingham_climate_similarity/Atlanta_Birmingham_Climate_Similarity_Analysis.ipynb,experiments/04_atlanta_birmingham/atlanta_birmingham_climate_similarity/Atlanta_Birmingham_Climate_Similarity_Analysis.ipynb,"1x  Path(r""D:\Downloads\BTP\model_training\lstm_training_2\Atlanta\atlanta_master.csv"")  ->  Path(""../Atlanta/atlanta_master.csv"")"
+edit,experiments/04_atlanta_birmingham/atlanta_birmingham_climate_similarity/Atlanta_Birmingham_Climate_Similarity_Analysis.ipynb,experiments/04_atlanta_birmingham/atlanta_birmingham_climate_similarity/Atlanta_Birmingham_Climate_Similarity_Analysis.ipynb,"1x  Path(r""D:\Downloads\BTP\model_training\lstm_training_2\Birmingham\birmingham_master.csv"")  ->  Path(""../Birmingham/birmingham_master.csv"")"
+edit,experiments/04_atlanta_birmingham/atlanta_birmingham_climate_similarity/Atlanta_Birmingham_Climate_Similarity_Analysis.ipynb,experiments/04_atlanta_birmingham/atlanta_birmingham_climate_similarity/Atlanta_Birmingham_Climate_Similarity_Analysis.ipynb,"1x  OUTPUT = ATLANTA_FILE.parent / ""atlanta_birmingham_climate_similarity""  ->  OUTPUT = Path.cwd()"
+edit,experiments/04_atlanta_birmingham/cleaning/Atlanta_Birmingham_Weather_Energy_EDA_Feature_Engineering.ipynb,experiments/04_atlanta_birmingham/cleaning/Atlanta_Birmingham_Weather_Energy_EDA_Feature_Engineering.ipynb,"1x  Path(r""D:\Downloads\BTP\model_training\lstm_training_2\cleaning\atlanta_master.csv"")  ->  Path(""atlanta_master.csv"")"
+edit,experiments/04_atlanta_birmingham/cleaning/Atlanta_Birmingham_Weather_Energy_EDA_Feature_Engineering.ipynb,experiments/04_atlanta_birmingham/cleaning/Atlanta_Birmingham_Weather_Energy_EDA_Feature_Engineering.ipynb,"1x  Path(r""D:\Downloads\BTP\model_training\lstm_training_2\cleaning\birmingham_master.csv"")  ->  Path(""birmingham_master.csv"")"
+edit,experiments/04_atlanta_birmingham/cleaning/LSTM_Data_Preparation_Atlanta_Birmingham.ipynb,experiments/04_atlanta_birmingham/cleaning/LSTM_Data_Preparation_Atlanta_Birmingham.ipynb,"1x  r""D:\Downloads\BTP\model_training\lstm_training_2\cleaning\atlanta_master.csv""  ->  ""atlanta_master.csv"""
+edit,experiments/04_atlanta_birmingham/LSTM_GPU_TRAINING/Birmingham_External_Test_Preparation_Atlanta_Scalers.ipynb,experiments/04_atlanta_birmingham/LSTM_GPU_TRAINING/Birmingham_External_Test_Preparation_Atlanta_Scalers.ipynb,"1x  r""D:\Downloads\BTP\model_training\lstm_training_2\cleaning""  ->  ""../cleaning"""
+edit,experiments/04_atlanta_birmingham/LSTM_GPU_TRAINING/ATLANTA/Birmingham_External_Test_Preparation_Atlanta_Scalers.ipynb,experiments/04_atlanta_birmingham/LSTM_GPU_TRAINING/ATLANTA/Birmingham_External_Test_Preparation_Atlanta_Scalers.ipynb,"1x  r""D:\Downloads\BTP\model_training\lstm_training_2\LSTM_GPU_TRAINING\ATLANTA""  ->  ""."""
+edit,experiments/04_atlanta_birmingham/LSTM_GPU_TRAINING/ATLANTA/LSTM_Training_Atlanta_to_Birmingham.ipynb,experiments/04_atlanta_birmingham/LSTM_GPU_TRAINING/ATLANTA/LSTM_Training_Atlanta_to_Birmingham.ipynb,"1x  r""D:\Downloads\BTP\model_training\lstm_training_2\LSTM_GPU_TRAINING""  ->  "".."""
+edit,experiments/04_atlanta_birmingham/neural_model/atlanta_birmingham_tcn_visualization.ipynb,experiments/04_atlanta_birmingham/neural_model/atlanta_birmingham_tcn_visualization.ipynb,"1x  Path(r""D:\Downloads\BTP\model_training\lstm_training_2\neural_model"")  ->  Path.cwd()"
+edit,experiments/04_atlanta_birmingham/neural_model/atlanta_birmingham_two_branch_tcn_training.ipynb,experiments/04_atlanta_birmingham/neural_model/atlanta_birmingham_two_branch_tcn_training.ipynb,"1x  Path(r""D:\Downloads\BTP\model_training\lstm_training_2\LSTM_GPU_TRAINING\LSTM_DATA_PREP\data"")  ->  Path(""../LSTM_GPU_TRAINING/LSTM_DATA_PREP/data"")"
+edit,experiments/04_atlanta_birmingham/neural_model/atlanta_birmingham_two_branch_tcn_training.ipynb,experiments/04_atlanta_birmingham/neural_model/atlanta_birmingham_two_branch_tcn_training.ipynb,"1x  Path(r""D:\Downloads\BTP\model_training\lstm_training_2\neural_model"")  ->  Path.cwd()"
+edit,experiments/04_atlanta_birmingham/Atlanta/extract_atlanta_weather.py,experiments/04_atlanta_birmingham/Atlanta/extract_atlanta_weather.py,"1x  Path(""atlanta_weather"")  ->  Path(""atlanta_weather_raw"")"
+edit,experiments/04_atlanta_birmingham/Birmingham/extract_birmingham_weather.py,experiments/04_atlanta_birmingham/Birmingham/extract_birmingham_weather.py,"1x  Path(""birmingham_weather"")  ->  Path(""birmingham_weather_raw"")"
+edit,experiments/05_las_vegas_phoenix/Feature_Engineering_Cross_City_Weather_Energy.ipynb,experiments/05_las_vegas_phoenix/Feature_Engineering_Cross_City_Weather_Energy.ipynb,1x  Path(r'D:\Downloads\BTP\model_training\lstm_training_3')  ->  Path.cwd()
+edit,experiments/05_las_vegas_phoenix/LSTM_LasVegas_Phoenix_Data_Preprocessing.ipynb,experiments/05_las_vegas_phoenix/LSTM_LasVegas_Phoenix_Data_Preprocessing.ipynb,"1x  BASE_DIR / ""las_vegas_hourly_weather_2016_2023.csv""  ->  BASE_DIR / ""data"" / ""las_vegas_hourly_weather_2016_2023.csv"""
+edit,experiments/05_las_vegas_phoenix/LSTM_LasVegas_Phoenix_Data_Preprocessing.ipynb,experiments/05_las_vegas_phoenix/LSTM_LasVegas_Phoenix_Data_Preprocessing.ipynb,"1x  BASE_DIR / ""las_vegas_hourly_energy.csv""  ->  BASE_DIR / ""data"" / ""las_vegas_hourly_energy.csv"""
+edit,experiments/05_las_vegas_phoenix/LSTM_LasVegas_Phoenix_Data_Preprocessing.ipynb,experiments/05_las_vegas_phoenix/LSTM_LasVegas_Phoenix_Data_Preprocessing.ipynb,"1x  BASE_DIR / ""phoenix_hourly_weather_2016_2023.csv""  ->  BASE_DIR / ""data"" / ""phoenix_hourly_weather_2016_2023.csv"""
+edit,experiments/05_las_vegas_phoenix/LSTM_LasVegas_Phoenix_Data_Preprocessing.ipynb,experiments/05_las_vegas_phoenix/LSTM_LasVegas_Phoenix_Data_Preprocessing.ipynb,"1x  BASE_DIR / ""phoenix_hourly_energy.csv""  ->  BASE_DIR / ""data"" / ""phoenix_hourly_energy.csv"""
+edit,experiments/05_las_vegas_phoenix/LSTM_LasVegas_Phoenix_Data_Preprocessing_BASELINE_DEVIATION.ipynb,experiments/05_las_vegas_phoenix/LSTM_LasVegas_Phoenix_Data_Preprocessing_BASELINE_DEVIATION.ipynb,"1x  BASE_DIR / ""las_vegas_hourly_weather_2016_2023.csv""  ->  BASE_DIR / ""data"" / ""las_vegas_hourly_weather_2016_2023.csv"""
+edit,experiments/05_las_vegas_phoenix/LSTM_LasVegas_Phoenix_Data_Preprocessing_BASELINE_DEVIATION.ipynb,experiments/05_las_vegas_phoenix/LSTM_LasVegas_Phoenix_Data_Preprocessing_BASELINE_DEVIATION.ipynb,"1x  BASE_DIR / ""las_vegas_hourly_energy.csv""  ->  BASE_DIR / ""data"" / ""las_vegas_hourly_energy.csv"""
+edit,experiments/05_las_vegas_phoenix/LSTM_LasVegas_Phoenix_Data_Preprocessing_BASELINE_DEVIATION.ipynb,experiments/05_las_vegas_phoenix/LSTM_LasVegas_Phoenix_Data_Preprocessing_BASELINE_DEVIATION.ipynb,"1x  BASE_DIR / ""phoenix_hourly_weather_2016_2023.csv""  ->  BASE_DIR / ""data"" / ""phoenix_hourly_weather_2016_2023.csv"""
+edit,experiments/05_las_vegas_phoenix/LSTM_LasVegas_Phoenix_Data_Preprocessing_BASELINE_DEVIATION.ipynb,experiments/05_las_vegas_phoenix/LSTM_LasVegas_Phoenix_Data_Preprocessing_BASELINE_DEVIATION.ipynb,"1x  BASE_DIR / ""phoenix_hourly_energy.csv""  ->  BASE_DIR / ""data"" / ""phoenix_hourly_energy.csv"""
+edit,experiments/05_las_vegas_phoenix/LSTM_LasVegas_Phoenix_Data_Preprocessing_REBUILT.ipynb,experiments/05_las_vegas_phoenix/LSTM_LasVegas_Phoenix_Data_Preprocessing_REBUILT.ipynb,"1x  BASE_DIR / ""las_vegas_hourly_weather_2016_2023.csv""  ->  BASE_DIR / ""data"" / ""las_vegas_hourly_weather_2016_2023.csv"""
+edit,experiments/05_las_vegas_phoenix/LSTM_LasVegas_Phoenix_Data_Preprocessing_REBUILT.ipynb,experiments/05_las_vegas_phoenix/LSTM_LasVegas_Phoenix_Data_Preprocessing_REBUILT.ipynb,"1x  BASE_DIR / ""las_vegas_hourly_energy.csv""  ->  BASE_DIR / ""data"" / ""las_vegas_hourly_energy.csv"""
+edit,experiments/05_las_vegas_phoenix/LSTM_LasVegas_Phoenix_Data_Preprocessing_REBUILT.ipynb,experiments/05_las_vegas_phoenix/LSTM_LasVegas_Phoenix_Data_Preprocessing_REBUILT.ipynb,"1x  BASE_DIR / ""phoenix_hourly_weather_2016_2023.csv""  ->  BASE_DIR / ""data"" / ""phoenix_hourly_weather_2016_2023.csv"""
+edit,experiments/05_las_vegas_phoenix/LSTM_LasVegas_Phoenix_Data_Preprocessing_REBUILT.ipynb,experiments/05_las_vegas_phoenix/LSTM_LasVegas_Phoenix_Data_Preprocessing_REBUILT.ipynb,"1x  BASE_DIR / ""phoenix_hourly_energy.csv""  ->  BASE_DIR / ""data"" / ""phoenix_hourly_energy.csv"""
+edit,experiments/05_las_vegas_phoenix/LV_Phoenix_Full_Weather_Energy_Analysis.ipynb,experiments/05_las_vegas_phoenix/LV_Phoenix_Full_Weather_Energy_Analysis.ipynb,"1x  BASE_DIR / ""las_vegas_hourly_weather_2016_2023.csv""  ->  BASE_DIR / ""data"" / ""las_vegas_hourly_weather_2016_2023.csv"""
+edit,experiments/05_las_vegas_phoenix/LV_Phoenix_Full_Weather_Energy_Analysis.ipynb,experiments/05_las_vegas_phoenix/LV_Phoenix_Full_Weather_Energy_Analysis.ipynb,"1x  BASE_DIR / ""las_vegas_hourly_energy.csv""  ->  BASE_DIR / ""data"" / ""las_vegas_hourly_energy.csv"""
+edit,experiments/05_las_vegas_phoenix/LV_Phoenix_Full_Weather_Energy_Analysis.ipynb,experiments/05_las_vegas_phoenix/LV_Phoenix_Full_Weather_Energy_Analysis.ipynb,"1x  BASE_DIR / ""phoenix_hourly_weather_2016_2023.csv""  ->  BASE_DIR / ""data"" / ""phoenix_hourly_weather_2016_2023.csv"""
+edit,experiments/05_las_vegas_phoenix/LV_Phoenix_Full_Weather_Energy_Analysis.ipynb,experiments/05_las_vegas_phoenix/LV_Phoenix_Full_Weather_Energy_Analysis.ipynb,"1x  BASE_DIR / ""phoenix_hourly_energy.csv""  ->  BASE_DIR / ""data"" / ""phoenix_hourly_energy.csv"""
+edit,experiments/05_las_vegas_phoenix/climate_similarity_analysis/Las_Vegas_Phoenix_Climate_Similarity_Analysis.ipynb,experiments/05_las_vegas_phoenix/climate_similarity_analysis/Las_Vegas_Phoenix_Climate_Similarity_Analysis.ipynb,"1x  Path(r""D:\Downloads\BTP\model_training\lstm_training_3"")  ->  Path.cwd().parent"
+edit,experiments/05_las_vegas_phoenix/climate_similarity_analysis/Las_Vegas_Phoenix_Climate_Similarity_Analysis.ipynb,experiments/05_las_vegas_phoenix/climate_similarity_analysis/Las_Vegas_Phoenix_Climate_Similarity_Analysis.ipynb,"1x  BASE / ""las_vegas_hourly_weather_2016_2023.csv""  ->  BASE / ""data"" / ""las_vegas_hourly_weather_2016_2023.csv"""
+edit,experiments/05_las_vegas_phoenix/climate_similarity_analysis/Las_Vegas_Phoenix_Climate_Similarity_Analysis.ipynb,experiments/05_las_vegas_phoenix/climate_similarity_analysis/Las_Vegas_Phoenix_Climate_Similarity_Analysis.ipynb,"1x  BASE / ""las_vegas_hourly_energy.csv""  ->  BASE / ""data"" / ""las_vegas_hourly_energy.csv"""
+edit,experiments/05_las_vegas_phoenix/climate_similarity_analysis/Las_Vegas_Phoenix_Climate_Similarity_Analysis.ipynb,experiments/05_las_vegas_phoenix/climate_similarity_analysis/Las_Vegas_Phoenix_Climate_Similarity_Analysis.ipynb,"1x  BASE / ""phoenix_hourly_weather_2016_2023.csv""  ->  BASE / ""data"" / ""phoenix_hourly_weather_2016_2023.csv"""
+edit,experiments/05_las_vegas_phoenix/climate_similarity_analysis/Las_Vegas_Phoenix_Climate_Similarity_Analysis.ipynb,experiments/05_las_vegas_phoenix/climate_similarity_analysis/Las_Vegas_Phoenix_Climate_Similarity_Analysis.ipynb,"1x  BASE / ""phoenix_hourly_energy.csv""  ->  BASE / ""data"" / ""phoenix_hourly_energy.csv"""
+edit,experiments/05_las_vegas_phoenix/create_cross_city_feature_engineering_notebook.py,experiments/05_las_vegas_phoenix/create_cross_city_feature_engineering_notebook.py,"1x  BASE = Path(r""D:\Downloads\BTP\model_training\lstm_training_3"")  ->  BASE = Path(__file__).resolve().parent"
+edit,experiments/05_las_vegas_phoenix/create_cross_city_feature_engineering_notebook.py,experiments/05_las_vegas_phoenix/create_cross_city_feature_engineering_notebook.py,"1x  ""BASE = Path(r'D:\\Downloads\\BTP\\model_training\\lstm_training_3')\n""  ->  ""BASE = Path.cwd()\n"""
+edit,experiments/05_las_vegas_phoenix/create_cross_city_training_notebook.py,experiments/05_las_vegas_phoenix/create_cross_city_training_notebook.py,"1x  BASE = Path(r""D:\Downloads\BTP\model_training\lstm_training_3"")  ->  BASE = Path(__file__).resolve().parent"
+edit,experiments/05_las_vegas_phoenix/create_cross_city_training_notebook.py,experiments/05_las_vegas_phoenix/create_cross_city_training_notebook.py,"1x  OUT = BASE / ""Train_Cross_City_Weather_and_Operational_Models.ipynb""  ->  OUT = BASE / ""training notebooks"" / ""Train_Cross_City_Weather_and_Operational_Models.ipynb"""
+edit,experiments/05_las_vegas_phoenix/create_cross_city_training_notebook.py,experiments/05_las_vegas_phoenix/create_cross_city_training_notebook.py,"1x  ""BASE = Path(r'D:\\Downloads\\BTP\\model_training\\lstm_training_3')\n""  ->  ""BASE = Path.cwd().parent\n"""
+edit,experiments/05_las_vegas_phoenix/create_lstm_training_notebook.py,experiments/05_las_vegas_phoenix/create_lstm_training_notebook.py,"1x  BASE = Path(r""D:\Downloads\BTP\model_training\lstm_training_3"")  ->  BASE = Path(__file__).resolve().parent"
+edit,experiments/05_las_vegas_phoenix/create_lstm_training_notebook.py,experiments/05_las_vegas_phoenix/create_lstm_training_notebook.py,"1x  OUT = BASE / ""Train_LSTM_Cross_City_Weather_and_Operational_Models.ipynb""  ->  OUT = BASE / ""training notebooks"" / ""Train_LSTM_Cross_City_Weather_and_Operational_Models.ipynb"""
+edit,experiments/05_las_vegas_phoenix/create_lstm_training_notebook.py,experiments/05_las_vegas_phoenix/create_lstm_training_notebook.py,"1x  ""BASE = Path(r'D:\\Downloads\\BTP\\model_training\\lstm_training_3')\n""  ->  ""BASE = Path.cwd().parent\n"""
+edit,experiments/05_las_vegas_phoenix/neural_models/two_branch_cross_city_tcn_training.ipynb,experiments/05_las_vegas_phoenix/neural_models/two_branch_cross_city_tcn_training.ipynb,1x  Path(r'D:\Downloads\BTP\model_training\lstm_training_3\data')  ->  (Path.cwd().parent / 'data')
+edit,experiments/05_las_vegas_phoenix/neural_models/two_branch_cross_city_tcn_training.ipynb,experiments/05_las_vegas_phoenix/neural_models/two_branch_cross_city_tcn_training.ipynb,1x  Path(r'D:\Downloads\BTP\model_training\lstm_training_3\neural_models')  ->  Path.cwd()
+edit,experiments/05_las_vegas_phoenix/tcn_models/TCN_data_preparation.ipynb,experiments/05_las_vegas_phoenix/tcn_models/TCN_data_preparation.ipynb,"1x  Path(r""D:\Downloads\BTP\model_training\lstm_training_3\data"")  ->  (Path.cwd().parent / ""data"")"
+edit,experiments/05_las_vegas_phoenix/tcn_models/TCN_training_gpu.ipynb,experiments/05_las_vegas_phoenix/tcn_models/TCN_training_gpu.ipynb,"1x  Path(r""D:\Downloads\BTP\model_training\lstm_training_3\data"")  ->  (Path.cwd().parent / ""data"")"
+edit,experiments/05_las_vegas_phoenix/training notebooks/Train_Cross_City_Weather_and_Operational_Models.ipynb,experiments/05_las_vegas_phoenix/training notebooks/Train_Cross_City_Weather_and_Operational_Models.ipynb,1x  Path(r'D:\Downloads\BTP\model_training\lstm_training_3')  ->  Path.cwd().parent
+edit,experiments/05_las_vegas_phoenix/training notebooks/Train_LSTM_Cross_City_Weather_and_Operational_Models.ipynb,experiments/05_las_vegas_phoenix/training notebooks/Train_LSTM_Cross_City_Weather_and_Operational_Models.ipynb,1x  Path(r'D:\Downloads\BTP\model_training\lstm_training_3')  ->  Path.cwd().parent
+edit,experiments/05_las_vegas_phoenix/training notebooks/Train_LSTM_Energy_Deviation_Las_Vegas_Phoenix.ipynb,experiments/05_las_vegas_phoenix/training notebooks/Train_LSTM_Energy_Deviation_Las_Vegas_Phoenix.ipynb,1x  BASE_DIR = Path.cwd()  ->  BASE_DIR = Path.cwd().parent
+edit,experiments/05_las_vegas_phoenix/Las_Vegas_weather/extract_las_vegas_weather.py,experiments/05_las_vegas_phoenix/Las_Vegas_weather/extract_las_vegas_weather.py,"1x  Path(""las_vegas_weather"")  ->  Path(""las_vegas_weather_raw"")"
+edit,experiments/05_las_vegas_phoenix/Phoenix_weather/extract_phoenix_weather.py,experiments/05_las_vegas_phoenix/Phoenix_weather/extract_phoenix_weather.py,"1x  Path(""phoenix_weather"")  ->  Path(""phoenix_weather_raw"")"
+edit,experiments/04_atlanta_birmingham/cleaning/.venv/Scripts/activate.bat,,VIRTUAL_ENV -> D:\Downloads\BTP\model_training\experiments\04_atlanta_birmingham\cleaning\.venv
+edit,experiments/04_atlanta_birmingham/cleaning/.venv/Scripts/activate,,VIRTUAL_ENV -> D:\Downloads\BTP\model_training\experiments\04_atlanta_birmingham\cleaning\.venv

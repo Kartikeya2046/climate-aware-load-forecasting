@@ -1,0 +1,66 @@
+# Energy Intelligence Dashboard configuration.
+# Paths are relative to the repository root (the folder that contains `experiments/`).
+
+[fitness_weights]
+# Initial hypotheses, not established constants. `python -m core.evidence --weights-study`
+# evaluates them (and alternatives) against held-out windows; see evidence/weights_study.json.
+validation_performance = 0.35
+climate_similarity = 0.25
+feature_compatibility = 0.15
+input_data_quality = 0.10
+temporal_compatibility = 0.10
+calibration_reliability = 0.05
+
+[selection]
+near_tie_points = 1.0            # candidates within this many points of the winner are flagged as near ties
+interval_nominal_coverage = 0.90 # empirical prediction-interval level
+
+[validation]
+max_upload_mb = 25
+max_rows = 200_000
+max_horizon_hours = 744           # 31 days of hourly predictions per request
+max_forward_fill_hours = 6       # longest weather gap that may be forward-filled (training used past-only ffill)
+min_rows_distribution_similarity = 72  # fewer hourly rows -> point-based climate proximity only
+
+[[models]]
+id = "tcn_atlanta"
+family = "Two-branch TCN"
+display_name = "Two-branch TCN · Atlanta weather branch"
+version = "atlanta_birmingham_two_branch_results (2025-09-16)"
+source_city = "atlanta"
+result_dir = "experiments/04_atlanta_birmingham/neural_model/atlanta_birmingham_two_branch_results"
+tcn = "atlanta_to_birmingham/best_atlanta_weather_tcn.keras"
+feature_scaler = "atlanta_to_birmingham/atlanta_feature_scaler.joblib"
+residual_scaler = "atlanta_to_birmingham/atlanta_residual_scaler.joblib"
+experiment_config = "atlanta_to_birmingham/experiment_config.json"
+research_metrics = "atlanta_to_birmingham/birmingham_2023_cross_city_metrics.json"
+research_predictions = "atlanta_to_birmingham/birmingham_2023_cross_city_predictions.csv"
+baselines = { atlanta = "atlanta", birmingham = "birmingham" }
+training_notebook = "experiments/04_atlanta_birmingham/neural_model/atlanta_birmingham_two_branch_tcn_training.ipynb"
+
+[[models]]
+id = "tcn_las_vegas"
+family = "Two-branch TCN"
+display_name = "Two-branch TCN · Las Vegas weather branch"
+version = "two_branch_tcn_results (2025-09-16)"
+source_city = "las_vegas"
+result_dir = "experiments/05_las_vegas_phoenix/neural_models/two_branch_tcn_results"
+tcn = "las_vegas_to_phoenix/best_weather_tcn.keras"
+feature_scaler = "las_vegas_to_phoenix/tcn_feature_scaler_las_vegas_only.joblib"
+residual_scaler = "las_vegas_to_phoenix/residual_target_scaler_las_vegas_only.joblib"
+experiment_config = "las_vegas_to_phoenix/experiment_config.json"
+research_metrics = "las_vegas_to_phoenix/phoenix_2023_cross_city_metrics.json"
+research_predictions = "las_vegas_to_phoenix/phoenix_2023_cross_city_predictions.csv"
+baselines = { las_vegas = "las_vegas", phoenix = "phoenix" }
+training_notebook = "experiments/05_las_vegas_phoenix/neural_models/two_branch_cross_city_tcn_training.ipynb"
+
+[[models]]
+id = "lstm_dayton"
+family = "LSTM"
+display_name = "LSTM · Dayton (24 h window)"
+version = "day_lstm_model (2026-05-05)"
+source_city = "dayton"
+model = "experiments/03_dayton_duquesne/models/day_lstm_model.keras"
+scaler = "experiments/03_dayton_duquesne/models/day_scaler.pkl"
+evaluated_on = ["pittsburgh"]
+training_notebook = "experiments/03_dayton_duquesne/notebooks/Dayton_to_Duquesne_LSTM_Transfer.ipynb"

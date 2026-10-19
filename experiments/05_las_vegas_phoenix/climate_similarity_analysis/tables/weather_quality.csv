@@ -1,0 +1,17 @@
+city,feature,missing,missing_pct,unique
+Las Vegas,temperature,0,0.0,116
+Las Vegas,dew_point,0,0.0,108
+Las Vegas,relative_humidity,0,0.0,95
+Las Vegas,pressure,0,0.0,44
+Las Vegas,wind_speed,0,0.0,38
+Las Vegas,wind_direction,0,0.0,38
+Las Vegas,visibility,0,0.0,34
+Las Vegas,precipitation,0,0.0,49
+Phoenix,temperature,0,0.0,108
+Phoenix,dew_point,0,0.0,103
+Phoenix,relative_humidity,0,0.0,94
+Phoenix,pressure,0,0.0,40
+Phoenix,wind_speed,0,0.0,38
+Phoenix,wind_direction,0,0.0,38
+Phoenix,visibility,0,0.0,37
+Phoenix,precipitation,0,0.0,38

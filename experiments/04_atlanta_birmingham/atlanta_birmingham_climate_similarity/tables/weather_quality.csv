@@ -1,0 +1,17 @@
+city,feature,missing,missing_pct
+Atlanta,temperature,0,0.0
+Atlanta,dew_point,0,0.0
+Atlanta,relative_humidity,0,0.0
+Atlanta,pressure,0,0.0
+Atlanta,wind_speed,0,0.0
+Atlanta,wind_direction,0,0.0
+Atlanta,visibility,0,0.0
+Atlanta,precipitation,0,0.0
+Birmingham,temperature,0,0.0
+Birmingham,dew_point,0,0.0
+Birmingham,relative_humidity,0,0.0
+Birmingham,pressure,0,0.0
+Birmingham,wind_speed,0,0.0
+Birmingham,wind_direction,0,0.0
+Birmingham,visibility,0,0.0
+Birmingham,precipitation,0,0.0

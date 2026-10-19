@@ -1,0 +1,868 @@
+================================================================================
+ATLANTA AND BIRMINGHAM
+WEATHER + ELECTRICITY CONSUMPTION EDA REPORT
+================================================================================
+
+Target variable: hourly_load_mw
+Timestamp variable: timestamp
+
+================================================================================
+1. BASIC DATA INFORMATION
+================================================================================
+
+
+--- Atlanta ---
+Rows: 70080
+Columns: 27
+Date range: 2016-01-01 00:00:00 to 2023-12-31 23:00:00
+Unique timestamps: 70080
+Duplicate timestamps: 0
+
+Columns:
+  timestamp
+  hourly_load_mw
+  date
+  hour
+  extraterrestrial_horizontal_radiation_wh_m2
+  extraterrestrial_direct_normal_radiation_wh_m2
+  global_horizontal_radiation_wh_m2
+  direct_normal_radiation_wh_m2
+  diffuse_horizontal_radiation_wh_m2
+  total_sky_cover_tenths
+  opaque_sky_cover_tenths
+  temperature_c
+  dew_point_c
+  relative_humidity_percent
+  station_pressure_kpa
+  wind_direction_deg
+  wind_speed_ms
+  horizontal_visibility_km
+  ceiling_height_m
+  observation_indicator
+  present_weather
+  precipitable_water_mm
+  broadband_aerosol_optical_depth
+  snow_depth_cm
+  days_since_last_snowfall
+  hourly_precipitation_cm
+  city
+
+--- Birmingham ---
+Rows: 70080
+Columns: 27
+Date range: 2016-01-01 00:00:00 to 2023-12-31 23:00:00
+Unique timestamps: 70080
+Duplicate timestamps: 0
+
+Columns:
+  timestamp
+  hourly_load_mw
+  date
+  hour
+  extraterrestrial_horizontal_radiation_wh_m2
+  extraterrestrial_direct_normal_radiation_wh_m2
+  global_horizontal_radiation_wh_m2
+  direct_normal_radiation_wh_m2
+  diffuse_horizontal_radiation_wh_m2
+  total_sky_cover_tenths
+  opaque_sky_cover_tenths
+  temperature_c
+  dew_point_c
+  relative_humidity_percent
+  station_pressure_kpa
+  wind_direction_deg
+  wind_speed_ms
+  horizontal_visibility_km
+  ceiling_height_m
+  observation_indicator
+  present_weather
+  precipitable_water_mm
+  broadband_aerosol_optical_depth
+  snow_depth_cm
+  days_since_last_snowfall
+  hourly_precipitation_cm
+  city
+
+
+================================================================================
+2. MISSING VALUE REPORT
+================================================================================
+
+--- Atlanta ---
+                                    missing_count  missing_percent
+global_horizontal_radiation_wh_m2           70080            100.0
+direct_normal_radiation_wh_m2               70080            100.0
+diffuse_horizontal_radiation_wh_m2          70080            100.0
+
+--- Birmingham ---
+                                    missing_count  missing_percent
+global_horizontal_radiation_wh_m2           70080            100.0
+direct_normal_radiation_wh_m2               70080            100.0
+diffuse_horizontal_radiation_wh_m2          70080            100.0
+
+
+================================================================================
+3. DUPLICATE REPORT
+================================================================================
+
+--- Atlanta ---
+Exact duplicate rows: 0
+Duplicate timestamps: 0
+
+--- Birmingham ---
+Exact duplicate rows: 0
+Duplicate timestamps: 0
+
+
+================================================================================
+4. OUTLIER REPORT (IQR METHOD)
+================================================================================
+
+--- Atlanta ---
+                                      variable  outlier_count  outlier_percent
+                               present_weather          15555        22.196062
+                       hourly_precipitation_cm           4353         6.211473
+                                hourly_load_mw           1769         2.524258
+                          station_pressure_kpa           1585         2.261701
+                                 wind_speed_ms           1526         2.177511
+               broadband_aerosol_optical_depth           1419         2.024829
+                      horizontal_visibility_km            440         0.627854
+                                 snow_depth_cm            192         0.273973
+                                 temperature_c            171         0.244007
+                                   dew_point_c             47         0.067066
+                         observation_indicator              5         0.007135
+                         precipitable_water_mm              5         0.007135
+                                          hour              0         0.000000
+                        total_sky_cover_tenths              0         0.000000
+extraterrestrial_direct_normal_radiation_wh_m2              0         0.000000
+   extraterrestrial_horizontal_radiation_wh_m2              0         0.000000
+                       opaque_sky_cover_tenths              0         0.000000
+                            wind_direction_deg              0         0.000000
+                     relative_humidity_percent              0         0.000000
+                              ceiling_height_m              0         0.000000
+                      days_since_last_snowfall              0         0.000000
+
+--- Birmingham ---
+                                      variable  outlier_count  outlier_percent
+                               present_weather          14563        20.780537
+                      horizontal_visibility_km          11566        16.503995
+                       hourly_precipitation_cm           4605         6.571062
+               broadband_aerosol_optical_depth           3264         4.657534
+                          station_pressure_kpa           1919         2.738299
+                                 wind_speed_ms           1871         2.669806
+                                hourly_load_mw           1826         2.605594
+                                 temperature_c            192         0.273973
+                                 snow_depth_cm            144         0.205479
+                                   dew_point_c            121         0.172660
+                         observation_indicator             10         0.014269
+   extraterrestrial_horizontal_radiation_wh_m2              0         0.000000
+                                          hour              0         0.000000
+                        total_sky_cover_tenths              0         0.000000
+extraterrestrial_direct_normal_radiation_wh_m2              0         0.000000
+                       opaque_sky_cover_tenths              0         0.000000
+                     relative_humidity_percent              0         0.000000
+                            wind_direction_deg              0         0.000000
+                              ceiling_height_m              0         0.000000
+                         precipitable_water_mm              0         0.000000
+                      days_since_last_snowfall              0         0.000000
+
+
+================================================================================
+5. PEARSON CORRELATION WITH ELECTRICITY
+================================================================================
+
+--- Atlanta ---
+hourly_load_mw                                    1.000000
+temperature_cubed_lag_3                           0.508520
+temperature_squared_lag_3                         0.489356
+temperature_cubed_rolling_mean_24                 0.411677
+temperature_c_lag_3                               0.409566
+temperature_squared_rolling_mean_24               0.390495
+temperature_squared_rolling_mean_3                0.388730
+temperature_cubed_rolling_mean_3                  0.388415
+temperature_squared_lag_1                         0.387049
+temperature_cubed_lag_1                           0.385424
+precipitable_water_mm                             0.370466
+temperature_c_rolling_mean_3                      0.340406
+temperature_c_lag_1                               0.340135
+temp_humidity_interaction_rolling_mean_24         0.335530
+temp_humidity_interaction                         0.331741
+temp_humidity_interaction_lag_24                  0.329448
+temperature_squared                               0.328910
+temperature_squared_lag_24                        0.327092
+dew_point_c_rolling_mean_24                       0.325025
+temperature_c_rolling_mean_24                     0.321370
+temp_humidity_interaction_rolling_mean_3          0.319373
+temp_humidity_interaction_lag_1                   0.318394
+temperature_cubed                                 0.317489
+temperature_cubed_lag_24                          0.316103
+dew_point_c                                       0.313503
+dew_point_c_rolling_mean_3                        0.312890
+dew_point_c_lag_1                                 0.312220
+dew_point_c_lag_24                                0.311965
+dew_point_c_lag_3                                 0.310384
+temperature_c                                     0.297971
+temperature_c_lag_24                              0.294755
+temp_humidity_interaction_lag_3                   0.292247
+broadband_aerosol_optical_depth                   0.268956
+extraterrestrial_horizontal_radiation_wh_m2      -0.246019
+extraterrestrial_direct_normal_radiation_wh_m2   -0.244938
+days_since_last_snowfall                          0.235350
+hour                                              0.215963
+heating_degree_proxy_18                          -0.214769
+cooling_degree_proxy_24                           0.200385
+wind_speed_ms_rolling_mean_24                    -0.139037
+temperature_dewpoint_spread_lag_3                 0.137175
+wind_speed_ms                                    -0.127716
+is_weekend                                       -0.122257
+wind_speed_ms_lag_24                             -0.122177
+relative_humidity_percent_lag_3                  -0.119523
+horizontal_visibility_km                         -0.119417
+relative_humidity_percent_rolling_mean_24         0.106682
+wind_speed_ms_rolling_mean_3                     -0.101281
+temperature_dewpoint_spread_rolling_mean_24      -0.094263
+wind_speed_ms_lag_1                              -0.092308
+day_of_week                                      -0.090593
+relative_humidity_percent_lag_24                  0.071020
+ceiling_height_m                                  0.070986
+relative_humidity_percent                         0.068418
+month                                             0.059405
+temperature_dewpoint_spread_lag_24               -0.058273
+temperature_dewpoint_spread                      -0.055530
+quarter                                           0.054166
+week_of_year                                      0.053831
+opaque_sky_cover_tenths                          -0.047877
+present_weather                                  -0.047421
+wind_speed_ms_lag_3                              -0.027634
+total_sky_cover_tenths                           -0.026363
+temperature_dewpoint_spread_lag_1                 0.017467
+temperature_dewpoint_spread_rolling_mean_3        0.015292
+station_pressure_kpa                             -0.014862
+day_of_month                                      0.008095
+wind_direction_deg                               -0.007961
+observation_indicator                            -0.003131
+relative_humidity_percent_lag_1                  -0.002751
+snow_depth_cm                                    -0.002718
+hourly_precipitation_cm                           0.001167
+relative_humidity_percent_rolling_mean_3         -0.000391
+global_horizontal_radiation_wh_m2                      NaN
+direct_normal_radiation_wh_m2                          NaN
+diffuse_horizontal_radiation_wh_m2                     NaN
+
+--- Birmingham ---
+hourly_load_mw                                    1.000000
+temperature_cubed_lag_3                           0.400339
+temperature_cubed_rolling_mean_24                 0.400124
+temperature_squared_lag_3                         0.395943
+temperature_squared_rolling_mean_24               0.378498
+precipitable_water_mm                             0.351349
+temperature_c_lag_3                               0.338124
+extraterrestrial_horizontal_radiation_wh_m2      -0.333580
+temp_humidity_interaction                         0.325016
+temp_humidity_interaction_lag_24                  0.324392
+extraterrestrial_direct_normal_radiation_wh_m2   -0.321673
+temp_humidity_interaction_rolling_mean_3          0.317364
+temp_humidity_interaction_lag_1                   0.316452
+temp_humidity_interaction_rolling_mean_24         0.314369
+dew_point_c_rolling_mean_24                       0.308605
+temperature_c_rolling_mean_24                     0.304342
+dew_point_c_lag_3                                 0.299474
+dew_point_c_rolling_mean_3                        0.297247
+dew_point_c_lag_1                                 0.296422
+temp_humidity_interaction_lag_3                   0.296068
+dew_point_c                                       0.295105
+dew_point_c_lag_24                                0.294382
+temperature_squared_rolling_mean_3                0.274010
+temperature_squared_lag_1                         0.270444
+temperature_cubed_rolling_mean_3                  0.259454
+temperature_cubed_lag_1                           0.254669
+temperature_c_rolling_mean_3                      0.249919
+temperature_c_lag_1                               0.248086
+broadband_aerosol_optical_depth                   0.238116
+days_since_last_snowfall                          0.212733
+temperature_squared                               0.208815
+temperature_squared_lag_24                        0.207827
+hour                                              0.206052
+temperature_c                                     0.201607
+temperature_c_lag_24                              0.199533
+wind_speed_ms                                    -0.190415
+wind_speed_ms_lag_24                             -0.188580
+temperature_cubed                                 0.184876
+temperature_cubed_lag_24                          0.183726
+relative_humidity_percent_lag_24                  0.176170
+relative_humidity_percent                         0.174094
+heating_degree_proxy_18                          -0.167743
+temperature_dewpoint_spread_lag_24               -0.165726
+temperature_dewpoint_spread                      -0.163372
+wind_speed_ms_rolling_mean_3                     -0.151902
+wind_direction_deg                               -0.146089
+wind_speed_ms_lag_1                              -0.137476
+wind_speed_ms_rolling_mean_24                    -0.136853
+is_weekend                                       -0.122797
+relative_humidity_percent_rolling_mean_3          0.097901
+relative_humidity_percent_lag_1                   0.095109
+horizontal_visibility_km                         -0.094667
+ceiling_height_m                                  0.093591
+relative_humidity_percent_rolling_mean_24         0.092842
+day_of_week                                      -0.090816
+temperature_dewpoint_spread_rolling_mean_3       -0.087421
+temperature_dewpoint_spread_lag_1                -0.084723
+temperature_dewpoint_spread_rolling_mean_24      -0.083020
+total_sky_cover_tenths                           -0.075750
+opaque_sky_cover_tenths                          -0.071411
+temperature_dewpoint_spread_lag_3                 0.066754
+cooling_degree_proxy_24                           0.065979
+station_pressure_kpa                             -0.058664
+relative_humidity_percent_lag_3                  -0.058129
+month                                             0.057286
+quarter                                           0.052247
+week_of_year                                      0.051931
+wind_speed_ms_lag_3                              -0.029152
+present_weather                                  -0.026778
+snow_depth_cm                                     0.023912
+day_of_month                                      0.007262
+hourly_precipitation_cm                          -0.004976
+observation_indicator                             0.001375
+global_horizontal_radiation_wh_m2                      NaN
+direct_normal_radiation_wh_m2                          NaN
+diffuse_horizontal_radiation_wh_m2                     NaN
+
+
+================================================================================
+6. SPEARMAN CORRELATION WITH ELECTRICITY
+================================================================================
+
+--- Atlanta ---
+hourly_load_mw                                    1.000000
+temperature_squared_lag_3                         0.414450
+temperature_c_lag_3                               0.414190
+temperature_cubed_lag_3                           0.414190
+temperature_c_rolling_mean_3                      0.341313
+temperature_squared_lag_1                         0.341162
+temperature_cubed_lag_1                           0.340885
+temperature_c_lag_1                               0.340885
+temperature_squared_rolling_mean_3                0.340626
+temperature_cubed_rolling_mean_3                  0.340053
+dew_point_c_rolling_mean_24                       0.339835
+temperature_c_rolling_mean_24                     0.328237
+temperature_squared_rolling_mean_24               0.327378
+dew_point_c_rolling_mean_3                        0.326277
+dew_point_c                                       0.326124
+temperature_cubed_rolling_mean_24                 0.326078
+dew_point_c_lag_3                                 0.325623
+precipitable_water_mm                             0.325515
+dew_point_c_lag_1                                 0.325290
+dew_point_c_lag_24                                0.324720
+temp_humidity_interaction_rolling_mean_24         0.318664
+temp_humidity_interaction                         0.308492
+temp_humidity_interaction_lag_24                  0.305966
+temp_humidity_interaction_rolling_mean_3          0.298709
+temp_humidity_interaction_lag_1                   0.297062
+temperature_squared                               0.295896
+temperature_cubed                                 0.295534
+temperature_c                                     0.295534
+temperature_squared_lag_24                        0.294079
+temperature_cubed_lag_24                          0.293781
+temperature_c_lag_24                              0.293781
+temp_humidity_interaction_lag_3                   0.276924
+extraterrestrial_direct_normal_radiation_wh_m2   -0.273663
+heating_degree_proxy_18                          -0.268634
+broadband_aerosol_optical_depth                   0.256543
+extraterrestrial_horizontal_radiation_wh_m2      -0.252453
+cooling_degree_proxy_24                           0.236548
+days_since_last_snowfall                          0.217329
+hour                                              0.179480
+temperature_dewpoint_spread_lag_3                 0.160811
+is_weekend                                       -0.143462
+relative_humidity_percent_lag_3                  -0.131619
+wind_speed_ms_rolling_mean_24                    -0.126593
+wind_speed_ms                                    -0.120684
+horizontal_visibility_km                         -0.115353
+wind_speed_ms_lag_24                             -0.112848
+day_of_week                                      -0.107492
+relative_humidity_percent_rolling_mean_24         0.105371
+wind_speed_ms_rolling_mean_3                     -0.088629
+wind_speed_ms_lag_1                              -0.083055
+temperature_dewpoint_spread_rolling_mean_24      -0.080214
+ceiling_height_m                                  0.075023
+relative_humidity_percent_lag_24                  0.056485
+relative_humidity_percent                         0.053980
+month                                             0.053709
+week_of_year                                      0.046902
+quarter                                           0.044162
+temperature_dewpoint_spread_lag_1                 0.041713
+temperature_dewpoint_spread_rolling_mean_3        0.039351
+temperature_dewpoint_spread_lag_24               -0.035989
+temperature_dewpoint_spread                      -0.033238
+opaque_sky_cover_tenths                          -0.031070
+total_sky_cover_tenths                           -0.024919
+station_pressure_kpa                             -0.023595
+relative_humidity_percent_lag_1                  -0.017757
+hourly_precipitation_cm                          -0.017410
+relative_humidity_percent_rolling_mean_3         -0.015660
+wind_speed_ms_lag_3                              -0.012527
+wind_direction_deg                               -0.008049
+snow_depth_cm                                     0.006746
+present_weather                                  -0.004293
+day_of_month                                      0.002842
+observation_indicator                            -0.002145
+global_horizontal_radiation_wh_m2                      NaN
+direct_normal_radiation_wh_m2                          NaN
+diffuse_horizontal_radiation_wh_m2                     NaN
+
+--- Birmingham ---
+hourly_load_mw                                    1.000000
+extraterrestrial_horizontal_radiation_wh_m2      -0.342670
+extraterrestrial_direct_normal_radiation_wh_m2   -0.341876
+temperature_squared_lag_3                         0.339311
+temperature_c_lag_3                               0.338083
+temperature_cubed_lag_3                           0.338083
+dew_point_c_rolling_mean_24                       0.321128
+temperature_c_rolling_mean_24                     0.316488
+temperature_squared_rolling_mean_24               0.315895
+temperature_cubed_rolling_mean_24                 0.313446
+dew_point_c_lag_3                                 0.312339
+dew_point_c_rolling_mean_3                        0.308743
+temp_humidity_interaction                         0.307430
+dew_point_c_lag_1                                 0.306989
+temp_humidity_interaction_lag_24                  0.306355
+dew_point_c                                       0.305517
+precipitable_water_mm                             0.305321
+dew_point_c_lag_24                                0.304925
+temp_humidity_interaction_rolling_mean_24         0.303321
+temp_humidity_interaction_rolling_mean_3          0.300621
+temp_humidity_interaction_lag_1                   0.298780
+temp_humidity_interaction_lag_3                   0.281653
+temperature_c_rolling_mean_3                      0.246225
+temperature_squared_rolling_mean_3                0.245998
+temperature_squared_lag_1                         0.244896
+temperature_cubed_rolling_mean_3                  0.243630
+temperature_c_lag_1                               0.243229
+temperature_cubed_lag_1                           0.243229
+broadband_aerosol_optical_depth                   0.200499
+heating_degree_proxy_18                          -0.198029
+days_since_last_snowfall                          0.195914
+temperature_squared                               0.195281
+temperature_squared_lag_24                        0.194776
+temperature_c                                     0.193376
+temperature_cubed                                 0.193376
+wind_speed_ms                                    -0.193212
+temperature_c_lag_24                              0.192936
+temperature_cubed_lag_24                          0.192936
+wind_speed_ms_lag_24                             -0.189109
+hour                                              0.168973
+relative_humidity_percent_lag_24                  0.160378
+relative_humidity_percent                         0.159676
+wind_speed_ms_rolling_mean_3                     -0.148372
+temperature_dewpoint_spread_lag_24               -0.147820
+temperature_dewpoint_spread                      -0.146993
+is_weekend                                       -0.143062
+wind_direction_deg                               -0.140963
+wind_speed_ms_lag_1                              -0.137493
+wind_speed_ms_rolling_mean_24                    -0.126492
+day_of_week                                      -0.107464
+cooling_degree_proxy_24                           0.107264
+horizontal_visibility_km                         -0.096066
+temperature_dewpoint_spread_lag_3                 0.094766
+relative_humidity_percent_rolling_mean_24         0.087687
+ceiling_height_m                                  0.085982
+relative_humidity_percent_rolling_mean_3          0.081407
+relative_humidity_percent_lag_1                   0.078553
+relative_humidity_percent_lag_3                  -0.075914
+temperature_dewpoint_spread_rolling_mean_24      -0.071247
+temperature_dewpoint_spread_rolling_mean_3       -0.067558
+total_sky_cover_tenths                           -0.067500
+temperature_dewpoint_spread_lag_1                -0.063743
+station_pressure_kpa                             -0.062897
+opaque_sky_cover_tenths                          -0.055432
+month                                             0.052865
+week_of_year                                      0.046671
+quarter                                           0.043118
+present_weather                                  -0.026576
+wind_speed_ms_lag_3                              -0.024040
+hourly_precipitation_cm                          -0.021292
+snow_depth_cm                                     0.008057
+day_of_month                                      0.003687
+observation_indicator                             0.002051
+global_horizontal_radiation_wh_m2                      NaN
+direct_normal_radiation_wh_m2                          NaN
+diffuse_horizontal_radiation_wh_m2                     NaN
+
+
+================================================================================
+7. VIF MULTICOLLINEARITY ANALYSIS
+================================================================================
+
+--- Atlanta ---
+No VIF results available.
+
+
+--- Birmingham ---
+No VIF results available.
+
+
+
+================================================================================
+8. WEATHER VARIABLE CORRELATIONS
+================================================================================
+
+--- Atlanta ---
+                                                extraterrestrial_horizontal_radiation_wh_m2  extraterrestrial_direct_normal_radiation_wh_m2  global_horizontal_radiation_wh_m2  direct_normal_radiation_wh_m2  diffuse_horizontal_radiation_wh_m2  total_sky_cover_tenths  opaque_sky_cover_tenths  temperature_c  dew_point_c  relative_humidity_percent  station_pressure_kpa  wind_direction_deg  wind_speed_ms  horizontal_visibility_km  ceiling_height_m  observation_indicator  present_weather  precipitable_water_mm  broadband_aerosol_optical_depth  snow_depth_cm  days_since_last_snowfall  hourly_precipitation_cm
+extraterrestrial_horizontal_radiation_wh_m2                                        1.000000                                        0.855213                                NaN                            NaN                                 NaN                0.072598                 0.078197       0.388783     0.133961                  -0.363508             -0.015061            0.023006       0.224639                  0.111725         -0.008628              -0.008362        -0.002352               0.120583                         0.014600      -0.009797                  0.041451                -0.014383
+extraterrestrial_direct_normal_radiation_wh_m2                                     0.855213                                        1.000000                                NaN                            NaN                                 NaN                0.090973                 0.083867       0.122305    -0.079163                  -0.310281              0.037162            0.029609       0.244611                  0.155438         -0.047389              -0.008356        -0.009148              -0.080292                        -0.183903       0.005998                 -0.063520                -0.003541
+global_horizontal_radiation_wh_m2                                                       NaN                                             NaN                                NaN                            NaN                                 NaN                     NaN                      NaN            NaN          NaN                        NaN                   NaN                 NaN            NaN                       NaN               NaN                    NaN              NaN                    NaN                              NaN            NaN                       NaN                      NaN
+direct_normal_radiation_wh_m2                                                           NaN                                             NaN                                NaN                            NaN                                 NaN                     NaN                      NaN            NaN          NaN                        NaN                   NaN                 NaN            NaN                       NaN               NaN                    NaN              NaN                    NaN                              NaN            NaN                       NaN                      NaN
+diffuse_horizontal_radiation_wh_m2                                                      NaN                                             NaN                                NaN                            NaN                                 NaN                     NaN                      NaN            NaN          NaN                        NaN                   NaN                 NaN            NaN                       NaN               NaN                    NaN              NaN                    NaN                              NaN            NaN                       NaN                      NaN
+total_sky_cover_tenths                                                             0.072598                                        0.090973                                NaN                            NaN                                 NaN                1.000000                 0.950105      -0.013352     0.202560                   0.420989             -0.175971           -0.201838       0.149602                 -0.435593         -0.818379               0.003840        -0.414107               0.281847                        -0.074079       0.029366                 -0.050051                 0.300546
+opaque_sky_cover_tenths                                                            0.078197                                        0.083867                                NaN                            NaN                                 NaN                0.950105                 1.000000      -0.023555     0.210890                   0.453786             -0.200708           -0.197352       0.170493                 -0.460530         -0.878542               0.004283        -0.448318               0.294486                        -0.068841       0.034716                 -0.039809                 0.329337
+temperature_c                                                                      0.388783                                        0.122305                                NaN                            NaN                                 NaN               -0.013352                -0.023555       1.000000     0.822221                  -0.130408             -0.153857           -0.084925      -0.085894                 -0.136648          0.139718              -0.009580         0.004511               0.770763                         0.562213      -0.081916                  0.464627                -0.088710
+dew_point_c                                                                        0.133961                                       -0.079163                                NaN                            NaN                                 NaN                0.202560                 0.210890       0.822221     1.000000                   0.416352             -0.210706           -0.143277      -0.155523                 -0.472951         -0.136543              -0.006359        -0.252972               0.949774                         0.575901      -0.069224                  0.501596                 0.066884
+relative_humidity_percent                                                         -0.363508                                       -0.310281                                NaN                            NaN                                 NaN                0.420989                 0.453786      -0.130408     0.416352                   1.000000             -0.179366           -0.147680      -0.127087                 -0.658470         -0.524556               0.005247        -0.515434               0.422884                         0.096075       0.036526                  0.117011                 0.320558
+station_pressure_kpa                                                              -0.015061                                        0.037162                                NaN                            NaN                                 NaN               -0.175971                -0.200708      -0.153857    -0.210706                  -0.179366              1.000000           -0.202496      -0.182954                  0.134378          0.183848               0.004735         0.130353              -0.212241                        -0.163466      -0.021879                  0.078153                -0.141775
+wind_direction_deg                                                                 0.023006                                        0.029609                                NaN                            NaN                                 NaN               -0.201838                -0.197352      -0.084925    -0.143277                  -0.147680             -0.202496            1.000000       0.142263                  0.178198          0.187328               0.004564         0.147901              -0.177036                        -0.059021       0.013727                 -0.097925                -0.095508
+wind_speed_ms                                                                      0.224639                                        0.244611                                NaN                            NaN                                 NaN                0.149602                 0.170493      -0.085894    -0.155523                  -0.127087             -0.182954            0.142263       1.000000                  0.142935         -0.164186              -0.003477         0.021245              -0.124380                        -0.118317       0.021542                 -0.137259                 0.085015
+horizontal_visibility_km                                                           0.111725                                        0.155438                                NaN                            NaN                                 NaN               -0.435593                -0.460530      -0.136648    -0.472951                  -0.658470              0.134378            0.178198       0.142935                  1.000000          0.481655               0.000849         0.684933              -0.499853                        -0.151592      -0.046162                 -0.155780                -0.305626
+ceiling_height_m                                                                  -0.008628                                       -0.047389                                NaN                            NaN                                 NaN               -0.818379                -0.878542       0.139718    -0.136543                  -0.524556              0.183848            0.187328      -0.164186                  0.481655          1.000000              -0.004686         0.503247              -0.217131                         0.107689      -0.047015                  0.063877                -0.358777
+observation_indicator                                                             -0.008362                                       -0.008356                                NaN                            NaN                                 NaN                0.003840                 0.004283      -0.009580    -0.006359                   0.005247              0.004735            0.004564      -0.003477                  0.000849         -0.004686               1.000000         0.004467              -0.006460                        -0.010411      -0.000443                 -0.004543                -0.002172
+present_weather                                                                   -0.002352                                       -0.009148                                NaN                            NaN                                 NaN               -0.414107                -0.448318       0.004511    -0.252972                  -0.515434              0.130353            0.147901       0.021245                  0.684933          0.503247               0.004467         1.000000              -0.297285                        -0.027645      -0.053307                 -0.052479                -0.498136
+precipitable_water_mm                                                              0.120583                                       -0.080292                                NaN                            NaN                                 NaN                0.281847                 0.294486       0.770763     0.949774                   0.422884             -0.212241           -0.177036      -0.124380                 -0.499853         -0.217131              -0.006460        -0.297285               1.000000                         0.542488      -0.055389                  0.489390                 0.124895
+broadband_aerosol_optical_depth                                                    0.014600                                       -0.183903                                NaN                            NaN                                 NaN               -0.074079                -0.068841       0.562213     0.575901                   0.096075             -0.163466           -0.059021      -0.118317                 -0.151592          0.107689              -0.010411        -0.027645               0.542488                         1.000000      -0.031160                  0.375106                -0.049185
+snow_depth_cm                                                                     -0.009797                                        0.005998                                NaN                            NaN                                 NaN                0.029366                 0.034716      -0.081916    -0.069224                   0.036526             -0.021879            0.013727       0.021542                 -0.046162         -0.047015              -0.000443        -0.053307              -0.055389                        -0.031160       1.000000                 -0.096351                 0.035058
+days_since_last_snowfall                                                           0.041451                                       -0.063520                                NaN                            NaN                                 NaN               -0.050051                -0.039809       0.464627     0.501596                   0.117011              0.078153           -0.097925      -0.137259                 -0.155780          0.063877              -0.004543        -0.052479               0.489390                         0.375106      -0.096351                  1.000000                -0.046517
+hourly_precipitation_cm                                                           -0.014383                                       -0.003541                                NaN                            NaN                                 NaN                0.300546                 0.329337      -0.088710     0.066884                   0.320558             -0.141775           -0.095508       0.085015                 -0.305626         -0.358777              -0.002172        -0.498136               0.124895                        -0.049185       0.035058                 -0.046517                 1.000000
+
+--- Birmingham ---
+                                                extraterrestrial_horizontal_radiation_wh_m2  extraterrestrial_direct_normal_radiation_wh_m2  global_horizontal_radiation_wh_m2  direct_normal_radiation_wh_m2  diffuse_horizontal_radiation_wh_m2  total_sky_cover_tenths  opaque_sky_cover_tenths  temperature_c  dew_point_c  relative_humidity_percent  station_pressure_kpa  wind_direction_deg  wind_speed_ms  horizontal_visibility_km  ceiling_height_m  observation_indicator  present_weather  precipitable_water_mm  broadband_aerosol_optical_depth  snow_depth_cm  days_since_last_snowfall  hourly_precipitation_cm
+extraterrestrial_horizontal_radiation_wh_m2                                        1.000000                                        0.854330                                NaN                            NaN                                 NaN                0.109441                 0.106704       0.444596     0.145718                  -0.485794             -0.033020            0.321941       0.377405                 -0.007383         -0.068410              -0.008522        -0.029234               0.146786                         0.130828      -0.006661                  0.050154                -0.006700
+extraterrestrial_direct_normal_radiation_wh_m2                                     0.854330                                        1.000000                                NaN                            NaN                                 NaN                0.120781                 0.107989       0.180110    -0.074033                  -0.425999              0.046151            0.298565       0.363409                  0.004572         -0.083174              -0.009986        -0.027592              -0.072792                        -0.072977       0.005520                 -0.064999                 0.006438
+global_horizontal_radiation_wh_m2                                                       NaN                                             NaN                                NaN                            NaN                                 NaN                     NaN                      NaN            NaN          NaN                        NaN                   NaN                 NaN            NaN                       NaN               NaN                    NaN              NaN                    NaN                              NaN            NaN                       NaN                      NaN
+direct_normal_radiation_wh_m2                                                           NaN                                             NaN                                NaN                            NaN                                 NaN                     NaN                      NaN            NaN          NaN                        NaN                   NaN                 NaN            NaN                       NaN               NaN                    NaN              NaN                    NaN                              NaN            NaN                       NaN                      NaN
+diffuse_horizontal_radiation_wh_m2                                                      NaN                                             NaN                                NaN                            NaN                                 NaN                     NaN                      NaN            NaN          NaN                        NaN                   NaN                 NaN            NaN                       NaN               NaN                    NaN              NaN                    NaN                              NaN            NaN                       NaN                      NaN
+total_sky_cover_tenths                                                             0.109441                                        0.120781                                NaN                            NaN                                 NaN                1.000000                 0.965897       0.053801     0.194507                   0.238267             -0.227025            0.183844       0.242639                 -0.317374         -0.837409              -0.000615        -0.377049               0.193107                        -0.072771       0.040963                 -0.094536                 0.313249
+opaque_sky_cover_tenths                                                            0.106704                                        0.107989                                NaN                            NaN                                 NaN                0.965897                 1.000000       0.057822     0.212475                   0.261356             -0.250083            0.190224       0.248024                 -0.357949         -0.877877              -0.001794        -0.404551               0.210811                        -0.058572       0.044957                 -0.079737                 0.332763
+temperature_c                                                                      0.444596                                        0.180110                                NaN                            NaN                                 NaN                0.053801                 0.057822       1.000000     0.826485                  -0.227417             -0.292572            0.109501       0.127745                 -0.106179          0.034111              -0.007688        -0.054864               0.827037                         0.546478      -0.068784                  0.458405                -0.064566
+dew_point_c                                                                        0.145718                                       -0.074033                                NaN                            NaN                                 NaN                0.194507                 0.212475       0.826485     1.000000                   0.307784             -0.346760           -0.044426      -0.072437                 -0.322648         -0.157602              -0.006445        -0.280483               0.999568                         0.545573      -0.060416                  0.505842                 0.062422
+relative_humidity_percent                                                         -0.485794                                       -0.425999                                NaN                            NaN                                 NaN                0.238267                 0.261356      -0.227417     0.307784                   1.000000             -0.151775           -0.301880      -0.374947                 -0.426206         -0.335077              -0.001480        -0.452505               0.305438                         0.019942       0.016825                  0.105412                 0.266037
+station_pressure_kpa                                                              -0.033020                                        0.046151                                NaN                            NaN                                 NaN               -0.227025                -0.250083      -0.292572    -0.346760                  -0.151775              1.000000           -0.149702      -0.162018                  0.191404          0.238297               0.006600         0.183202              -0.339924                        -0.203504      -0.017543                 -0.046011                -0.158401
+wind_direction_deg                                                                 0.321941                                        0.298565                                NaN                            NaN                                 NaN                0.183844                 0.190224       0.109501    -0.044426                  -0.301880             -0.149702            1.000000       0.606274                  0.033276         -0.187313              -0.000535        -0.001554              -0.044936                        -0.070813       0.001148                 -0.104767                 0.042819
+wind_speed_ms                                                                      0.377405                                        0.363409                                NaN                            NaN                                 NaN                0.242639                 0.248024       0.127745    -0.072437                  -0.374947             -0.162018            0.606274       1.000000                  0.081943         -0.238970               0.000440         0.029897              -0.072983                        -0.075823       0.020991                 -0.124606                 0.100187
+horizontal_visibility_km                                                          -0.007383                                        0.004572                                NaN                            NaN                                 NaN               -0.317374                -0.357949      -0.106179    -0.322648                  -0.426206              0.191404            0.033276       0.081943                  1.000000          0.391673               0.009236         0.784360              -0.320842                        -0.097088      -0.039440                 -0.102770                -0.292429
+ceiling_height_m                                                                  -0.068410                                       -0.083174                                NaN                            NaN                                 NaN               -0.837409                -0.877877       0.034111    -0.157602                  -0.335077              0.238297           -0.187313      -0.238970                  0.391673          1.000000               0.002821         0.434741              -0.155679                         0.095643      -0.051198                  0.084619                -0.357140
+observation_indicator                                                             -0.008522                                       -0.009986                                NaN                            NaN                                 NaN               -0.000615                -0.001794      -0.007688    -0.006445                  -0.001480              0.006600           -0.000535       0.000440                  0.009236          0.002821               1.000000         0.008152              -0.006500                        -0.009227      -0.000542                 -0.000413                 0.001928
+present_weather                                                                   -0.029234                                       -0.027592                                NaN                            NaN                                 NaN               -0.377049                -0.404551      -0.054864    -0.280483                  -0.452505              0.183202           -0.001554       0.029897                  0.784360          0.434741               0.008152         1.000000              -0.278686                        -0.035880      -0.047127                 -0.048756                -0.470691
+precipitable_water_mm                                                              0.146786                                       -0.072792                                NaN                            NaN                                 NaN                0.193107                 0.210811       0.827037     0.999568                   0.305438             -0.339924           -0.044936      -0.072983                 -0.320842         -0.155679              -0.006500        -0.278686               1.000000                         0.545480      -0.060341                  0.506717                 0.060803
+broadband_aerosol_optical_depth                                                    0.130828                                       -0.072977                                NaN                            NaN                                 NaN               -0.072771                -0.058572       0.546478     0.545573                   0.019942             -0.203504           -0.070813      -0.075823                 -0.097088          0.095643              -0.009227        -0.035880               0.545480                         1.000000      -0.025822                  0.377966                -0.049827
+snow_depth_cm                                                                     -0.006661                                        0.005520                                NaN                            NaN                                 NaN                0.040963                 0.044957      -0.068784    -0.060416                   0.016825             -0.017543            0.001148       0.020991                 -0.039440         -0.051198              -0.000542        -0.047127              -0.060341                        -0.025822       1.000000                 -0.081991                 0.060747
+days_since_last_snowfall                                                           0.050154                                       -0.064999                                NaN                            NaN                                 NaN               -0.094536                -0.079737       0.458405     0.505842                   0.105412             -0.046011           -0.104767      -0.124606                 -0.102770          0.084619              -0.000413        -0.048756               0.506717                         0.377966      -0.081991                  1.000000                -0.053536
+hourly_precipitation_cm                                                           -0.006700                                        0.006438                                NaN                            NaN                                 NaN                0.313249                 0.332763      -0.064566     0.062422                   0.266037             -0.158401            0.042819       0.100187                 -0.292429         -0.357140               0.001928        -0.470691               0.060803                        -0.049827       0.060747                 -0.053536                 1.000000
+
+
+================================================================================
+9. ENGINEERED FEATURES
+================================================================================
+
+--- Atlanta ---
+Number of engineered features: 55
+
+  day_of_week
+  day_name
+  day_of_month
+  month
+  week_of_year
+  quarter
+  is_weekend
+  season
+  time_period
+  temperature_squared
+  temperature_cubed
+  cooling_degree_proxy_24
+  heating_degree_proxy_18
+  temperature_dewpoint_spread
+  temp_humidity_interaction
+  temperature_c_lag_1
+  temperature_c_lag_3
+  temperature_c_lag_24
+  temperature_c_rolling_mean_3
+  temperature_c_rolling_mean_24
+  dew_point_c_lag_1
+  dew_point_c_lag_3
+  dew_point_c_lag_24
+  dew_point_c_rolling_mean_3
+  dew_point_c_rolling_mean_24
+  relative_humidity_percent_lag_1
+  relative_humidity_percent_lag_3
+  relative_humidity_percent_lag_24
+  relative_humidity_percent_rolling_mean_3
+  relative_humidity_percent_rolling_mean_24
+  wind_speed_ms_lag_1
+  wind_speed_ms_lag_3
+  wind_speed_ms_lag_24
+  wind_speed_ms_rolling_mean_3
+  wind_speed_ms_rolling_mean_24
+  temperature_squared_lag_1
+  temperature_squared_lag_3
+  temperature_squared_lag_24
+  temperature_squared_rolling_mean_3
+  temperature_squared_rolling_mean_24
+  temperature_cubed_lag_1
+  temperature_cubed_lag_3
+  temperature_cubed_lag_24
+  temperature_cubed_rolling_mean_3
+  temperature_cubed_rolling_mean_24
+  temperature_dewpoint_spread_lag_1
+  temperature_dewpoint_spread_lag_3
+  temperature_dewpoint_spread_lag_24
+  temperature_dewpoint_spread_rolling_mean_3
+  temperature_dewpoint_spread_rolling_mean_24
+  temp_humidity_interaction_lag_1
+  temp_humidity_interaction_lag_3
+  temp_humidity_interaction_lag_24
+  temp_humidity_interaction_rolling_mean_3
+  temp_humidity_interaction_rolling_mean_24
+
+--- Birmingham ---
+Number of engineered features: 55
+
+  day_of_week
+  day_name
+  day_of_month
+  month
+  week_of_year
+  quarter
+  is_weekend
+  season
+  time_period
+  temperature_squared
+  temperature_cubed
+  cooling_degree_proxy_24
+  heating_degree_proxy_18
+  temperature_dewpoint_spread
+  temp_humidity_interaction
+  temperature_c_lag_1
+  temperature_c_lag_3
+  temperature_c_lag_24
+  temperature_c_rolling_mean_3
+  temperature_c_rolling_mean_24
+  dew_point_c_lag_1
+  dew_point_c_lag_3
+  dew_point_c_lag_24
+  dew_point_c_rolling_mean_3
+  dew_point_c_rolling_mean_24
+  relative_humidity_percent_lag_1
+  relative_humidity_percent_lag_3
+  relative_humidity_percent_lag_24
+  relative_humidity_percent_rolling_mean_3
+  relative_humidity_percent_rolling_mean_24
+  wind_speed_ms_lag_1
+  wind_speed_ms_lag_3
+  wind_speed_ms_lag_24
+  wind_speed_ms_rolling_mean_3
+  wind_speed_ms_rolling_mean_24
+  temperature_squared_lag_1
+  temperature_squared_lag_3
+  temperature_squared_lag_24
+  temperature_squared_rolling_mean_3
+  temperature_squared_rolling_mean_24
+  temperature_cubed_lag_1
+  temperature_cubed_lag_3
+  temperature_cubed_lag_24
+  temperature_cubed_rolling_mean_3
+  temperature_cubed_rolling_mean_24
+  temperature_dewpoint_spread_lag_1
+  temperature_dewpoint_spread_lag_3
+  temperature_dewpoint_spread_lag_24
+  temperature_dewpoint_spread_rolling_mean_3
+  temperature_dewpoint_spread_rolling_mean_24
+  temp_humidity_interaction_lag_1
+  temp_humidity_interaction_lag_3
+  temp_humidity_interaction_lag_24
+  temp_humidity_interaction_rolling_mean_3
+  temp_humidity_interaction_rolling_mean_24
+
+
+================================================================================
+10. FINAL DATASET SHAPES
+================================================================================
+
+Atlanta original: (70080, 27)
+Atlanta engineered: (70080, 82)
+Birmingham original: (70080, 27)
+Birmingham engineered: (70080, 82)
+
+
+================================================================================
+11. FINAL ENGINEERED FEATURE LIST
+================================================================================
+
+--- Atlanta ---
+  timestamp
+  hourly_load_mw
+  date
+  hour
+  extraterrestrial_horizontal_radiation_wh_m2
+  extraterrestrial_direct_normal_radiation_wh_m2
+  global_horizontal_radiation_wh_m2
+  direct_normal_radiation_wh_m2
+  diffuse_horizontal_radiation_wh_m2
+  total_sky_cover_tenths
+  opaque_sky_cover_tenths
+  temperature_c
+  dew_point_c
+  relative_humidity_percent
+  station_pressure_kpa
+  wind_direction_deg
+  wind_speed_ms
+  horizontal_visibility_km
+  ceiling_height_m
+  observation_indicator
+  present_weather
+  precipitable_water_mm
+  broadband_aerosol_optical_depth
+  snow_depth_cm
+  days_since_last_snowfall
+  hourly_precipitation_cm
+  city
+  day_of_week
+  day_name
+  day_of_month
+  month
+  week_of_year
+  quarter
+  is_weekend
+  season
+  time_period
+  temperature_squared
+  temperature_cubed
+  cooling_degree_proxy_24
+  heating_degree_proxy_18
+  temperature_dewpoint_spread
+  temp_humidity_interaction
+  temperature_c_lag_1
+  temperature_c_lag_3
+  temperature_c_lag_24
+  temperature_c_rolling_mean_3
+  temperature_c_rolling_mean_24
+  dew_point_c_lag_1
+  dew_point_c_lag_3
+  dew_point_c_lag_24
+  dew_point_c_rolling_mean_3
+  dew_point_c_rolling_mean_24
+  relative_humidity_percent_lag_1
+  relative_humidity_percent_lag_3
+  relative_humidity_percent_lag_24
+  relative_humidity_percent_rolling_mean_3
+  relative_humidity_percent_rolling_mean_24
+  wind_speed_ms_lag_1
+  wind_speed_ms_lag_3
+  wind_speed_ms_lag_24
+  wind_speed_ms_rolling_mean_3
+  wind_speed_ms_rolling_mean_24
+  temperature_squared_lag_1
+  temperature_squared_lag_3
+  temperature_squared_lag_24
+  temperature_squared_rolling_mean_3
+  temperature_squared_rolling_mean_24
+  temperature_cubed_lag_1
+  temperature_cubed_lag_3
+  temperature_cubed_lag_24
+  temperature_cubed_rolling_mean_3
+  temperature_cubed_rolling_mean_24
+  temperature_dewpoint_spread_lag_1
+  temperature_dewpoint_spread_lag_3
+  temperature_dewpoint_spread_lag_24
+  temperature_dewpoint_spread_rolling_mean_3
+  temperature_dewpoint_spread_rolling_mean_24
+  temp_humidity_interaction_lag_1
+  temp_humidity_interaction_lag_3
+  temp_humidity_interaction_lag_24
+  temp_humidity_interaction_rolling_mean_3
+  temp_humidity_interaction_rolling_mean_24
+
+--- Birmingham ---
+  timestamp
+  hourly_load_mw
+  date
+  hour
+  extraterrestrial_horizontal_radiation_wh_m2
+  extraterrestrial_direct_normal_radiation_wh_m2
+  global_horizontal_radiation_wh_m2
+  direct_normal_radiation_wh_m2
+  diffuse_horizontal_radiation_wh_m2
+  total_sky_cover_tenths
+  opaque_sky_cover_tenths
+  temperature_c
+  dew_point_c
+  relative_humidity_percent
+  station_pressure_kpa
+  wind_direction_deg
+  wind_speed_ms
+  horizontal_visibility_km
+  ceiling_height_m
+  observation_indicator
+  present_weather
+  precipitable_water_mm
+  broadband_aerosol_optical_depth
+  snow_depth_cm
+  days_since_last_snowfall
+  hourly_precipitation_cm
+  city
+  day_of_week
+  day_name
+  day_of_month
+  month
+  week_of_year
+  quarter
+  is_weekend
+  season
+  time_period
+  temperature_squared
+  temperature_cubed
+  cooling_degree_proxy_24
+  heating_degree_proxy_18
+  temperature_dewpoint_spread
+  temp_humidity_interaction
+  temperature_c_lag_1
+  temperature_c_lag_3
+  temperature_c_lag_24
+  temperature_c_rolling_mean_3
+  temperature_c_rolling_mean_24
+  dew_point_c_lag_1
+  dew_point_c_lag_3
+  dew_point_c_lag_24
+  dew_point_c_rolling_mean_3
+  dew_point_c_rolling_mean_24
+  relative_humidity_percent_lag_1
+  relative_humidity_percent_lag_3
+  relative_humidity_percent_lag_24
+  relative_humidity_percent_rolling_mean_3
+  relative_humidity_percent_rolling_mean_24
+  wind_speed_ms_lag_1
+  wind_speed_ms_lag_3
+  wind_speed_ms_lag_24
+  wind_speed_ms_rolling_mean_3
+  wind_speed_ms_rolling_mean_24
+  temperature_squared_lag_1
+  temperature_squared_lag_3
+  temperature_squared_lag_24
+  temperature_squared_rolling_mean_3
+  temperature_squared_rolling_mean_24
+  temperature_cubed_lag_1
+  temperature_cubed_lag_3
+  temperature_cubed_lag_24
+  temperature_cubed_rolling_mean_3
+  temperature_cubed_rolling_mean_24
+  temperature_dewpoint_spread_lag_1
+  temperature_dewpoint_spread_lag_3
+  temperature_dewpoint_spread_lag_24
+  temperature_dewpoint_spread_rolling_mean_3
+  temperature_dewpoint_spread_rolling_mean_24
+  temp_humidity_interaction_lag_1
+  temp_humidity_interaction_lag_3
+  temp_humidity_interaction_lag_24
+  temp_humidity_interaction_rolling_mean_3
+  temp_humidity_interaction_rolling_mean_24
+
+
+================================================================================
+END OF REPORT
+================================================================================

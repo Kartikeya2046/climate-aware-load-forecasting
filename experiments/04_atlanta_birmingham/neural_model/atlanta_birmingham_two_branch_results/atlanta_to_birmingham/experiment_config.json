@@ -1,0 +1,26 @@
+{
+  "source_city": "atlanta",
+  "target_city": "birmingham",
+  "train_end": "2021-12-31 23:00:00",
+  "validation_end": "2022-12-31 23:00:00",
+  "test_period": "2023",
+  "lookback_hours": 168,
+  "time_weight_half_life_years": 2.0,
+  "weather_features": [
+    "temperature_c",
+    "dew_point_c",
+    "relative_humidity_percent",
+    "hourly_precipitation_cm",
+    "cooling_degree_c",
+    "heating_degree_c",
+    "temp_x_humidity"
+  ],
+  "residual_features": [
+    "residual_lag_0h",
+    "residual_lag_1h",
+    "residual_lag_24h",
+    "residual_lag_168h",
+    "residual_mean_24h",
+    "residual_std_24h"
+  ]
+}

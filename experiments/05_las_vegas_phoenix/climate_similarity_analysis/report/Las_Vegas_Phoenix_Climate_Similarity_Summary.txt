@@ -1,0 +1,59 @@
+las vegas X Phoenix
+
+| component                        | score_0_to_100 | weight |
+| :------------------------------- | -------------: | -----: |
+| Distribution similarity          |        59.6805 |    0.6 |
+| Correlation structure similarity |        85.7867 |    0.2 |
+| Multivariate climate similarity  |        10.7813 |    0.2 |
+| Overall climate similarity       |        55.1219 |      1 |
+
+temperature mean:
+
+| Las Vegas = 19.8490
+| Phoenix = 23.8525
+diff = 4.0035
+
+temp std dev:
+Las Vegas     = 10.206
+Phoenix       = 10.208
+
+SMD = (mean of a - mean of b) / root((variance of a + variance of b) / 2)
+Smaller = more similar
+
+Wasserstein distance:
+How much would I have to "move" the Las Vegas distribution to turn it into the Phoenix distribution?
+Smaller = more similar
+
+most similar variables : temperature, relative_humidity, precipitation (used in our model training + additional lag features)
+problematic variables which have significant difference : dew_point, windspeed, wind direction, pressure, visibility (not used in our model training)
+
+
+temperature
+
+| metric | score |
+| :--- | ---: |
+| SMD | 0.392317 |
+| normalized_Wasserstein | 0.392317 |
+| SMD_similarity | 67.58 |
+| Wasserstein_similarity | 67.58 |
+| variable_similarity_score | 73.64 |
+
+relative_humidity
+
+| metric | score |
+| :--- | ---: |
+| SMD | 0.237098 |
+| normalized_Wasserstein | 0.237347 |
+| SMD_similarity | 78.88 |
+| Wasserstein_similarity | 78.88 |
+| variable_similarity_score | 82.0764 |
+
+precipitation
+
+| metric | score |
+| :--- | ---: |
+| SMD | 0.343534 |
+| normalized_Wasserstein | 0.360766 |
+| SMD_similarity | 70.90 |
+| Wasserstein_similarity | 69.73 |
+| variable_similarity_score | 74.8086 |

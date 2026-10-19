@@ -1,0 +1,26 @@
+# Python / Jupyter caches
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local virtual environments (e.g. experiments/04_atlanta_birmingham/cleaning/.venv)
+.venv/
+venv/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+
+# Large raw source and regenerable arrays (each is 0.1-1.7 GB; too big for git).
+# Remove these lines if you track data with Git LFS instead.
+*.h5
+*.npy
+experiments/05_las_vegas_phoenix/processed_feature_candidates_cross_city_v1/*.csv
+
+# TensorBoard event files
+events.out.tfevents.*
+
+# Old Jupyter autosaves moved out of the working tree during the reorganisation
+archive/ipynb_checkpoints/

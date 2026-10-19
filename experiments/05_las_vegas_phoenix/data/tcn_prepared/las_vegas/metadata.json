@@ -1,0 +1,64 @@
+{
+  "city": "las_vegas",
+  "target": "hourly_load_mw",
+  "forecast_horizon_hours": 1,
+  "lookback_hours": 168,
+  "feature_columns": [
+    "temperature_c",
+    "dew_point_c",
+    "relative_humidity_percent",
+    "station_pressure_kpa",
+    "wind_speed_ms",
+    "horizontal_visibility_km",
+    "ceiling_height_m",
+    "precipitable_water_mm",
+    "hourly_precipitation_cm",
+    "total_sky_cover_tenths",
+    "opaque_sky_cover_tenths",
+    "extraterrestrial_horizontal_radiation_wh_m2",
+    "extraterrestrial_direct_normal_radiation_wh_m2",
+    "wind_dir_sin",
+    "wind_dir_cos",
+    "cooling_degree_c",
+    "heating_degree_c",
+    "temp_x_humidity",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "month_sin",
+    "month_cos",
+    "is_weekend",
+    "is_holiday",
+    "load_lag_0h",
+    "load_lag_1h",
+    "load_lag_24h",
+    "load_lag_168h",
+    "load_roll_mean_24h",
+    "load_roll_std_24h",
+    "load_roll_mean_168h"
+  ],
+  "raw_rows": 70128,
+  "splits": {
+    "train": {
+      "target_start": "2016-01-01 00:00:00",
+      "target_end": "2021-08-07 08:00:00",
+      "samples": 48753
+    },
+    "validation": {
+      "target_start": "2021-08-07 09:00:00",
+      "target_end": "2022-10-19 15:00:00",
+      "samples": 10519
+    },
+    "test": {
+      "target_start": "2022-10-19 16:00:00",
+      "target_end": "2023-12-31 23:00:00",
+      "samples": 10520
+    }
+  },
+  "feature_scaler_fit_rows": 48921,
+  "source_files": {
+    "energy": "D:\\Downloads\\BTP\\model_training\\lstm_training_3\\data\\las_vegas_hourly_energy.csv",
+    "weather": "D:\\Downloads\\BTP\\model_training\\lstm_training_3\\data\\las_vegas_hourly_weather_2016_2023.csv"
+  }
+}

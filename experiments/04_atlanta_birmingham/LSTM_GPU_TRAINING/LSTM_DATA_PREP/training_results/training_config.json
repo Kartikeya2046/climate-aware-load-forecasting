@@ -1,0 +1,43 @@
+{
+  "seed": 42,
+  "lookback_hours": 168,
+  "horizon_hours": 1,
+  "batch_size": 64,
+  "max_epochs": 100,
+  "architecture": [
+    "LSTM(64, return_sequences=True, L2=1e-4)",
+    "Dropout(0.25)",
+    "LSTM(32, return_sequences=False, L2=1e-4)",
+    "Dropout(0.25)",
+    "Dense(16, ReLU, L2=1e-4)",
+    "Dense(1, Linear)"
+  ],
+  "optimizer": "Adam",
+  "learning_rate": 0.001,
+  "loss": "Huber(delta=1.0)",
+  "dropout": 0.25,
+  "l2": 0.0001,
+  "early_stopping": {
+    "monitor": "val_loss",
+    "patience": 10,
+    "restore_best_weights": true
+  },
+  "reduce_lr": {
+    "monitor": "val_loss",
+    "factor": 0.5,
+    "patience": 4,
+    "min_lr": 1e-06
+  },
+  "split": {
+    "train": "2016\u20132021",
+    "validation": "2022",
+    "test": "2023"
+  },
+  "models": {
+    "Baseline_0": "historical hour \u00d7 weekday mean, training period only",
+    "Model_A": 31,
+    "Model_B": 43,
+    "Model_C": 44,
+    "Model_D": 51
+  }
+}

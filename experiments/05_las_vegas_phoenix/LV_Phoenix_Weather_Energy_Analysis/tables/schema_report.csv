@@ -1,0 +1,5 @@
+city,dataset,rows,columns,timestamp_column,energy_column
+Las Vegas,energy,70128,2,timestamp,hourly_load_mw
+Las Vegas,weather,70080,25,timestamp,
+Phoenix,energy,70128,2,timestamp,hourly_load_mw
+Phoenix,weather,70080,25,timestamp,

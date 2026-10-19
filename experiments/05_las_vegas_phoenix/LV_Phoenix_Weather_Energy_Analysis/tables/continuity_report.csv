@@ -1,0 +1,3 @@
+city,rows,start,end,duplicate_timestamps,hourly_transitions,unexpected_transitions,largest_gap_hours
+Las Vegas,70080,2016-01-01,2023-12-31 23:00:00,0,70077,2,25.0
+Phoenix,70080,2016-01-01,2023-12-31 23:00:00,0,70077,2,25.0

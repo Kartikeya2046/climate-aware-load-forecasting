@@ -1,0 +1,32 @@
+Variable,Type,Pearson_r,Spearman_r
+bar  ×  out_temp,Interaction,0.5839,0.5872
+density_in_air  ×  out_temp,Interaction,0.586,0.5842
+out_temp,Individual,0.5817,0.5836
+out_temp  ×  tx_wind,Interaction,0.5817,0.5836
+index_thsw  ×  out_temp,Interaction,0.5733,0.5738
+index_thsw  ×  density_in_air,Interaction,0.5664,0.563
+bar  ×  index_thsw,Interaction,0.566,0.5627
+index_thsw  ×  tx_wind,Interaction,0.5648,0.5603
+index_thsw,Individual,0.5648,0.5603
+index_thsw  ×  emc_in,Interaction,0.5294,0.5398
+emc_in  ×  out_temp,Interaction,0.4861,0.5236
+temp_in  ×  hum_out,Interaction,-0.459,-0.4994
+hum_out,Individual,-0.4238,-0.4601
+speed_hi,Individual,0.327,0.3651
+pt_dew,Individual,0.4007,0.352
+index_uv,Individual,0.3715,0.3496
+dose_uv,Individual,0.2302,0.3116
+speed_wind,Individual,0.2953,0.2785
+density_in_air,Individual,0.3263,0.2436
+temp_hi,Individual,-0.0514,0.2113
+hum_in,Individual,-0.1659,-0.205
+temp_in,Individual,-0.2774,-0.1925
+bar,Individual,-0.2093,-0.1658
+temp_low,Individual,-0.1787,-0.1463
+run_wind,Individual,0.1274,0.1402
+dew_in,Individual,0.1038,0.118
+emc_in,Individual,0.099,0.1175
+rain,Individual,0.033,0.0508
+rate_rain,Individual,0.0314,0.0504
+dd_heat,Individual,,
+tx_wind,Individual,,

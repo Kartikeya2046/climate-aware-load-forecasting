@@ -1,0 +1,3 @@
+city,energy_column,rows,energy_missing_pct,energy_mean,energy_std,start,end
+Atlanta,hourly_load_mw,70080,0.0,1571.0310447441027,326.7680305137633,2016-01-01,2023-12-31 23:00:00
+Birmingham,hourly_load_mw,70080,0.0,1321.8843000696302,275.064883098707,2016-01-01,2023-12-31 23:00:00

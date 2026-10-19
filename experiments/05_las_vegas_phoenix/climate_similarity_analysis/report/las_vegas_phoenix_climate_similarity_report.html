@@ -1,0 +1,203 @@
+<html><head><meta charset='utf-8'><title>Las Vegas vs Phoenix Climate Similarity</title><style>body{font-family:Arial,sans-serif;max-width:1100px;margin:40px auto;line-height:1.5}table{border-collapse:collapse;width:100%}th,td{border:1px solid #ccc;padding:6px}th{background:#eee}code{background:#f4f4f4;padding:2px 4px}</style></head><body><h1>Las Vegas vs Phoenix Climate Similarity Report</h1>
+<h2>Executive conclusion</h2>
+<p>Las Vegas and Phoenix were evaluated using a <strong>data-driven meteorological similarity procedure</strong> based on their observed 2016–2023 weather data. The city pair was not selected solely from general geographic or climatological assumptions.</p>
+<p>The final climate similarity score was <strong>55.12/100</strong>, giving the pair a classification of <strong>Moderately similar</strong> under the project's predefined scoring thresholds.</p>
+<p>The purpose of this analysis is to establish whether the two cities represent sufficiently similar climatic regimes to serve as a controlled pair for evaluating cross-city LSTM generalization.</p>
+<h2>1. Data used</h2>
+<h3>Las Vegas</h3>
+<ul>
+<li>Weather: <code>D:\Downloads\BTP\model_training\lstm_training_3\las_vegas_hourly_weather_2016_2023.csv</code></li>
+<li>Energy: <code>D:\Downloads\BTP\model_training\lstm_training_3\las_vegas_hourly_energy.csv</code></li>
+</ul>
+<h3>Phoenix</h3>
+<ul>
+<li>Weather: <code>D:\Downloads\BTP\model_training\lstm_training_3\phoenix_hourly_weather_2016_2023.csv</code></li>
+<li>Energy: <code>D:\Downloads\BTP\model_training\lstm_training_3\phoenix_hourly_energy.csv</code></li>
+</ul>
+<p>The climate similarity score uses <strong>weather only</strong>. Energy is kept as the downstream prediction target and is not used to select the city pair.</p>
+<h2>2. Preprocessing</h2>
+<ol>
+<li>CSV schemas were inspected.</li>
+<li>Timestamp columns were detected and converted to datetime.</li>
+<li>Duplicate timestamps were removed after sorting.</li>
+<li>Weather observations were restricted to the requested 2016–2023 period.</li>
+<li>Only meteorological variables available in both cities were used.</li>
+<li>The comparison was restricted to the common overlapping date window:
+   <strong>2016-01-01 00:00:00 to 2023-12-31 23:00:00</strong>.</li>
+<li>Variables were standardized where necessary before multivariate comparison.</li>
+</ol>
+<h2>3. Common meteorological variables</h2>
+<p>temperature, dew_point, relative_humidity, pressure, wind_speed, wind_direction, visibility, precipitation</p>
+<h2>4. Statistical evidence</h2>
+<h3>Variable-level comparison</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">feature</th>
+<th style="text-align: right;">LV_mean</th>
+<th style="text-align: right;">Phoenix_mean</th>
+<th style="text-align: right;">standardized_mean_difference</th>
+<th style="text-align: right;">wasserstein_distance</th>
+<th style="text-align: right;">normalized_wasserstein</th>
+<th style="text-align: right;">KS_statistic</th>
+<th style="text-align: right;">KS_p_value</th>
+<th style="text-align: right;">variable_similarity_score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">temperature</td>
+<td style="text-align: right;">19.849</td>
+<td style="text-align: right;">23.8525</td>
+<td style="text-align: right;">0.392317</td>
+<td style="text-align: right;">4.00353</td>
+<td style="text-align: right;">0.392317</td>
+<td style="text-align: right;">0.141781</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">73.64</td>
+</tr>
+<tr>
+<td style="text-align: left;">dew_point</td>
+<td style="text-align: right;">-0.509473</td>
+<td style="text-align: right;">5.28287</td>
+<td style="text-align: right;">0.78002</td>
+<td style="text-align: right;">5.79234</td>
+<td style="text-align: right;">0.78002</td>
+<td style="text-align: right;">0.316396</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">53.3466</td>
+</tr>
+<tr>
+<td style="text-align: left;">relative_humidity</td>
+<td style="text-align: right;">31.1109</td>
+<td style="text-align: right;">35.8288</td>
+<td style="text-align: right;">0.237098</td>
+<td style="text-align: right;">4.72286</td>
+<td style="text-align: right;">0.237347</td>
+<td style="text-align: right;">0.11534</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">82.0764</td>
+</tr>
+<tr>
+<td style="text-align: left;">pressure</td>
+<td style="text-align: right;">93.7795</td>
+<td style="text-align: right;">97.3872</td>
+<td style="text-align: right;">7.01707</td>
+<td style="text-align: right;">3.60767</td>
+<td style="text-align: right;">7.01707</td>
+<td style="text-align: right;">0.999615</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.0726058</td>
+</tr>
+<tr>
+<td style="text-align: left;">wind_speed</td>
+<td style="text-align: right;">197.205</td>
+<td style="text-align: right;">152.435</td>
+<td style="text-align: right;">0.455478</td>
+<td style="text-align: right;">44.7697</td>
+<td style="text-align: right;">0.455478</td>
+<td style="text-align: right;">0.302754</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">65.5179</td>
+</tr>
+<tr>
+<td style="text-align: left;">wind_direction</td>
+<td style="text-align: right;">197.205</td>
+<td style="text-align: right;">152.435</td>
+<td style="text-align: right;">0.455478</td>
+<td style="text-align: right;">44.7697</td>
+<td style="text-align: right;">0.455478</td>
+<td style="text-align: right;">0.302754</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">65.5179</td>
+</tr>
+<tr>
+<td style="text-align: left;">visibility</td>
+<td style="text-align: right;">62.9209</td>
+<td style="text-align: right;">58.3567</td>
+<td style="text-align: right;">0.14456</td>
+<td style="text-align: right;">26.9753</td>
+<td style="text-align: right;">0.854379</td>
+<td style="text-align: right;">0.417038</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">62.4637</td>
+</tr>
+<tr>
+<td style="text-align: left;">precipitation</td>
+<td style="text-align: right;">11.5588</td>
+<td style="text-align: right;">13.8824</td>
+<td style="text-align: right;">0.343534</td>
+<td style="text-align: right;">2.44011</td>
+<td style="text-align: right;">0.360766</td>
+<td style="text-align: right;">0.162143</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">74.8086</td>
+</tr>
+</tbody>
+</table>
+<h3>Overall score components</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">component</th>
+<th style="text-align: right;">score_0_to_100</th>
+<th style="text-align: right;">weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Distribution similarity</td>
+<td style="text-align: right;">59.6805</td>
+<td style="text-align: right;">0.6</td>
+</tr>
+<tr>
+<td style="text-align: left;">Correlation structure similarity</td>
+<td style="text-align: right;">85.7867</td>
+<td style="text-align: right;">0.2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Multivariate climate similarity</td>
+<td style="text-align: right;">10.7813</td>
+<td style="text-align: right;">0.2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Overall climate similarity</td>
+<td style="text-align: right;">55.1219</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+<h2>5. Interpretation</h2>
+<p>The variable-level analysis examines both central tendency and distributional shape. Standardized mean difference controls for measurement scale, while Wasserstein distance and the KS statistic provide distribution-level comparisons.</p>
+<p>The correlation analysis additionally evaluates whether relationships among meteorological variables are similar between the cities.</p>
+<p>The standardized multivariate distance provides a single geometry-based comparison in the common weather feature space.</p>
+<h2>6. Main findings</h2>
+<ol>
+<li>The analysis used 8 common meteorological variables: temperature, dew_point, relative_humidity, pressure, wind_speed, wind_direction, visibility, precipitation.</li>
+<li>The comparison used the common observed weather period from 2016-01-01 to 2023-12-31, after timestamp normalization and duplicate removal.</li>
+<li>The mean variable-level distribution similarity was 59.68/100.</li>
+<li>The weather correlation-structure similarity was 85.79/100.</li>
+<li>The standardized multivariate climate distance was 2.2274, corresponding to a multivariate similarity score of 10.78/100.</li>
+<li>The final weighted climate similarity score was 55.12/100, classified as 'Moderately similar' using the predefined project thresholds.</li>
+<li>The most similar weather variable by the combined variable score was relative_humidity (82.08/100).</li>
+<li>The least similar weather variable by the combined variable score was pressure (0.07/100).</li>
+</ol>
+<h2>7. Why this supports the LSTM city-pair experiment</h2>
+<p>The intended model experiment is not simply to predict energy independently in two arbitrary cities. It is to investigate whether meteorological patterns learned in one city can generalize to another city with a similar climatic regime.</p>
+<p>Therefore, the workflow is:</p>
+<p><strong>Weather data → climate similarity analysis → city-pair selection → LSTM training → cross-city evaluation</strong></p>
+<p>This makes Las Vegas and Phoenix a data-supported test case for model transfer/generalization, provided that the final score and supporting plots show sufficient similarity.</p>
+<h2>8. Professor-ready explanation</h2>
+<blockquote>
+<p>We did not select Las Vegas and Phoenix arbitrarily. We first identified common meteorological variables in the two datasets and restricted the analysis to their overlapping 2016–2023 period. We compared their descriptive statistics, empirical weather distributions, and correlation structures. We then standardized the weather variables and calculated a multivariate climate distance. These independent measures were combined into a transparent similarity score. The resulting score was 55.12/100, classified as Moderately similar under our predefined thresholds. Therefore, the city pair was selected based on similarity in the observed meteorological feature space, and we then use the pair to test whether an LSTM trained on one city can generalize to another city under a comparable climate regime.</p>
+</blockquote>
+<h2>9. Important limitation</h2>
+<p>This analysis establishes <strong>similarity under the selected meteorological variables and the available 2016–2023 data</strong>. It does not claim that the two cities are identical climates in every climatological sense.</p>
+<p>Similarity also does not guarantee identical electricity-demand behavior. Differences in population, building stock, utility infrastructure, socioeconomic activity, air-conditioning penetration, and local energy practices can cause different load responses even when weather is similar. Those factors are part of the reason cross-city model evaluation is meaningful.</p>
+<h2>10. Output files</h2>
+<p>All generated tables are stored in:</p>
+<p><code>D:\Downloads\BTP\model_training\lstm_training_3\climate_similarity_analysis\tables</code></p>
+<p>All generated figures are stored in:</p>
+<p><code>D:\Downloads\BTP\model_training\lstm_training_3\climate_similarity_analysis\plots</code></p>
+<p>This report is stored in:</p>
+<p><code>D:\Downloads\BTP\model_training\lstm_training_3\climate_similarity_analysis\report</code></p></body></html>

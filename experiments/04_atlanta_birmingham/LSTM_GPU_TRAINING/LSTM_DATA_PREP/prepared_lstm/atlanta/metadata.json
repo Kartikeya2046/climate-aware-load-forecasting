@@ -1,0 +1,74 @@
+{
+  "city": "Atlanta",
+  "feature_names": [
+    "extraterrestrial_horizontal_radiation_wh_m2",
+    "extraterrestrial_direct_normal_radiation_wh_m2",
+    "total_sky_cover_tenths",
+    "opaque_sky_cover_tenths",
+    "temperature_c",
+    "relative_humidity_percent",
+    "station_pressure_kpa",
+    "wind_speed_ms",
+    "horizontal_visibility_km",
+    "ceiling_height_m",
+    "precipitable_water_mm",
+    "broadband_aerosol_optical_depth",
+    "snow_depth_cm",
+    "days_since_last_snowfall",
+    "hourly_precipitation_cm",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "doy_sin",
+    "doy_cos",
+    "is_weekend",
+    "time_index",
+    "temperature_squared",
+    "cooling_degree_24",
+    "heating_degree_18",
+    "temp_humidity_interaction",
+    "wind_dir_sin",
+    "wind_dir_cos",
+    "load_lag_1h",
+    "load_lag_2h",
+    "load_lag_3h",
+    "load_lag_24h",
+    "load_lag_48h",
+    "load_lag_168h",
+    "load_roll_mean_3h",
+    "load_roll_std_3h",
+    "load_roll_mean_24h",
+    "load_roll_std_24h",
+    "load_roll_mean_168h",
+    "load_roll_std_168h",
+    "temperature_c_lag_1h",
+    "temperature_c_roll_mean_24h",
+    "wind_speed_ms_lag_1h",
+    "wind_speed_ms_roll_mean_24h"
+  ],
+  "n_features": 45,
+  "horizon_hours": 1,
+  "lookback_hours": 168,
+  "validation_start": "2022-01-01 00:00:00",
+  "test_start": "2023-01-01 00:00:00",
+  "row_counts": {
+    "train": 52391,
+    "validation": 8760,
+    "test": 8760
+  },
+  "target_ranges": {
+    "test": [
+      "2023-01-01 00:00:00",
+      "2023-12-31 23:00:00"
+    ],
+    "train": [
+      "2016-01-08 01:00:00",
+      "2021-12-31 23:00:00"
+    ],
+    "validation": [
+      "2022-01-01 00:00:00",
+      "2022-12-31 23:00:00"
+    ]
+  }
+}

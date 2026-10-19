@@ -1,0 +1,69 @@
+atlanta X Birmingham
+
+| component                        | score_0_to_100 | weight |
+| :------------------------------- | -------------: | -----: |
+| Distribution similarity          |        69.5781 |    0.6 |
+| Correlation structure similarity |        89.6078 |    0.2 |
+| Multivariate climate similarity  |        14.1108 |    0.2 |
+| Overall climate similarity       |        62.4906 |      1 |
+
+temperature mean:
+
+| Atlanta = 16.7739
+| Birmingham = 16.7063
+diff = 0.0676
+
+temp std dev:
+Atlanta     = 9.046
+Birmingham  = 9.400
+
+SMD = (mean of a - mean of b) / root((variance of a + variance of b) / 2)
+Smaller = more similar
+
+Wasserstein distance:
+How much would I have to "move" the Atlanta distribution to turn it into the Birmingham distribution?
+Smaller = more similar
+
+most similar variables : temperature, dew_point, humidity, precipitation (used in our model training + additional lag features)
+problematic variables which have significant difference : windspeed, wind direction, pressure (not used in our model training)
+
+
+temperature
+
+| metric | score |
+| :--- | ---: |
+| SMD | 0.00732788 |
+| normalized_Wasserstein | 0.0280626 |
+| SMD_similarity | 99.2699 |
+| Wasserstein_similarity | 97.2328 |
+| variable_similarity_score | 98.399 |
+
+dew_point
+
+| metric | score |
+| :--- | ---: |
+| SMD | 0.0853031 |
+| normalized_Wasserstein | 0.0855556 |
+| SMD_similarity | 91.8234 |
+| Wasserstein_similarity | 91.8002 |
+| variable_similarity_score | 93.1823 |
+
+humidity
+
+| metric | score |
+| :--- | ---: |
+| SMD | 0.190431 |
+| normalized_Wasserstein | 0.190434 |
+| SMD_similarity | 82.6602 |
+| Wasserstein_similarity | 82.66 |
+| variable_similarity_score | 85.101 |
+
+precipitation
+
+| metric | score |
+| :--- | ---: |
+| SMD | 0.0129302 |
+| normalized_Wasserstein | 0.0956147 |
+| SMD_similarity | 98.7153 |
+| Wasserstein_similarity | 90.8814 |
+| variable_similarity_score | 94.701 |

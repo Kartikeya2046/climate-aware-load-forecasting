@@ -1,0 +1,3 @@
+city,model,split,number_of_features,feature_list,training_epochs,best_validation_loss,deviation_mae,deviation_rmse,deviation_r2,final_energy_mae,final_energy_rmse,final_energy_r2
+Las Vegas,Model_1,validation,5,temperature_c | dew_point_c | station_pressure_kpa | wind_speed_ms | wind_direction_deg,11,1.7319672107696533,330.44113753161287,485.8711666510791,-0.09218138136147047,330.44113753161287,485.8711666510791,0.6944217080256782
+Las Vegas,Model_1,test,5,temperature_c | dew_point_c | station_pressure_kpa | wind_speed_ms | wind_direction_deg,11,1.7319672107696533,323.38893038958963,425.71296779117864,-0.07299082430889792,323.38893038958963,425.71296779117864,0.6658540850455379

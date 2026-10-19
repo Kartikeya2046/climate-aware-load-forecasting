@@ -1,0 +1,18 @@
+{
+  "city": "Phoenix",
+  "model": "Model_1",
+  "features": [
+    "temperature_c",
+    "dew_point_c",
+    "station_pressure_kpa",
+    "wind_speed_ms",
+    "wind_direction_deg"
+  ],
+  "feature_count": 5,
+  "target": "energy_deviation",
+  "sequence_length": 24,
+  "batch_size": 64,
+  "baseline_source": "saved city-specific energy_baseline from preprocessing",
+  "epochs_run": 11,
+  "best_validation_loss": 1.3816689252853394
+}

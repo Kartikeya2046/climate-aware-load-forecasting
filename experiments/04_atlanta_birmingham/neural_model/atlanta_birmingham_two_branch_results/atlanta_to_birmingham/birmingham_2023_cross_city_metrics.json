@@ -1,0 +1,8 @@
+{
+  "experiment": "Atlanta weather-residual TCN to Birmingham 2023",
+  "MAE_MW": 12.595627591259596,
+  "RMSE_MW": 17.176520480976457,
+  "MAPE_percent": 1.0116967075926495,
+  "R2": 0.9954789509107697,
+  "test_samples": 8760
+}

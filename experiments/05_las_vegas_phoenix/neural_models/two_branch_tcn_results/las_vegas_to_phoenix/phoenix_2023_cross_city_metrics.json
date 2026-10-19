@@ -1,0 +1,8 @@
+{
+  "experiment": "Las Vegas weather residual TCN -> Phoenix 2023",
+  "MAE_MW": 119.50098257407467,
+  "RMSE_MW": 168.62786104332255,
+  "MAPE_percent": 1.897291265879563,
+  "R2": 0.9924750040073155,
+  "test_samples": 8760
+}
