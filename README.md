@@ -274,5 +274,3 @@ in [`dashboard/README.md`](dashboard/README.md).
 <sub>Figures are generated from the real models, evidence file and recorded data by
 <code>python docs/make_figures.py</code>. Dashboard screenshots show the bundled synthetic
 "Kirk land" test city.</sub>
-#   c l i m a t e - a w a r e - l o a d - f o r e c a s t i n g  
- 
