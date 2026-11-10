@@ -18,6 +18,25 @@ python -m core.evidence --weights-study  # optional: re-evaluate the fitness wei
 Run `streamlit` from inside `dashboard/` so that `dashboard/.streamlit/config.toml` (light theme,
 25 MB upload limit) is picked up. No GPU or retraining is needed.
 
+## Web app (React)
+
+`web/` is a second frontend over the same `core/` service: a dark, glass-styled React app
+(Vite, Tailwind 4, Motion, ECharts). `api.py` is its FastAPI layer; it only parses requests,
+calls the service functions the Streamlit app calls, and serialises their results.
+
+```bash
+cd dashboard
+python -m uvicorn api:app --port 8000     # API; also serves web/dist if it has been built
+cd web && npm install && npm run build    # once, then open http://localhost:8000
+npm run dev                               # or: hot-reloading dev server on http://localhost:5173
+python -m pytest tests/test_api.py -q     # one end-to-end API test, real models
+```
+
+Pages: Overview, Workspace, Model selection, Analytics, Climate, Data and report, Research.
+It adds one input source the Streamlit app lacks, "Recorded data", which feeds the city's
+recorded weather through the same CSV validation path as an upload. State is in memory and
+single-user, like the Streamlit app.
+
 ## Architecture
 
 ```

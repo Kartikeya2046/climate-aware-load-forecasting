@@ -24,3 +24,7 @@ events.out.tfevents.*
 
 # Old Jupyter autosaves moved out of the working tree during the reorganisation
 archive/ipynb_checkpoints/
+
+# Web frontend (dashboard/web)
+node_modules/
+dashboard/web/dist/

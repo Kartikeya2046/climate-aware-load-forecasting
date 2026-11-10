@@ -1,0 +1,217 @@
+@import 'tailwindcss';
+
+/* Design tokens.
+   The palette encodes the research equation E = E_baseline + ΔE_weather:
+   amber is electricity (predicted load), slate is the calendar baseline, ice/coral is weather pulling load down/up.
+   Chart marks (--mark-*) are the validated dark steps; brighter tints are for UI light only. */
+@theme {
+  --color-night: #070b11;
+  --color-deep: #0d131c;
+  --color-ink: #e8edf4;
+  --color-ink-2: #a3afc0;
+  --color-ink-3: #6b788d;
+  --color-line: rgb(190 210 255 / 0.1);
+  --color-line-2: rgb(190 210 255 / 0.18);
+  --color-amber: #c98500;
+  --color-amber-hi: #f2b24a;
+  --color-ice: #3987e5;
+  --color-ice-hi: #7db6f5;
+  --color-coral: #e66767;
+  --color-aqua: #199e70;
+  --color-slate: #8a97ad;
+  --color-good: #2bb673;
+  --color-warn: #fab219;
+  --color-bad: #e66767;
+  --font-sans: 'Geist Variable', system-ui, sans-serif;
+  --font-display: 'Newsreader Variable', Georgia, serif;
+  --radius-panel: 22px;
+  --radius-well: 14px;
+}
+
+html {
+  background: var(--color-night);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  scrollbar-color: rgb(190 210 255 / 0.18) transparent;
+}
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+::selection {
+  background: rgb(242 178 74 / 0.3);
+}
+:focus-visible {
+  outline: 2px solid var(--color-amber-hi);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+h1, h2, h3 {
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+.display {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  font-weight: 350;
+  letter-spacing: -0.02em;
+  font-feature-settings: 'lnum';
+}
+.num {
+  font-variant-numeric: tabular-nums;
+}
+
+@layer components {
+/* ---- surfaces: three levels, each with a job ----
+   .glass   primary panels: translucent, blurred, top-lit
+   .liquid  the one hero surface per page: deeper refraction, specular rim, pointer-following light
+   .well    recessed areas inside panels: no blur, just a hairline */
+.glass {
+  position: relative;
+  border-radius: var(--radius-panel);
+  background: linear-gradient(180deg, rgb(150 178 230 / 0.07), rgb(150 178 230 / 0.025)), rgb(10 15 23 / 0.66);
+  border: 1px solid var(--color-line);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.06), 0 30px 60px -40px rgb(0 0 0 / 0.8);
+  backdrop-filter: blur(22px) saturate(150%);
+}
+.liquid {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgb(160 190 240 / 0.11), rgb(160 190 240 / 0.02) 45%, rgb(242 178 74 / 0.05)), rgb(9 14 22 / 0.55);
+  border: 1px solid rgb(200 220 255 / 0.14);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.14), inset 0 -1px 0 rgb(255 255 255 / 0.03), inset 0 0 40px rgb(140 175 235 / 0.05),
+    0 40px 80px -45px rgb(0 0 0 / 0.9);
+  backdrop-filter: blur(34px) saturate(170%);
+}
+.liquid::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(520px circle at var(--mx, 70%) var(--my, 0%), rgb(242 178 74 / 0.1), transparent 62%);
+  transition: opacity 0.4s;
+  pointer-events: none;
+}
+.well {
+  border-radius: var(--radius-well);
+  background: rgb(255 255 255 / 0.028);
+  border: 1px solid rgb(190 210 255 / 0.07);
+}
+
+/* ---- form controls ---- */
+.field {
+  width: 100%;
+  height: 40px;
+  padding: 0 12px;
+  border-radius: 10px;
+  background: rgb(255 255 255 / 0.04);
+  border: 1px solid var(--color-line);
+  color: var(--color-ink);
+  font: inherit;
+  font-variant-numeric: tabular-nums;
+  color-scheme: dark;
+  transition: border-color 0.15s, background 0.15s;
+}
+.field:hover {
+  border-color: var(--color-line-2);
+}
+.field:focus {
+  outline: none;
+  border-color: rgb(242 178 74 / 0.7);
+  background: rgb(255 255 255 / 0.06);
+}
+select.field {
+  appearance: none;
+  padding-right: 28px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%23a3afc0' stroke-width='1.5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+select.field option {
+  background: #0d131c;
+}
+.lbl {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: var(--color-ink-2);
+}
+
+/* ---- tables ---- */
+table.data {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+}
+table.data th {
+  text-align: left;
+  font-weight: 500;
+  color: var(--color-ink-3);
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--color-line);
+  white-space: nowrap;
+}
+table.data td {
+  padding: 9px 12px;
+  border-bottom: 1px solid rgb(190 210 255 / 0.05);
+  vertical-align: top;
+  color: var(--color-ink-2);
+}
+table.data tr:last-child td {
+  border-bottom: 0;
+}
+table.data td.strong {
+  color: var(--color-ink);
+}
+table.data td.r, table.data th.r {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+} /* end @layer components */
+
+/* run loader: a load curve being traced */
+@keyframes trace {
+  to {
+    stroke-dashoffset: -220;
+  }
+}
+.trace {
+  stroke-dasharray: 60 160;
+  animation: trace 1.6s linear infinite;
+}
+@keyframes grow {
+  from {
+    width: 0;
+  }
+}
+.grow {
+  animation: grow 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+.rise {
+  animation: rise 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* grid and flex children may shrink below their content, so wide tables and charts scroll inside their panel instead of widening the page */
+main .grid > *,
+main .flex > * {
+  min-width: 0;
+}
