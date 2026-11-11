@@ -7,6 +7,7 @@ Streamlit app calls, and serialises what they return. No model, validation or sc
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import math
 import sys
@@ -34,17 +35,19 @@ from core.service import MAX_HISTORY, aggregate, prepare_inputs, run_analog, run
 from core.validation import manual_frame, process, propose_mapping, read_csv, suggest_unit
 
 app = FastAPI(title="Energy Intelligence API")
-LOCK = threading.Lock()  # ponytail: one global lock, single-user tool; per-session state if it is ever shared
+LOCK = threading.Lock()  # ponytail: one global lock serialises inference (5-10 s each); a worker queue if traffic ever needs it
+# In-memory stores shared by all visitors, addressed only by unguessable ids that each browser keeps for itself.
+# ponytail: oldest entries are evicted at these caps and everything is lost on restart; a database if results must persist.
 UPLOADS: dict[str, dict] = {}
 PENDING: dict[str, dict] = {}
 RESULTS: dict[str, dict] = {}
-KEEP = 6
+KEEP = {id(UPLOADS): 8, id(PENDING): 16, id(RESULTS): 32}
 DEFAULT_START = {"dayton": "2015-07-06", "pittsburgh": "2015-07-06"}
 
 
 def remember(store: dict, key: str, value: dict) -> None:
     store[key] = value
-    while len(store) > KEEP:
+    while len(store) > KEEP[id(store)]:
         store.pop(next(iter(store)))
 
 
@@ -125,7 +128,6 @@ def meta():
         "evidence": {k: ev.get(k) for k in ("generated_utc", "models", "benchmarks", "research_reported")},
         "weights_study": json.loads(WEIGHTS_STUDY_PATH.read_text()) if WEIGHTS_STUDY_PATH.exists() else None,
         "limitations": LIMITATIONS, "artifacts": discovered_artifacts(),
-        "last_result": next(reversed(RESULTS), None),
     })
 
 
@@ -183,7 +185,7 @@ async def upload(request: Request, filename: str):
     if len(data) > (config()["validation"]["max_upload_mb"] + 1) * 1024 * 1024:
         raise HTTPException(413, "File too large.")
     ing = read_csv(data, filename)
-    uid = f"u{len(data)}_{abs(hash(data)) % 10 ** 10}"
+    uid = "u" + hashlib.sha256(data).hexdigest()[:20]
     remember(UPLOADS, uid, {"name": filename, "bytes": data, "ingested": ing})
     return ok(describe_upload(uid))
 
@@ -398,13 +400,6 @@ def climate_space():
         z[a][b] = z[b][a] = round(v["overall"], 1)
     return ok({"points": {c: pts[pts.city == c][["PC1", "PC2"]].iloc[::5].round(3).to_numpy() for c in ids},
                "explained": pca.explained_variance_ratio_, "cities": ids, "matrix": z})
-
-
-@app.post("/api/reset")
-def reset():
-    for s in (UPLOADS, PENDING, RESULTS):
-        s.clear()
-    return ok({"ok": True})
 
 
 DIST = DASHBOARD_DIR / "web" / "dist"

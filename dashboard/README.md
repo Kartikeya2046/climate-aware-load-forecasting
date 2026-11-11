@@ -32,10 +32,22 @@ npm run dev                               # or: hot-reloading dev server on http
 python -m pytest tests/test_api.py -q     # one end-to-end API test, real models
 ```
 
+Container (what the online deployment runs), from the repository root:
+
+```bash
+docker build -t energy-intelligence .
+docker run --rm -p 7860:7860 energy-intelligence     # http://localhost:7860
+```
+
+The image holds the server, the built frontend and only the files the server reads
+(`.dockerignore` lists them; `requirements-api.txt` pins the runtime packages). It needs about
+600 MB of memory. `.github/workflows/docker.yml` publishes it to ghcr.io on every push to `main`,
+and `deploy/huggingface/` holds the two files a Hugging Face Docker Space needs to run it.
+
 Pages: Overview, Workspace, Model selection, Analytics, Climate, Data and report, Research.
 It adds one input source the Streamlit app lacks, "Recorded data", which feeds the city's
-recorded weather through the same CSV validation path as an upload. State is in memory and
-single-user, like the Streamlit app.
+recorded weather through the same CSV validation path as an upload. Results are held in the
+server's memory under unguessable ids that each browser keeps for itself; they are lost on restart.
 
 ## Architecture
 

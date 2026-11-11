@@ -1,0 +1,47 @@
+# Keep the image small: only what the server reads at runtime goes into the build context.
+.git
+archive
+docs
+**/node_modules
+**/dist
+**/__pycache__
+**/.pytest_cache
+dashboard/samples/report_*.html
+
+# experiments/ holds the research (notebooks, raw data, figures). The server needs only the registered
+# models with their scalers, the six cities' data, and the .keras files it lists on the Research page.
+# Regenerate this list if config.toml or core/data.py changes (the image's API test fails if a file is missing).
+experiments/**
+!experiments/**/*.keras
+!experiments/03_dayton_duquesne/data/processed/FINAL_MERGED_DAY_LOAD_2006_2016.csv
+!experiments/03_dayton_duquesne/data/processed/FINAL_MERGED_DUQ_LOAD_2006_2016.csv
+!experiments/03_dayton_duquesne/data/processed/weather_DAY_2006-2016.csv
+!experiments/03_dayton_duquesne/data/processed/weather_DUQ_2006-2016.csv
+!experiments/03_dayton_duquesne/models/day_lstm_model.keras
+!experiments/03_dayton_duquesne/models/day_scaler.pkl
+!experiments/04_atlanta_birmingham/LSTM_GPU_TRAINING/LSTM_DATA_PREP/data/atlanta_master.csv
+!experiments/04_atlanta_birmingham/LSTM_GPU_TRAINING/LSTM_DATA_PREP/data/birmingham_master.csv
+!experiments/04_atlanta_birmingham/neural_model/atlanta_birmingham_two_branch_results/atlanta/baseline_feature_scaler.joblib
+!experiments/04_atlanta_birmingham/neural_model/atlanta_birmingham_two_branch_results/atlanta/baseline_mlp.keras
+!experiments/04_atlanta_birmingham/neural_model/atlanta_birmingham_two_branch_results/atlanta/baseline_target_scaler.joblib
+!experiments/04_atlanta_birmingham/neural_model/atlanta_birmingham_two_branch_results/atlanta_to_birmingham/atlanta_feature_scaler.joblib
+!experiments/04_atlanta_birmingham/neural_model/atlanta_birmingham_two_branch_results/atlanta_to_birmingham/atlanta_residual_scaler.joblib
+!experiments/04_atlanta_birmingham/neural_model/atlanta_birmingham_two_branch_results/atlanta_to_birmingham/best_atlanta_weather_tcn.keras
+!experiments/04_atlanta_birmingham/neural_model/atlanta_birmingham_two_branch_results/atlanta_to_birmingham/experiment_config.json
+!experiments/04_atlanta_birmingham/neural_model/atlanta_birmingham_two_branch_results/birmingham/baseline_feature_scaler.joblib
+!experiments/04_atlanta_birmingham/neural_model/atlanta_birmingham_two_branch_results/birmingham/baseline_mlp.keras
+!experiments/04_atlanta_birmingham/neural_model/atlanta_birmingham_two_branch_results/birmingham/baseline_target_scaler.joblib
+!experiments/05_las_vegas_phoenix/data/las_vegas_hourly_energy.csv
+!experiments/05_las_vegas_phoenix/data/las_vegas_hourly_weather_2016_2023.csv
+!experiments/05_las_vegas_phoenix/data/phoenix_hourly_energy.csv
+!experiments/05_las_vegas_phoenix/data/phoenix_hourly_weather_2016_2023.csv
+!experiments/05_las_vegas_phoenix/neural_models/two_branch_tcn_results/las_vegas/baseline_feature_scaler.joblib
+!experiments/05_las_vegas_phoenix/neural_models/two_branch_tcn_results/las_vegas/baseline_mlp.keras
+!experiments/05_las_vegas_phoenix/neural_models/two_branch_tcn_results/las_vegas/baseline_target_scaler.joblib
+!experiments/05_las_vegas_phoenix/neural_models/two_branch_tcn_results/las_vegas_to_phoenix/best_weather_tcn.keras
+!experiments/05_las_vegas_phoenix/neural_models/two_branch_tcn_results/las_vegas_to_phoenix/experiment_config.json
+!experiments/05_las_vegas_phoenix/neural_models/two_branch_tcn_results/las_vegas_to_phoenix/residual_target_scaler_las_vegas_only.joblib
+!experiments/05_las_vegas_phoenix/neural_models/two_branch_tcn_results/las_vegas_to_phoenix/tcn_feature_scaler_las_vegas_only.joblib
+!experiments/05_las_vegas_phoenix/neural_models/two_branch_tcn_results/phoenix/baseline_feature_scaler.joblib
+!experiments/05_las_vegas_phoenix/neural_models/two_branch_tcn_results/phoenix/baseline_mlp.keras
+!experiments/05_las_vegas_phoenix/neural_models/two_branch_tcn_results/phoenix/baseline_target_scaler.joblib

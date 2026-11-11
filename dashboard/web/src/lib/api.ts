@@ -26,7 +26,7 @@ export type Meta = {
   weights: Record<string, number>; labels: Record<string, string>; components: string[]
   limits: { max_horizon_hours: number; max_upload_mb: number; max_history_hours: number; near_tie_points: number }
   evidence: { generated_utc: string; models: Record<string, Record<string, any>>; benchmarks: Record<string, Record<string, any>>; research_reported: Record<string, any> }
-  weights_study: any; limitations: string[]; artifacts: { artifact: string; registered: boolean }[]; last_result: string | null
+  weights_study: any; limitations: string[]; artifacts: { artifact: string; registered: boolean }[]
 }
 export type Result = {
   id: string; source: 'recorded' | 'manual' | 'csv'; upload_name: string | null
@@ -73,7 +73,6 @@ export const api = {
   result: (id: string) => call<Result>(`/api/result/${id}`),
   climateDetail: (id: string, model: string) => call<any>(`/api/result/${id}/climate/${model}`),
   climateSpace: () => call<{ points: Record<string, [number, number][]>; explained: number[]; cities: string[]; matrix: number[][] }>('/api/climate/space'),
-  reset: () => post('/api/reset', {}),
   exportUrl: (id: string, kind: string) => `/api/result/${id}/export/${kind}`,
   sampleUrl: (city: string, start: string, end: string) => `/api/sample?city=${city}&start=${encodeURIComponent(start)}&end=${encodeURIComponent(end)}`,
 }

@@ -31,6 +31,12 @@ type Store = {
 const Ctx = createContext<Store>(null as never)
 export const useStore = () => useContext(Ctx)
 
+/** The id of this browser's last result. Storage can be blocked (private windows), so every access is guarded. */
+const remembered = {
+  get: () => { try { return localStorage.getItem('lastResult') } catch { return null } },
+  set: (id: string | null) => { try { id ? localStorage.setItem('lastResult', id) : localStorage.removeItem('lastResult') } catch { /* not persisted */ } },
+}
+
 const readRoute = (): Route => {
   const h = location.hash.replace(/^#\/?/, '')
   return ROUTES.some(r => r.id === h) ? (h as Route) : 'overview'
@@ -54,9 +60,10 @@ export function StoreProvider({ meta, children }: { meta: Meta; children: ReactN
     addEventListener('hashchange', on)
     return () => removeEventListener('hashchange', on)
   }, [])
-  useEffect(() => { // a page reload keeps the last prediction the server still holds
-    if (meta.last_result) api.result(meta.last_result).then(setResult).catch(() => {})
-  }, [meta])
+  useEffect(() => { // a page reload keeps this browser's last prediction, if the server still holds it
+    const id = remembered.get()
+    if (id) api.result(id).then(setResult).catch(() => remembered.set(null))
+  }, [])
 
   const go = useCallback((r: Route) => { location.hash = `/${r}` }, [])
   const setForm = useCallback((p: Partial<Form>) => { setFormState(f => ({ ...f, ...p })); setPending(null) }, [])
@@ -65,7 +72,7 @@ export function StoreProvider({ meta, children }: { meta: Meta; children: ReactN
     setBusy(label); setError(null)
     try { return await fn() } catch (e) { setError((e as Error).message); return null } finally { setBusy(null) }
   }
-  const finish = (r: Result) => { setResult(r); setPending(null); go('overview') }
+  const finish = (r: Result) => { remembered.set(r.id); setResult(r); setPending(null); go('overview') }
 
   const value = useMemo<Store>(() => ({
     meta, result, route, go, form, setForm, pending, setPending, busy, error, setError,
@@ -81,7 +88,7 @@ export function StoreProvider({ meta, children }: { meta: Meta; children: ReactN
         finish(await api.run(p.pending_id, '', true))
       })
     },
-    reset: async () => { await guard('Resetting', () => api.reset()); setResult(null); setPending(null); setFormState(initialForm); go('overview') },
+    reset: async () => { remembered.set(null); setResult(null); setPending(null); setFormState(initialForm); go('overview') },
   }), [meta, result, route, form, pending, busy, error, go, setForm])
 
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>
